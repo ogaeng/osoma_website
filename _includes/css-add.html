@@ -1,0 +1,10 @@
+<!-- Ionicons -->
+<link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/images/fontawesome.css">
+
+<style>
+{% capture include_to_scssify %}
+  {% include main.scss %}
+{% endcapture %}
+{{ include_to_scssify | scssify }}
+</style>

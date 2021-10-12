@@ -1,0 +1,28 @@
+#-------------------------------
+# Member Informations
+
+ogaeng:
+  name: 오경석
+  avatar: /images/authors/ogaeng.jpg
+  bio:
+  blog: https://ogaeng.com
+  about: # {{site.baseurl}}/about/{{post.author}}
+
+nohze:
+  name: 노지혜
+  avatar: /images/authors/nohze.jpg
+  bio:
+  blog: https://nohze.com
+  about: # {{site.baseurl}}/about/{{post.author}}
+
+yena:
+  name: 김예나
+  avatar: /images/authors/yena.png
+  bio:
+  blog: https://nice-nana.com
+
+jay:
+  name: 이자영
+  avatar: /images/authors/jay.jpg
+  bio: 
+  blog:

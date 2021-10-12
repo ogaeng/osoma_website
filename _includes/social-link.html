@@ -1,0 +1,13 @@
+{% if site.data.settings.social %}
+  <div class="social">
+    <ul class="social__list list-reset">
+      {% for social in site.data.settings.social %}
+      <li class="social__item">
+        <a class="social__link" href="{{social.link}}" target="_blank" rel="noopener" aria-label="social icon" data-tag-index="footer_social" data-tag-content="{{social.name}}">
+          <span class="iconify" data-icon="{{social.icon}}"></span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endif %}

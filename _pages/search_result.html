@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<!-- begin search -->
+<div class="search">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="search__box">
+          <div class="search__group">
+            <label for="search-input" class="screen-reader-text">Search for Blog</label>
+            <input type="text" id="search-input" class="search__text" autocomplete="off" placeholder="검색어를 입력하세요">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row search-results-list" id="results-container">
+    </div>
+  </div>
+
+</div>
+<!-- end search -->
+
+
+
+
+
+
+
+<div class="search container">
+  <div class="row">
+      <div class="col col-12">
+        <div class="page-head">
+          <div class="tag">
+            <form class="subscribe-form validate" action="{% if site.data.settings.mailchimp__settings.mailchimp__identifier %}//{{site.data.settings.mailchimp__settings.mailchimp__identifier}}{% else %}#{% endif %}" method="POST"
+              id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
+              <label class="screen-reader-text" for="search-input">검색어</label>
+              <input class="subscribe-email required email" id="search-input" type="text" name="query"
+                placeholder="검색어를 입력하세요" required>
+            </form>
+
+            <h1 class="page-title">{{ page.tag }}</h1>
+            <div class="tag-meta">
+              <div class="tag-count{% if site.tags[page.tag].size > 9 %} count-padding-small{% endif %}">
+                <div class="tag-number">{{ site.tags[page.tag].size }}</div>
+              </div>
+              <span>{% if site.tags[page.tag].size < 2 %}Article {% else %}개의 글을 발견했습니다.{% endif %}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row search-results-list" id="results-container">
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <div class="contaniner__inner animate">
+        <div class="row">
+          {% for post in page.posts %}
+            {% include article-content.html %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  dataLayer.push({
+    'event': 'view_tags',
+    'tags': '{{page.tag}}',
+    'page_index': 'tags'
+  });
+</script>

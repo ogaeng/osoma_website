@@ -1,0 +1,37 @@
+---
+layout: default
+title: 블로그
+description: 오소마 블로그로 디지털 마케팅 인사이트를 얻어가세요.
+---
+<div class="container">
+  <div class="row">
+    <div class="col col-8 push-2 col-t-12 push-t-0">
+      <div class="page-head">
+        <h1 class="page-title">
+          오픈소스마케팅 블로그
+        </h1>
+          <p class="page-description">
+            디지털 마케팅과 관련된 인사이트 가득한 소식을 준비했습니다.
+          </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container animate">
+  <div class="row">
+    {% if site.posts.size > 0 %}
+      {% for post in paginator.posts offset:0 %}
+        {% include article-content.html %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
+{% include pagination.html %}
+
+<script>
+  dataLayer.push({
+    'page_index': 'blog_home'
+  });
+</script>

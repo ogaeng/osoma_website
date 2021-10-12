@@ -1,0 +1,114 @@
+<title>
+  {% if page.title %}
+    {{ page.title }} | {{ site.data.settings.title }}
+  {% else %}
+    {{ site.data.settings.title }} | {{ site.data.settings.tagline }}
+  {% endif %}
+</title>
+
+<!-- SEO Tag -->
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<meta name="robots" content="max-image-preview:large">
+
+<meta name="twitter:card" content="summary_large_image" />
+{% if page.title %}
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+{% else %}
+  <meta property="og:title" content="{{ site.data.settings.title }} | {{ site.data.settings.tagline }}" />
+  <meta name="twitter:title" content="{{ site.data.settings.title }} | {{ site.data.settings.tagline }}" />
+{% endif %}
+{% if page.layout == "post" %}
+  <meta property="og:type" content="article" />
+{% else %}
+  <meta property="og:type" content="website" />
+{% endif %}
+{% if page.description %}
+  <meta name="description" content="{{ page.description }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta name="twitter:description" content="{{ page.description }}" />
+{% else %}
+  <meta name="description" content="{{ site.data.settings.description }}" />
+  <meta property="og:description" content="{{ site.data.settings.description }}" />
+  <meta name="twitter:description" content="{{ site.data.settings.description }}" />
+{% endif %}
+{% if page.url %}
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}" />
+{% endif %}
+{% if page.date %}
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+{% endif %}
+{% if page.image %}
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+  <meta name="twitter:image:src" content="{{ site.url }}{{ page.image }}" />
+{% else %}
+  <meta property="og:image" content="{{ site.url }}{{ site.data.settings.thumbnail }}" />
+  <meta name="twitter:image:src" content="{{ site.url }}{{ site.data.settings.thumbnail }}" />
+{% endif %}
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:site_name" content="{{ site.data.settings.title }}" />
+{% if page.categories %}
+  {% for category in page.categories limit:1 %}
+  <meta property="article:section" content="{{ category }}" />
+  {% endfor %}
+{% endif %}
+{% if page.tags %}
+  {% for tag in page.tags %}
+  <meta property="article:tag" content="{{ tag }}" />
+  {% endfor %}
+{% endif %}
+
+<!-- End SEO Tag -->
+
+<!-- Article 구조화된 데이터 Start -->
+{% if page.layout == "post" %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "{{ page.title }}",
+      "image": [
+        "{{ site.url }}{{ page.image }}"
+       ],
+      "datePublished": "{{ page.date | date_to_xmlschema }}"
+    }
+  </script>
+{% endif %}
+<!-- Article 구조화된 데이터 End -->
+
+<!-- 연관 채널 구조화된 데이터 Start -->
+<script type="application/ld+json">
+  {
+   "@context": "http://schema.org",
+   "@type": "Person",
+   "name": "{{ site.data.settings.title }}",
+   "url": "{{ site.url }}",
+   "sameAs": [
+     "https://facebook.com/osoma.kr",
+     "https://www.linkedin.com/company/opensourcemarketing",
+     "http://pf.kakao.com/_PLzxcj"
+   ]
+  }
+</script>
+<!-- 연관 채널 구조화된 데이터 End -->
+
+<!-- Favicon Tag -->
+<link rel="apple-touch-icon" sizes="57x57" href="{{ "/images/favicon/apple-icon-57x57.png" | relative_url }}">
+<link rel="apple-touch-icon" sizes="60x60" href="{{ "/images/favicon/apple-icon-60x60.png" | relative_url }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ "/images/favicon/apple-icon-72x72.png" | relative_url }}">
+<link rel="apple-touch-icon" sizes="76x76" href="{{ "/images/favicon/apple-icon-76x76.png" | relative_url }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ "/images/favicon/apple-icon-114x114.png" | relative_url }}">
+<link rel="apple-touch-icon" sizes="120x120" href="{{ "/images/favicon/apple-icon-120x120.png" | relative_url }}">
+<link rel="apple-touch-icon" sizes="144x144" href="{{ "/images/favicon/apple-icon-144x144.png" | relative_url }}">
+<link rel="apple-touch-icon" sizes="152x152" href="{{ "/images/favicon/apple-icon-152x152.png" | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/favicon/apple-icon-180x180.png" | relative_url }}">
+<link rel="icon" type="image/png" sizes="192x192"  href="{{ "/images/favicon/android-icon-192x192.png" | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon/favicon-32x32.png" | relative_url }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ "/images/favicon/favicon-96x96.png" | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicon/favicon-16x16.png" | relative_url }}">
+<link rel="manifest" href="{{ "/images/favicon/manifest.json" | relative_url }}">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="{{ "/images/favicon/ms-icon-144x144.png" | relative_url }}">
+<meta name="theme-color" content="#ffffff">
+<!-- End Favicon Tag -->

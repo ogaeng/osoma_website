@@ -1,0 +1,86 @@
+<!-- begin contact -->
+  <div class="contact-modal">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+
+          <div class="contact-close">
+            <i class="ion ion-md-close"></i>
+          </div>
+
+          <div class="form-box">
+            <div class="contact-head">
+              {% if site.data.settings.contact__settings.contact__title %}
+                <h2 class="contact-title">{{ site.data.settings.contact__settings.contact__title }}</h2>
+              {% endif %}
+              {% if site.data.settings.contact__settings.contact__description %}
+                <p class="contact-description">{{ site.data.settings.contact__settings.contact__description }}</p>
+              {% endif %}
+              <p class="contact-description"><i class="ion ion-ios-mail-unread"></i> <a href="mailto:contact@osoma.kr" data-tag-index="contact" data-tag-content="이메일">contact@osoma.kr</a></p>
+            </div>
+
+            <div class="contact__btn__div">
+              <a class="contact__btn" href="https://drive.google.com/file/d/1RUj-w1D4nQnslLYxBqvyiC0ySsZZUgN6/view?usp=sharing" target="_blank" data-tag-index="contact" data-tag-content="서비스 소개서 보기">
+                <span class="circle-bg"><i class="ion ion-md-arrow-down button-arrow"></i></span> 서비스 소개서 보기
+              </a>
+            </div>
+
+            <form id="contact" class="form" action="https://formspree.io/f/xyylvqaa" method="POST">
+              <div class="form__group">
+                <select id="form-select" class="form-select form__input" aria-label="문의 구분">
+                  <option selected disabled>어떤 문의를 하시나요?</option>
+                  <option value="marketing">디지털 마케팅 컨설팅</option>
+                  <option value="tagging">태깅 컨설팅</option>
+                  <option value="oneday">원데이 컨설팅</option>
+                  <option value="lecture">마케팅 교육</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label screen-reader-text" for="form-name">이름</label>
+                <input class="form__input" id="form-name" type="text" name="name" placeholder="담당자 이름" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label screen-reader-text" for="form-email">Email</label>
+                <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="담당자 이메일 주소" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label screen-reader-text" for="form-company">회사명</label>
+                <input class="form__input" id="form-company" type="text" name="company" placeholder="회사명" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label screen-reader-text" for="form-website">웹사이트</label>
+                <input class="form__input" id="form-website" type="text" name="website" placeholder="웹사이트 주소" required>
+              </div>
+              <div class="form__group">
+                <label class="form__label screen-reader-text" for="form-text">문의 내용</label>
+                <textarea class="form__input" id="form-text" name="message" rows="8" placeholder="문의 내용" required></textarea>
+              </div>
+              <div class="form__group form__group-button">
+                <button class="button button--middle" type="submit">전송하기 <i class="ion ion-ios-paper-plane"></i></button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- end contact -->
+
+<script>
+  var formSubmit = function(){
+    var contents = {
+      'name': document.querySelector('#form-name').value,
+      'email': document.querySelector('#form-email').value,
+      'company': document.querySelector('#form-company').value,
+      'website': document.querySelector('#form-website').value,
+      'text': document.querySelector('#form-text').value
+    };
+
+    dataLayer.push({
+      'event': 'contactSubmit',
+      'value': contents
+    });
+  };
+  document.querySelector('#contact').addEventListener('submit', formSubmit);
+</script>
