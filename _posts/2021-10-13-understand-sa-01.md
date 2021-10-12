@@ -10,7 +10,7 @@ categories:
 date:   2021-10-13 00:20:00 +09:00
 image:  '/images/posts/understand-sa-01/thumb.jpg'
 tags:   [ads, search-ad]
-description:
+description: 검색 광고와 다른 매체를 동시에 돌릴 때 어떻게 전환을 측정해야 할까요?
 ---
 
 안녕하세요, 오픈소스마케팅 김예나 컨설턴트입니다.

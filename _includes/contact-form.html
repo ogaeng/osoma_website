@@ -27,7 +27,7 @@
 
             <form id="contact" class="form" action="https://formspree.io/f/xyylvqaa" method="POST">
               <div class="form__group">
-                <select id="form-select" class="form-select form__input" aria-label="문의 구분">
+                <select id="form-select" class="form-select form__input" aria-label="문의 구분" name="index">
                   <option selected disabled>어떤 문의를 하시나요?</option>
                   <option value="marketing">디지털 마케팅 컨설팅</option>
                   <option value="tagging">태깅 컨설팅</option>
@@ -58,6 +58,7 @@
               <div class="form__group form__group-button">
                 <button class="button button--middle" type="submit">전송하기 <i class="ion ion-ios-paper-plane"></i></button>
               </div>
+              <input type="hidden" name="_subject" value="[osoma.kr]에서 문의가 도착했습니다." />
             </form>
           </div>
 

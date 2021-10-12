@@ -10,7 +10,7 @@ categories:
 date:   2021-10-13 00:00:00 +09:00
 image:  '/images/posts/understand-da-01/thumb.jpg'
 tags:   [ads, display-ad]
-description:
+description: 쉽게 접할 수 있는 디스플레이 광고의 특징에 대해서 알아봅니다.
 ---
 
 고객들이 가장 자주, 그리고 쉽게 접하게 되는 '디스플레이 광고(Display Ad : DA)'
