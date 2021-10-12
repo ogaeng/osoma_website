@@ -14,8 +14,8 @@ menu__settings:
       url: '/'
     - title: 'All'
       url: '/blog/'
-    # - title: 'Ads'
-    #   url: '/tag/ads'
+    - title: 'Ads'
+      url: '/tag/ads'
 
 # Call to action button
 cta__button__text: 컨설팅 문의
