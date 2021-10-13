@@ -2,5 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /tag/
 Disallow: /404.html
+Disallow: /projects/
 
 Sitemap: https://osoma.kr/sitemap.xml

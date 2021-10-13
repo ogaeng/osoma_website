@@ -12,10 +12,43 @@
     </li>
 
     <li class="share__item">
-      <a class="share__link share__pinterest" href=""
-        onclick=""
-        title="카카오톡으로 공유하기" rel="nofollow" data-tag-index="share_post" data-tag-content="카카오톡"><span class="iconify" data-icon="vs:kakaotalk"></span></a>
+      <a class="share__link share__pinterest" onclick="javascript:sendLink()" title="카카오톡으로 공유하기" rel="nofollow" data-tag-index="share_post" data-tag-content="카카오톡"><span class="iconify" data-icon="vs:kakaotalk"></span></a>
     </li>
 
   </ul>
 </div>
+
+
+<!-- Kakao SDK -->
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+<script type='text/javascript'>
+  //<![CDATA[
+    // // 카카오 앱 JavaScript 키
+    Kakao.init('2ea048eb49cb0c266a58e1f71e56dd2e');
+    // // 카카오링크 버튼을 생성
+    function sendLink() {
+      Kakao.Link.sendDefault({
+        objectType: 'feed',
+        content: {
+          title: '{{ page.title }}',
+          description: '{{ page.description }}',
+          imageUrl: '{{ site.url }}{{ page.image }}',
+          link: {
+            mobileWebUrl: '{{ site.url }}{{ page.url }}?utm_source=kakaotalk&utm_medium=social&utm_campaign=post_share',
+            webUrl: '{{ site.url }}{{ page.url }}?utm_source=kakaotalk&utm_medium=social&utm_campaign=post_share'
+          }
+        },
+        buttons: [
+          {
+            title: '자세히 보기',
+            link: {
+              mobileWebUrl: '{{ site.url }}{{ page.url }}?utm_source=kakaotalk&utm_medium=social&utm_campaign=post_share',
+              webUrl: '{{ site.url }}{{ page.url }}?utm_source=kakaotalk&utm_medium=social&utm_campaign=post_share'
+            }
+          }
+        ]
+      });
+    }
+  //]]>
+</script>
