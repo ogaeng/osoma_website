@@ -3,5 +3,6 @@ Allow: /
 Disallow: /tag/
 Disallow: /404.html
 Disallow: /projects/
+Disallow: /search-result
 
 Sitemap: https://osoma.kr/sitemap.xml
