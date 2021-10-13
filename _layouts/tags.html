@@ -25,15 +25,14 @@ layout: default
     <div class="col col-12">
       <div class="contaniner__inner animate">
         <div class="row">
-          {% for post in page.posts %}
-            {% include article-content.html %}
-          {% endfor %}
+            {% for post in site.tags[page.tag] %}
+              {% include article-content.html %}
+            {% endfor %}
         </div>
       </div>
     </div>
   </div>
 </div>
-
 
 <script>
   dataLayer.push({
