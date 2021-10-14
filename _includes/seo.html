@@ -7,8 +7,6 @@
 </title>
 
 <!-- SEO Tag -->
-<meta name="naver-site-verification" content="d14ff9739553aff2513a87ff2717404cb7e4953c" />
-
 <meta name="referrer" content="no-referrer-when-downgrade" />
 <meta name="robots" content="max-image-preview:large">
 
@@ -63,37 +61,54 @@
 
 <!-- End SEO Tag -->
 
-<!-- Article 구조화된 데이터 Start -->
-{% if page.layout == "post" %}
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "NewsArticle",
-      "headline": "{{ page.title }}",
-      "image": [
-        "{{ site.url }}{{ page.image }}"
-       ],
-      "datePublished": "{{ page.date | date_to_xmlschema }}"
-    }
-  </script>
-{% endif %}
-<!-- Article 구조화된 데이터 End -->
+<!-- 인증 태그 Start -->
+<meta name="naver-site-verification" content="d14ff9739553aff2513a87ff2717404cb7e4953c" />
+<!-- 인증 태그 End -->
 
-<!-- 연관 채널 구조화된 데이터 Start -->
-<script type="application/ld+json">
-  {
-   "@context": "http://schema.org",
-   "@type": "Person",
-   "name": "{{ site.data.settings.title }}",
-   "url": "{{ site.url }}",
-   "sameAs": [
-     "https://facebook.com/osoma.kr",
-     "https://www.linkedin.com/company/opensourcemarketing",
-     "http://pf.kakao.com/_PLzxcj"
-   ]
-  }
-</script>
-<!-- 연관 채널 구조화된 데이터 End -->
+<!-- 구조화된 데이터 Start -->
+  <!-- Article -->
+    {% if page.layout == "post" %}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "headline": "{{ page.title }}",
+          "image": [
+            "{{ site.url }}{{ page.image }}"
+           ],
+          "datePublished": "{{ page.date | date_to_xmlschema }}"
+        }
+      </script>
+    {% endif %}
+
+  <!-- LOGO -->
+    {% if page.title %}
+    {% else %}
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "url": "{{ site.url }}",
+          "logo": "{{ site.url }}/images/logo/logo_980x518_no-bg.png"
+        }
+    </script>
+    {% endif %}
+
+  <!-- 연관 채널 -->
+    <script type="application/ld+json">
+      {
+       "@context": "http://schema.org",
+       "@type": "Person",
+       "name": "{{ site.data.settings.title }}",
+       "url": "{{ site.url }}",
+       "sameAs": [
+         "https://facebook.com/osoma.kr",
+         "https://www.linkedin.com/company/opensourcemarketing",
+         "http://pf.kakao.com/_PLzxcj"
+       ]
+      }
+    </script>
+<!-- 구조화된 데이터 End -->
 
 <!-- Favicon Tag -->
 <link rel="apple-touch-icon" sizes="57x57" href="{{ "/images/favicon/apple-icon-57x57.png" | relative_url }}">
