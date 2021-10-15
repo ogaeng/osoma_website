@@ -11,7 +11,7 @@ ogaeng:
 nohze:
   name: 노지혜
   avatar: /images/authors/nohze.jpg
-  bio:
+  bio: 퇴근시간을 당겨주는 디지털 마케팅 노하우를 공유합니다.
   blog: https://nohze.com
   about: # {{site.baseurl}}/about/{{post.author}}
 
@@ -24,5 +24,11 @@ yena:
 jay:
   name: 이자영
   avatar: /images/authors/jay.jpg
-  bio: 
+  bio:
   blog:
+
+ann:
+  name: 이연정
+  avatar: /images/authors/ann.jpg
+  bio: 문제에 대한 해결책을 찾기 위해 늘 공부합니다.
+  blog: https://growth-study.kr
