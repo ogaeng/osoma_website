@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
-Disallow: /tag/
 Disallow: /404.html
 Disallow: /projects/
 Disallow: /search-result
 
 Sitemap: https://osoma.kr/sitemap.xml
+#DaumWebMasterTool:885eceb1f85e08f0de663bc342ef6cbc8a911ae24b69251a4e89d40345d0a4d0:iQnKcLiW8sjMzIZOPP3qrw==
