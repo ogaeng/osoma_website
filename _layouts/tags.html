@@ -38,6 +38,7 @@ layout: default
   dataLayer.push({
     'event': 'view_tags',
     'tags': '{{page.tag}}',
-    'page_index': 'tags'
+    'page_index': 'tags',
+    'event_id': generateRandomCode(32)
   });
 </script>
