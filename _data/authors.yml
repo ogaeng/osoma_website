@@ -4,7 +4,7 @@
 ogaeng:
   name: 오경석
   avatar: /images/authors/ogaeng.jpg
-  bio:
+  bio: 당신을 훌륭한 디지털 마케터로 만들어드립니다.
   blog: https://ogaeng.com
   about: # {{site.baseurl}}/about/{{post.author}}
 
