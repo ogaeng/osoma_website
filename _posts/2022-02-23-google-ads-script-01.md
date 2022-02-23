@@ -8,7 +8,7 @@ categories:
   - ads
   - gas
 date:   2022-02-23 10:00:00 +9:00
-image:  '/images/posts/google-ads-script-01/thumb.jpg'
+image:  '/images/posts/gas-01/thumb.jpg'
 tags:   [ads, gas]
 description: 구글 애즈 스크립트를 이용해 구글 광고 자동화하기 1편
 ---
@@ -29,9 +29,9 @@ Google Ads Script는 Google Ads를 Javascript로 조작하거나 데이터를 �
 
 조작할 수 있는 항목에는 어떤 것이 있는지 궁금하다면 아래 링크를 참고해주세요.
 
-**조작 가능한 항목 확인하기 -** [Google Ads Entities](https://developers.google.com/google-ads/scripts/docs/features/entities){:target="_blank"}
+**조작 가능한 항목 확인하기 -** [Google Ads Entities](https://oso.ma/FQMjK){:target="_blank"}
 
-**셀렉터 및 메서드 확인하기 -** [Google Ads Selectors](https://developers.google.com/google-ads/scripts/docs/concepts/selectors){:target="_blank"}
+**셀렉터 및 메서드 확인하기 -** [Google Ads Selectors](https://oso.ma/bf7gs){:target="_blank"}
 
 
 ## 2. Google Ads Script 사용 범위
@@ -56,15 +56,15 @@ Google Ads Script는 Google Ads를 Javascript로 조작하거나 데이터를 �
 
 알림을 원하는 Google Ads 계정에 접속한 뒤 메뉴에서 도구 및 설정 > 일괄 작업 > 스크립트를 선택합니다.
 
-![스크립트 메뉴](/images/posts/google-ads-script-01/1.png)
+![스크립트 메뉴](/images/posts/gas-01/1.png)
 
 (+)버튼을 눌러 새 스크립트 작성 작성으로 들어갑니다.
 
-![새 스크립트 작성](/images/posts/google-ads-script-01/2.png)
+![새 스크립트 작성](/images/posts/gas-01/2.png)
 
 노란 띠배너에서 [인증] 버튼을 눌러, 스크립트 실행에 필요한 계정 변경 권한을 부여합니다.
 
-![인증](/images/posts/google-ads-script-01/3.png)
+![인증](/images/posts/gas-01/3.png)
 
 스크립트 입력 창에 아래 스크립트를 입력합니다.
 
@@ -180,31 +180,31 @@ Logger.log([accId, campNum]);
 
 이 인증은 메일 발송에 필요한 권한을 부여하는 과정입니다.
 
-![스크립트 미리보기](/images/posts/google-ads-script-01/4.png)
+![스크립트 미리보기](/images/posts/gas-01/4.png)
 
-![스크립트 인증](/images/posts/google-ads-script-01/5.png)
+![스크립트 인증](/images/posts/gas-01/5.png)
 
 한 번 더 [미리보기]버튼을 눌러 로그에 값이 제대로 들어오는 지 확인합니다.
 
-![로그 확인](/images/posts/google-ads-script-01/6.png)
+![로그 확인](/images/posts/gas-01/6.png)
 
 오류가 발생하지 않았다면 [저장]을 눌러 스크립트를 저장합니다.
 
-![스크립트 저장](/images/posts/google-ads-script-01/7.png)
+![스크립트 저장](/images/posts/gas-01/7.png)
 
 이제 스크립트 실행 주기 설정을 위해 [빈도]에 마우스 커서를 가져다 대고 연필 모양 아이콘이 나오면 클릭합니다.
 
-![빈도 선택](/images/posts/google-ads-script-01/8.png)
+![빈도 선택](/images/posts/gas-01/8.png)
 
 체크를 원하는 시간 범위(예: 08시 ~ 09시)를 정하고, 해당 시간에 매일 스크립트가 실행되도록 규칙을 설정합니다.(메일은 항상 정각에 발송되지 않고 지정한 범위 내에 발송됩니다.)
 
-![시간 선택](/images/posts/google-ads-script-01/9.png)
+![시간 선택](/images/posts/gas-01/9.png)
 
 ## 스크립트 실행 결과
 
 미리보기를 실행하면 실행 시간에 바로 메일이 들어오는 것을 확인해 볼 수 있는데요
 
-![발송 결과](/images/posts/google-ads-script-01/10.png)
+![발송 결과](/images/posts/gas-01/10.png)
 
 이렇게 시간 설정을 걸어 사용하게 되면 일부 한계점도 있습니다.
 
