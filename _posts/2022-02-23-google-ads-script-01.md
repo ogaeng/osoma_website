@@ -25,7 +25,7 @@ description: 구글 애즈 스크립트를 이용해 구글 광고 자동화하�
 
 Google Ads Script는 Google Ads를 Javascript로 조작하거나 데이터를 내보낼 수 있도록 제공하는 도구입니다.
 
-> 참고 - [구글 애즈 스크립트 웹사이트](https://developers.google.com/google-ads/scripts){:target="_blank"}
+> 참고 - [구글 애즈 스크립트 웹사이트](https://oso.ma/MuqQk){:target="_blank"}
 
 조작할 수 있는 항목에는 어떤 것이 있는지 궁금하다면 아래 링크를 참고해주세요.
 
