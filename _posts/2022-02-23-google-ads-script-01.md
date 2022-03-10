@@ -9,7 +9,7 @@ categories:
   - gas
 date:   2022-02-23 10:00:00 +9:00
 image:  '/images/posts/gas-01/thumb.jpg'
-tags:   [ads, gas]
+tags:   [ads, GAS]
 description: 구글 애즈 스크립트를 이용해 구글 광고 자동화하기 1편
 ---
 
