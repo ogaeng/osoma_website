@@ -18,6 +18,8 @@ menu__settings:
       url: '/tag/ads'
     - title: 'GA'
       url: '/tag/ga'
+    - title: 'Docs'
+      url: 'https://docs.osoma.kr/'
 
 # Call to action button
 cta__button__text: 컨설팅 문의
