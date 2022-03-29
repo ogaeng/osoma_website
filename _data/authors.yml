@@ -32,3 +32,15 @@ ann:
   avatar: /images/authors/ann.jpg
   bio: 문제에 대한 해결책을 찾기 위해 늘 공부합니다.
   blog: https://growth-study.kr
+
+hong:
+  name: 홍승협
+  avatar: /images/authors/hong.jpg
+  bio:
+  blog:
+
+habin:
+  name: 박하빈
+  avatar: /images/authors/habin.jpg
+  bio:
+  blog:
