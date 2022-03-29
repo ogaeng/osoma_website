@@ -109,5 +109,5 @@ disqus-identifier:  # add your shortname for Disqus Comment. For example anvodst
 social:
 - {name: "페이스북", icon: "brandico:facebook-rect", link: "https://facebook.com/osoma.kr"}
 - {name: "링크드인", icon: "brandico:linkedin-rect", link: "https://www.linkedin.com/company/opensourcemarketing"}
-# - {name: "유튜브", icon: "ion-logo-youtube", link: "https://www.linkedin.com/company/opensourcemarketing"}
 - {name: "카카오톡", icon: "vs:kakaotalk", link: "http://pf.kakao.com/_PLzxcj"}
+- {name: "유튜브", icon: "ion-logo-youtube", link: "https://www.youtube.com/channel/UC0-tqcM8MkMIUM1nEr_0Vtw"}
