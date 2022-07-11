@@ -39,7 +39,7 @@ layout: default
         </a>
         <div class="post__author-info">
           <a class="post__author-link" data-tag-index="blog_author_name" data-tag-title="{{page.title}}" data-tag-content="{{page.author}}">{{site.data.authors[member].name}}</a>
-          <span class="post__date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time></span>
+          <span class="post__date"><time datetime="{{ page.startdate | date_to_xmlschema }}">{{ page.startdate | date_to_string }}</time></span>
         </div>
       </div>
       {%include share.html %}
@@ -48,8 +48,6 @@ layout: default
     <div class="post__content">
       {{ content }}
     </div>
-
-    {% include post-author.html %}
 
     {% include post-navigation.html %}
 
@@ -69,28 +67,13 @@ layout: default
   {% endfor %}
 
   // dataLayer set
-{% if post.index == "event" %}
   dataLayer.push({
     'event': 'view_event',
     'ids': '{{page.ids}}',
     'title': '{{page.title}}',
-    'author': '{{page.author}}',
+    'author': '{{page.speaker}}',
     'tags': tag_array,
     'page_index': 'event_article',
     'event_id': generateRandomCode(32)
   });
-{% else %}
-  dataLayer.push({
-    'event': 'view_article',
-    'ids': '{{page.ids}}',
-    'title': '{{page.title}}',
-    'author': '{{page.author}}',
-    'tags': tag_array,
-    'page_index': 'blog_article',
-    'event_id': generateRandomCode(32)
-  });
-{% endif %}
-
 </script>
-
-{% include code-copy.html %}

@@ -1,11 +1,13 @@
 ---
 layout: post
+index: blog
 author: nohze
 ids: ga4-start-settings
 title:  "GA4 설치 후 바로 세팅해야 하는 5가지"
 permalink: /blog/ga4-start-settings/
 categories:
   - GA
+  - blog
 date:   2021-12-09 00:00:00 +09:00
 image:  '/images/posts/ga4-start-settings/thumb.jpg'
 tags:   [GA, GA4]

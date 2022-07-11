@@ -1,0 +1,19 @@
+{% assign member = {{page.speaker}} -%}
+<div class="post__navigation">
+  <div class="post__prev" style="width: 100%;">
+    <div class="prev__image">
+      <a data-tag-index="blog_author_img" data-tag-title="{{page.title}}" data-tag-content="{{page.author}}">
+        <img class="lazy" data-src="{{site.baseurl}}{{site.data.authors[member].avatar}}" alt="{{page.speaker}}">
+      </a>
+    </div>
+    <div class="prev__box">
+      <a data-tag-index="blog_author_name" data-tag-title="{{page.title}}" data-tag-content="{{page.speaker}}">
+        <h2 class="post__nav__title">
+          {{site.data.authors[member].name}}
+        </h2>
+      </a>
+      <p class="post_author_bottom_text">{{site.data.authors[member].career}}</p>
+
+    </div>
+  </div>
+</div>

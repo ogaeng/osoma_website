@@ -1,5 +1,6 @@
 ---
 layout: post
+index: blog
 author: nohze
 ids: understand-da-01
 title:  "디스플레이 광고 이해하기 1 : DA의 특징"
@@ -7,6 +8,7 @@ permalink: /blog/understand-da-01/
 categories:
   - ads
   - display-ad
+  - blog
 date:   2021-10-13 00:00:00 +09:00
 image:  '/images/posts/understand-da-01/thumb.jpg'
 tags:   [ads, display-ad]

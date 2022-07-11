@@ -1,5 +1,6 @@
 ---
 layout: post
+index: blog
 author: yena
 ids: understand-sa-01
 title:  "검색 광고 이해하기 1 : 검색 광고 말고는 전환이 안나오는데... 다른 광고, 꺼도 될까?"
@@ -7,6 +8,7 @@ permalink: /blog/understand-sa-01/
 categories:
   - ads
   - search-ad
+  - blog
 date:   2021-10-13 00:20:00 +09:00
 image:  '/images/posts/understand-sa-01/thumb.jpg'
 tags:   [ads, search-ad]

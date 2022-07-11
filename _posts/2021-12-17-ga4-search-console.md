@@ -1,11 +1,13 @@
 ---
 layout: post
+index: blog
 author: ogaeng
 ids: ga4-search-console
 title:  "구글 자연 검색 파악을 위한 GA4와 서치 콘솔 연결하기"
 permalink: /blog/ga4-search-console/
 categories:
   - GA
+  - blog
 date:   2021-12-17 00:00:00 +09:00
 image:  '/images/posts/ga4-search-console/thumb.jpg'
 tags:   [GA, GA4]

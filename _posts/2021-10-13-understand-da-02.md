@@ -1,5 +1,6 @@
 ---
 layout: post
+index: blog
 author: nohze
 ids: understand-da-02
 title:  "디스플레이 광고 이해하기 2 : DA 광고시장"
@@ -7,6 +8,7 @@ permalink: /blog/understand-da-02/
 categories:
   - ads
   - display-ad
+  - blog
 date:   2021-10-13 00:10:00 +09:00
 image:  '/images/posts/understand-da-02/thumb.jpg'
 tags:   [ads, display-ad]

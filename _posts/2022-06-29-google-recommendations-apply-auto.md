@@ -1,5 +1,6 @@
 ---
 layout: post
+division: blog
 author: yena
 ids: google-recommendations-apply-auto
 title:  "내 캠페인을 망치러 온 나의 구원자, 구글 추천 자동 적용"
@@ -7,6 +8,7 @@ permalink: /blog/google-recommendations-apply-auto/
 categories:
   - ads
   - google-ads
+  - blog
 date:   2022-06-29 00:00:00 +9:00
 image:  '/images/posts/google-recommendations-apply-auto/thumb.jpg'
 tags:   [ads, google-ads]

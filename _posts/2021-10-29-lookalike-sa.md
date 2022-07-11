@@ -1,5 +1,6 @@
 ---
 layout: post
+index: blog
 author: yena
 ids: lookalike-sa
 title:  "검색 광고는 다 똑같을까? 구글과 네이버 검색 광고의 차이점 알아보기"
@@ -7,6 +8,7 @@ permalink: /blog/lookalike-sa/
 categories:
   - ads
   - search-ad
+  - blog
 date:   2021-10-29 00:00:00 +09:00
 image:  '/images/posts/lookalike-sa/thumb.jpg'
 tags:   [ads, search-ad]

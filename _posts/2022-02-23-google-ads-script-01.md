@@ -1,5 +1,6 @@
 ---
 layout: post
+index: blog
 author: yena
 ids: google-ads-script-01
 title:  "Google Ads Script로 구글 광고 잔액 소진 알림 보내기"
@@ -7,6 +8,7 @@ permalink: /blog/google-ads-script-01/
 categories:
   - ads
   - gas
+  - blog
 date:   2022-02-23 10:00:00 +9:00
 image:  '/images/posts/gas-01/thumb.jpg'
 tags:   [ads, GAS]

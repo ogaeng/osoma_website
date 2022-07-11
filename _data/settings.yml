@@ -12,8 +12,10 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'All'
+    - title: 'Blog'
       url: '/blog/'
+    - title: 'Event'
+      url: '/event/'
     - title: 'Ads'
       url: '/tag/ads'
     - title: 'GA'
