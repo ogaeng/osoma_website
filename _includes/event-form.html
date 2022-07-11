@@ -39,6 +39,25 @@
 
 <iframe name="blankiframe" style="display:none;"></iframe>
 
+<!-- 신청 완료 Modal -->
+<div id="eventSubmitModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">신청 완료</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>참가 신청이 완료되었습니다.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- emailjs Init -->
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -48,9 +67,6 @@
       emailjs.init("l6lrh8HbQjz4EaC4N");
    })();
 </script>
-
-<script data-cfasync="false" type="text/javascript"
-src="{{ site.baseurl }}/js/form-submission-handler.js"></script>
 
 <script>
   var eventSubmit = function(){
@@ -62,6 +78,9 @@ src="{{ site.baseurl }}/js/form-submission-handler.js"></script>
       'ids': '{{ page.ids }}',
       'email': emailVal
     });
+
+    var myModal = new bootstrap.Modal(document.getElementById('eventSubmitModal'));
+    myModal.show();
 
     // emailjs send
     var templateParams = {
