@@ -48,4 +48,4 @@ description: 2022년 7월 28일 오후 8시, 마케터를 위한 개발 공부 �
 
 {% include event-speaker.html %}
 
-{% include event-form.html %}
+{% include event-end.html %}
