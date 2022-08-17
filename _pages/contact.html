@@ -1,30 +1,93 @@
 ---
-layout: page
-title: Contact
-image: '/images/25.jpg'
+layout: default
+title: 문의 남기기
 ---
 
-<div class="form-box">
+<div class="form-box mb-5">
   <div class="contact-head">
-    {% if site.contact.description %}
-    <p class="page-description">{{site.contact.description}}</p>
+    {% if site.data.settings.contact__settings.contact__title %}
+      <h2 class="contact-title">{{ site.data.settings.contact__settings.contact__title }}</h2>
     {% endif %}
+    {% if site.data.settings.contact__settings.contact__description %}
+      <p class="contact-description">{{ site.data.settings.contact__settings.contact__description }}</p>
+    {% endif %}
+    <p class="contact-description"><i class="ion ion-ios-mail-unread"></i> <a href="mailto:contact@osoma.kr" data-tag-index="contact" data-tag-content="이메일">contact@osoma.kr</a></p>
   </div>
-  <form class="form" action="{% if site.contact.email %}https://formspree.io/{{site.contact.email}}{% else %}#{% endif %}" method="POST">
+
+  <div class="contact__btn__div">
+    <a class="contact__btn" href="https://drive.google.com/file/d/1r6mJ-qBfcgREjrxifVmBE7ryNrBK1Cfm/view?usp=sharing" target="_blank" data-tag-index="contact" data-tag-content="서비스 소개서 보기">
+      <span class="circle-bg"><i class="ion ion-md-arrow-down button-arrow"></i></span> 서비스 소개서 보기
+    </a>
+  </div>
+
+  <form id="contact_page" class="form" action="https://script.google.com/macros/s/AKfycbxqounpy9s8wygO-r9-gFJNi6cMZG0dIueUuv7fBWgbfKnUoaV4WE3HpE3p3tU8rBM/exec" method="POST" target="contactblankiframepage">
     <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-name">Your Name</label>
-      <input class="form__input" id="form-name" type="text" name="name" placeholder="Name..." required>
+      <select id="form-select" class="form-select form__input" aria-label="문의 구분" name="index">
+        <option selected disabled>어떤 문의를 하시나요?</option>
+        <option value="디지털 마케팅">디지털 마케팅 컨설팅</option>
+        <option value="태깅">태깅 컨설팅</option>
+        <option value="원데이">원데이 컨설팅</option>
+        <option value="마케팅 교육">마케팅 교육</option>
+      </select>
     </div>
     <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-email">Your Email</label>
-      <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Email..." required>
+      <label class="form__label screen-reader-text" for="form-name-page">이름</label>
+      <input class="form__input" id="form-name-page" type="text" name="name" placeholder="담당자 이름" required>
     </div>
     <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-text">Your Message</label>
-      <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="Message..." required></textarea>
+      <label class="form__label screen-reader-text" for="form-email-page">Email</label>
+      <input class="form__input" id="form-email-page" type="email" name="email" placeholder="담당자 이메일 주소" required>
     </div>
     <div class="form__group">
-      <button class="button" type="submit">Send Message</button>
+      <label class="form__label screen-reader-text" for="form-company-page-page">회사명</label>
+      <input class="form__input" id="form-company-page" type="text" name="company" placeholder="회사명" required>
     </div>
+    <div class="form__group">
+      <label class="form__label screen-reader-text" for="form-website-page">웹사이트</label>
+      <input class="form__input" id="form-website-page" type="text" name="website" placeholder="웹사이트 주소" required>
+    </div>
+    <div class="form__group">
+      <label class="form__label screen-reader-text" for="form-text-page">문의 내용</label>
+      <textarea class="form__input" id="form-text-page" name="message" rows="8" placeholder="문의 내용" required></textarea>
+    </div>
+    <div class="form__group form__group-button">
+      <button class="g-recaptcha button button--middle" type="submit" data-sitekey="6LeCcoEhAAAAABX3zxn3bw3tXPSPiYPcBjD1QvfO" data-callback='onSubmit' data-action='submit'>전송하기 <i class="ion ion-ios-paper-plane"></i></button>
+    </div>
+    <!-- <input type="hidden" name="_subject" value="[osoma.kr]에서 문의가 도착했습니다." /> -->
   </form>
+
+  <div class="col col-12" style="display:none;" id="contact_complete_page">
+    <h4 class="text-center">문의가 제출되었습니다.</h4>
+  </div>
+
+  <iframe name="contactblankiframepage" style="display:none;"></iframe>
+
 </div>
+<!-- end contact -->
+
+<script>
+  function onSubmit(token) {
+    document.getElementById("contact_page").submit();
+  }
+</script>
+
+<script>
+  var formSubmitPage = function(){
+    var contents = {
+      'name': document.querySelector('#form-name-page').value,
+      'email': document.querySelector('#form-email-page').value,
+      'company': document.querySelector('#form-company-page').value,
+      'website': document.querySelector('#form-website-page').value,
+      'text': document.querySelector('#form-text-page').value
+    };
+
+    dataLayer.push({
+      'event': 'contactSubmit',
+      'value': contents
+    });
+
+    document.getElementById('contact_page').style.display = 'none'; // hide form
+    document.getElementById('contact_complete_page').style.display = 'block';
+  };
+  document.querySelector('#contact_page').addEventListener('submit', formSubmitPage);
+</script>

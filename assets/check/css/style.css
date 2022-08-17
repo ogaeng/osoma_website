@@ -10,6 +10,10 @@ NOTE:
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
 
+#run-btn {
+  color: #fff !important;
+}
+
 #test {
   display: none;
 }
@@ -18,10 +22,21 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
   display: none;
 }
 
+.test_sub_title {
+  font-size: 36px;
+}
+
+.test_time {
+  font-size: 20px;
+}
+
 .btn-osoma {
   border-color: #7367f0 !important;
   background-color: #7367f0 !important;
-  color: #fff !important; }
+  color: #fff !important;
+  font-size: 1.2rem;
+  padding: 0.786rem 1.5rem;
+}
 
 .btn-osoma:focus, .btn-osoma:active, .btn-osoma.active {
   color: #fff;
@@ -36,3 +51,13 @@ WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BET
 .btn-check:checked + .btn-osoma, .btn-check:active + .btn-osoma {
   color: #fff;
   background-color: #5e50ee !important; }
+
+
+/* .nav__link {
+  text-decoration: none;
+  color: #120f3e;
+}
+
+.cta-button {
+  color: #fff !important;
+} */

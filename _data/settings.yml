@@ -22,6 +22,8 @@ menu__settings:
       url: '/tag/ga'
     - title: 'Docs'
       url: 'https://docs.osoma.kr/'
+    # - title: 'DMIQ'
+    #   url: '/dmiq/'
 
 # Call to action button
 cta__button__text: 컨설팅 문의

@@ -53,8 +53,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.45;
-  --bs-body-color: #6e6b7b;
-  --bs-body-bg: #f8f8f8; }
+  --bs-body-color: #120f3e;
+  --bs-body-bg: #fff; }
 
 *,
 *::before,
@@ -73,7 +73,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(34, 41, 47, 0); }
 
@@ -93,7 +93,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
-  color: #5e5873; }
+}
 
 h1, .h1 {
   font-size: calc(1.325rem + 0.9vw); }
@@ -195,7 +195,7 @@ sup {
   top: -.5em; }
 
 a {
-  color: #7367f0;
+  color: #120f3e;
   text-decoration: none; }
 
 a:hover {
@@ -1647,7 +1647,7 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; } }
 
-.form-label {
+/* .form-label {
   margin-bottom: 0.2857rem;
   font-size: 0.857rem;
   color: #5e5873; }
@@ -2344,7 +2344,7 @@ textarea.form-control-lg {
 .was-validated .input-group .form-control:invalid:focus, .input-group .form-control.is-invalid:focus, .was-validated
 .input-group .form-select:invalid:focus,
 .input-group .form-select.is-invalid:focus {
-  z-index: 3; }
+  z-index: 3; } */
 
 .btn {
   display: inline-block;

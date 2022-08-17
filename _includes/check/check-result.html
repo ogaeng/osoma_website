@@ -42,7 +42,7 @@
               <p class="card-text font-small-3">
                 <span id="product_result_txt"></span>
               </p>
-              <button type="button" class="mb-1 btn btn-osoma">추가 코멘트 보기</button>
+              <button type="button" class="mb-1 btn btn-osoma" data-bs-toggle="modal" data-bs-target="#product_comment">추가 코멘트 보기</button>
             </div>
             <div class="col-md-6 col-lg-4 col-12">
               <div id="product-donut-chart"></div>
@@ -60,7 +60,7 @@
               <p class="card-text font-small-3">
                 <span id="data_result_txt"></span>
               </p>
-              <button type="button" class="mb-1 btn btn-osoma">추가 코멘트 보기</button>
+              <button type="button" class="mb-1 btn btn-osoma" data-toggle="modal" data-target="#data_comment">추가 코멘트 보기</button>
             </div>
             <div class="col-md-6 col-lg-4 col-12">
               <div id="data-donut-chart"></div>
@@ -78,7 +78,7 @@
               <p class="card-text font-small-3">
                 <span id="resource_result_txt"></span>
               </p>
-              <button type="button" class="mb-1 btn btn-osoma">추가 코멘트 보기</button>
+              <button type="button" class="mb-1 btn btn-osoma" data-toggle="modal" data-target="#resource_comment">추가 코멘트 보기</button>
             </div>
             <div class="col-md-6 col-lg-4 col-12">
               <div id="resource-donut-chart"></div>
@@ -96,7 +96,7 @@
               <p class="card-text font-small-3">
                 <span id="skill_result_txt"></span>
               </p>
-              <button type="button" class="mb-1 btn btn-osoma">추가 코멘트 보기</button>
+              <button type="button" class="mb-1 btn btn-osoma" data-toggle="modal" data-target="#skill_comment">추가 코멘트 보기</button>
             </div>
             <div class="col-md-6 col-lg-4 col-12">
               <div id="skill-donut-chart"></div>
@@ -114,7 +114,7 @@
               <p class="card-text font-small-3">
                 <span id="media_result_txt"></span>
               </p>
-              <button type="button" class="mb-1 btn btn-osoma">추가 코멘트 보기</button>
+              <button type="button" class="mb-1 btn btn-osoma" data-toggle="modal" data-target="#media_comment">추가 코멘트 보기</button>
             </div>
             <div class="col-md-6 col-lg-4 col-12">
               <div id="media-donut-chart"></div>
@@ -134,6 +134,96 @@
       <div class="d-grid pb-1 mb-lg-0">
         <button type="button" class="btn btn-osoma">무슨버튼</button>
       </div>
+      <div class="d-grid pb-1 mb-lg-0">
+        <button type="button" class="btn btn-osoma nav__link cta-button button button--small">컨설팅 문의</button>
+      </div>
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
+<!-- 추가 코멘트 -->
+<!-- 제품/서비스 -->
+<div class="modal fade" id="product_comment" tabindex="-1" aria-labelledby="productModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModal">제품/서비스 코멘트</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="modal-product-comments" class="list-group list-group-flush">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 데이터 -->
+<div class="modal fade" id="data_comment" tabindex="-1" aria-labelledby="dataModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dataModal">데이터 코멘트</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="modal-data-comments" class="list-group list-group-flush">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 리소스 -->
+<div class="modal fade" id="resource_comment" tabindex="-1" aria-labelledby="resourceModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resourceModal">리소스 코멘트</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="modal-resource-comments" class="list-group list-group-flush">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 스킬/역량 -->
+<div class="modal fade" id="skill_comment" tabindex="-1" aria-labelledby="skillModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="skillModal">스킬/역량 코멘트</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="modal-skill-comments" class="list-group list-group-flush">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 매체 -->
+<div class="modal fade" id="media_comment" tabindex="-1" aria-labelledby="mediaModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mediaModal">매체 코멘트</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul id="modal-media-comments" class="list-group list-group-flush">
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
