@@ -68,10 +68,25 @@ title: 문의 남기기
 <script>
   function onSubmit(token) {
     document.getElementById("contact_page").submit();
+    var contents = {
+      'name': document.querySelector('#form-name-page').value,
+      'email': document.querySelector('#form-email-page').value,
+      'company': document.querySelector('#form-company-page').value,
+      'website': document.querySelector('#form-website-page').value,
+      'text': document.querySelector('#form-text-page').value
+    };
+
+    dataLayer.push({
+      'event': 'contactSubmit',
+      'value': contents
+    });
+
+    document.getElementById('contact_page').style.display = 'none'; // hide form
+    document.getElementById('contact_complete_page').style.display = 'block';
   }
 </script>
 
-<script>
+<!-- <script>
   var formSubmitPage = function(){
     var contents = {
       'name': document.querySelector('#form-name-page').value,
@@ -90,4 +105,4 @@ title: 문의 남기기
     document.getElementById('contact_complete_page').style.display = 'block';
   };
   document.querySelector('#contact_page').addEventListener('submit', formSubmitPage);
-</script>
+</script> -->

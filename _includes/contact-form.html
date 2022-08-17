@@ -78,10 +78,25 @@
 <script>
   function onSubmit(token) {
     document.getElementById("contact").submit();
+    var contents = {
+      'name': document.querySelector('#form-name').value,
+      'email': document.querySelector('#form-email').value,
+      'company': document.querySelector('#form-company').value,
+      'website': document.querySelector('#form-website').value,
+      'text': document.querySelector('#form-text').value
+    };
+
+    dataLayer.push({
+      'event': 'contactSubmit',
+      'value': contents
+    });
+
+    document.getElementById('contact').style.display = 'none'; // hide form
+    document.getElementById('contact_complete').style.display = 'block';
   }
 </script>
 
-<script>
+<!-- <script>
   var formSubmit = function(){
     var contents = {
       'name': document.querySelector('#form-name').value,
@@ -100,4 +115,4 @@
     document.getElementById('contact_complete').style.display = 'block';
   };
   document.querySelector('#contact').addEventListener('submit', formSubmit);
-</script>
+</script> -->
