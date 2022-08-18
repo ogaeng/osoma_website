@@ -25,7 +25,7 @@
               </a>
             </div>
 
-            <form id="contact" class="form" action="https://script.google.com/macros/s/AKfycbyJBhtyiGDqJO9jW4OcvnxJQIH7piDvaX1Ll_fy2GujUt9IGsI2HhA2GSi9TS4IJ18Baw/exec" method="POST" target="contactblankiframe">
+            <form id="contact" class="form" action="https://formspree.io/f/xyylvqaa" method="POST">
               <div class="form__group">
                 <select id="form-select" class="form-select form__input" aria-label="문의 구분" name="index">
                   <option selected disabled>어떤 문의를 하시나요?</option>
@@ -58,16 +58,16 @@
                 <textarea class="form__input" id="form-text" name="message" rows="8" placeholder="문의 내용" required></textarea>
               </div>
               <div class="form__group form__group-button">
-                <button class="g-recaptcha button button--middle" type="submit" data-sitekey="6LeCcoEhAAAAABX3zxn3bw3tXPSPiYPcBjD1QvfO" data-callback='onSubmit' data-action='submit'>전송하기 <i class="ion ion-ios-paper-plane"></i></button>
+                <button class="g-recaptcha button button--middle" type="submit">전송하기 <i class="ion ion-ios-paper-plane"></i></button>
               </div>
-              <!-- <input type="hidden" name="_subject" value="[osoma.kr]에서 문의가 도착했습니다." /> -->
+              <input type="hidden" name="_subject" value="[osoma.kr]에서 문의가 도착했습니다." />
             </form>
 
-            <div class="col col-12" style="display:none;" id="contact_complete">
+            <!-- <div class="col col-12" style="display:none;" id="contact_complete">
               <h4 class="text-center">문의가 제출되었습니다.</h4>
-            </div>
+            </div> -->
 
-            <iframe name="contactblankiframe" style="display:none;"></iframe>
+            <!-- <iframe name="contactblankiframe" style="display:none;"></iframe> -->
 
           </div>
 
@@ -77,7 +77,7 @@
   </div>
 <!-- end contact -->
 
-<script>
+<!-- <script>
   function onSubmit(token) {
     document.getElementById("contact").submit();
     var contents = {
@@ -96,9 +96,9 @@
     document.getElementById('contact').style.display = 'none'; // hide form
     document.getElementById('contact_complete').style.display = 'block';
   }
-</script>
+</script> -->
 
-<!-- <script>
+<script>
   var formSubmit = function(){
     var contents = {
       'name': document.querySelector('#form-name').value,
@@ -113,8 +113,8 @@
       'value': contents
     });
 
-    document.getElementById('contact').style.display = 'none'; // hide form
-    document.getElementById('contact_complete').style.display = 'block';
+    // document.getElementById('contact').style.display = 'none'; // hide form
+    // document.getElementById('contact_complete').style.display = 'block';
   };
   document.querySelector('#contact').addEventListener('submit', formSubmit);
-</script> -->
+</script>
