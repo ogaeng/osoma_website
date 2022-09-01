@@ -10,6 +10,7 @@ categories:
   - event
 image:  '/images/events/ga4-utm-guide-webinar/thumb.jpg'
 tags:   [event]
+date:   2022-09-02 08:00:00 +09:00
 startdate: 2022-09-20 20:00:00 +09:00
 description: 2022년 9월 20일 오후 8시, GA4 사용자를 위한 UTM 가이드를 소개합니다.
 ---
