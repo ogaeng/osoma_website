@@ -48,4 +48,4 @@ description: 2022년 9월 20일 오후 8시, GA4 사용자를 위한 UTM 가이�
 
 {% include event-speaker.html %}
 
-{% include event-form.html %}
+{% include event-end.html %}
