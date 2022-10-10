@@ -36,8 +36,8 @@ description: 쉽게 접할 수 있는 디스플레이 광고의 특징에 대해
 
 여기에 이어서 리타게팅 광고 기술을 활용하게 되면, 곧바로 구매 유도를 하는 방식보다, 더 나은 효율을 기대할 수 있습니다. (낮은 비용으로 최대한 많은 고객에게 도달해 제품을 학습시킨 후 우리 제품에 관심 있는 고객을 대상으로 직접적인 혜택 또는 제품 효용성을 전달해 구매를 유도하는 방식)
 
-- 제품의 기능성을 설명하는 광고 사례 : [바디럽 - 퓨어썸 샤워기](https://www.facebook.com/business/success/bodyluv)
-- 제품의 효용성을 설명하는 광고 사례 : [페스룸 - 힐링브러쉬](https://www.facebook.com/business/success/instagram/pethroom?locale=ko_KR)
+- 제품의 기능성을 설명하는 광고 사례 : [바디럽 - 퓨어썸 샤워기](https://www.facebook.com/business/success/bodyluv){:target="_blank"}
+- 제품의 효용성을 설명하는 광고 사례 : [페스룸 - 힐링브러쉬](https://www.facebook.com/business/success/instagram/pethroom?locale=ko_KR){:target="_blank"}
 
 <div class="gallery-box">
   <div class="gallery">
@@ -51,7 +51,7 @@ description: 쉽게 접할 수 있는 디스플레이 광고의 특징에 대해
 
 앞서 언급했듯 디스플레이 광고는 사용자(우리의 잠재 고객)이 기대하지 않은 순간에 마주칠 확률이 높습니다. 예를 들어, 흥미 있던 기사를 보던 중 기사 중간에 끼어있는 배너 형태로 마주친다거나, SNS 콘텐츠를 보던 중간에 마주칠 수 있습니다. 때문에, 사용자(우리의 잠재 고객)은 광고를 '방해되는 콘텐츠', '불편할 콘텐츠'로 인식할 확률이 높으므로 이를 유념해 소재를 제작하세요. 디스플레이 광고에서는 명확한 정보 전달 못지 않게, '흥미 유발'도 매우 중요합니다.
 
-- 드라마타이즈 형식을 활용한 흥미유발형 광고 사례 - [그랑사가](https://www.youtube.com/watch?v=mK8GiTBnFq0&t=36s) / [빙그레](https://www.youtube.com/watch?v=RII-T8HNOAw)
+- 드라마타이즈 형식을 활용한 흥미유발형 광고 사례 - [그랑사가](https://www.youtube.com/watch?v=mK8GiTBnFq0&t=36s){:target="_blank"} / [빙그레](https://www.youtube.com/watch?v=RII-T8HNOAw){:target="_blank"}
 
 <div class="gallery-box">
   <div class="gallery">
@@ -61,7 +61,7 @@ description: 쉽게 접할 수 있는 디스플레이 광고의 특징에 대해
   <em>사례 1: 그랑사가 - 연극의 왕  /  사례 2: 빙그레 - 빙그레 메이커를 위하여</em>
 </div>
 
-- 실생활 공감 콘텐츠를 활용한 광고 사례 - [자취생으로살아남기](https://www.instagram.com/one_home_life/) (나만 몰랐던 아이템, 삶의질 개선템 모음)
+- 실생활 공감 콘텐츠를 활용한 광고 사례 - [자취생으로살아남기](https://www.instagram.com/one_home_life/){:target="_blank"} (나만 몰랐던 아이템, 삶의질 개선템 모음)
 
 <div class="gallery-box">
   <div class="gallery">
@@ -80,6 +80,4 @@ description: 쉽게 접할 수 있는 디스플레이 광고의 특징에 대해
 - 인스타그램 광고 : 글로벌 최대 SNS 지면, 가로형, 정사각형, 세로형 등으로 노출할 수 있으며, 화면 전면을 차지한다. 페이스북과 달리 최상단에 이미지(또는 영상)가 배치되어 있고, 이어서 텍스트가 나오는 구조
 - 구글 디스플레이 광고 : 뉴스, 블로그, 유튜브 등 다양한 미디어(글로벌 최대 제휴)에 노출할 수 있으며, 다양한 사이즈를 제공한다.
 
----
-
-이에 더불어 더 효율적인 비용 운영 방식이 궁금하다면, 디스플레이 광고 시장에 대해서도 학습해보세요. 관련 내용은 **[디스플레이 광고 이해하기 2 : DA 광고시장](/blog/understand-da-02/)**에서 이어집니다.
+이에 더불어 더 효율적인 비용 운영 방식이 궁금하다면, 디스플레이 광고 시장에 대해서도 학습해보세요. 관련 내용은 **[디스플레이 광고 이해하기 2 : DA 광고시장](/blog/understand-da-02/){:target="_blank"}**에서 이어집니다.

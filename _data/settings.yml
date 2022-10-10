@@ -14,16 +14,14 @@ menu__settings:
       url: '/'
     - title: 'Blog'
       url: '/blog/'
-    - title: 'Event'
-      url: '/event/'
-    - title: 'Ads'
-      url: '/tag/ads'
     - title: 'GA'
       url: '/tag/ga'
-    - title: 'Docs'
-      url: 'https://docs.osoma.kr/'
-    # - title: 'DMIQ'
-    #   url: '/dmiq/'
+    - title: 'Ads'
+      url: '/tag/ads'
+    - title: 'Event'
+      url: '/event/'
+    - title: 'DMIQ'
+      url: '/dmiq/'
 
 # Call to action button
 cta__button__text: 컨설팅 문의
@@ -72,7 +70,7 @@ testimonial-items:
 # Blog Section
 
 blog__settings:
-  blog__title: 최근 <span class="text-span">블로그</span> 글 # Add a 'text-span' class to highlight text.
+  blog__title: 최신 <span class="text-span">소식</span> # Add a 'text-span' class to highlight text.
   blog__description:
 
 
@@ -111,7 +109,19 @@ disqus-identifier:  # add your shortname for Disqus Comment. For example anvodst
 # Example of adding a new link to the footer - {icon: "ion-logo-facebook", link: "https://facebook.com"}
 # Other icons can be found at https://ionicons.com/v4/
 social:
+- {name: "유튜브", icon: "ion-logo-youtube", link: "https://www.youtube.com/channel/UC0-tqcM8MkMIUM1nEr_0Vtw"}
 - {name: "페이스북", icon: "brandico:facebook-rect", link: "https://facebook.com/osoma.kr"}
 - {name: "링크드인", icon: "brandico:linkedin-rect", link: "https://www.linkedin.com/company/opensourcemarketing"}
 - {name: "카카오톡", icon: "vs:kakaotalk", link: "http://pf.kakao.com/_PLzxcj"}
-- {name: "유튜브", icon: "ion-logo-youtube", link: "https://www.youtube.com/channel/UC0-tqcM8MkMIUM1nEr_0Vtw"}
+
+introduce_file: https://drive.google.com/file/d/1r6mJ-qBfcgREjrxifVmBE7ryNrBK1Cfm/view?usp=sharing
+
+footer_contents:
+  blog:
+    - {title: "블로그 전체 글 보기", link: "{{ '/blog' | relative_url }}"}
+    - {title: "광고 글 목록 보기", link: "{{ '/tag/ads' | relative_url }}"}
+    - {title: "GA 글 목록 보기", link: "{{ '/tag/ga' | relative_url }}"}
+  resource:
+    - {title: "이벤트", link: "{{ '/event' | relative_url }}"}
+    - {title: "DMIQ 테스트", link: "{{ '/dmiq' | relative_url }}"}
+    - {title: "유튜브", link: "https://www.youtube.com/c/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%A7%88%EC%BC%80%ED%8C%85/"}

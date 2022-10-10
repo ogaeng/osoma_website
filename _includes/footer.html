@@ -1,5 +1,5 @@
 <!-- begin footer -->
-<footer class="footer">
+<footer class="footer d-none d-md-none d-lg-block">
 
   {% if site.data.settings.cover__image %}
     <div class="footer-cover">
@@ -9,13 +9,114 @@
     </div>
   {% endif %}
 
-  <div class="container">
+  <div class="container footer_content">
     <div class="row">
+      <div class="col-md-4">
+        <h3>최근 글</h3>
+        {% if site.posts.size > 0 %}
+          {% for post in site.categories.blog offset:0 limit:3 %}
+            {% include footer-recent-article.html %}
+          {% endfor %}
+        {% endif %}
+      </div>
+      <div class="col-md-7 offset-md-1">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>컨설팅</h3>
+            <ul>
+              <li><a href="{{site.data.settings.introduce_file}}" target="_blank" data-tag-index="footer_contents" data-tag-content="서비스 소개서 다운로드">서비스 소개서 다운로드</a></li>
+              <li><a class="blank_link" onclick="openContactForm();" data-tag-index="footer_contents" data-tag-content="컨설팅 문의">컨설팅 문의</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>블로그</h3>
+            <ul>
+              <li><a href="{{ '/blog' | relative_url }}" data-tag-index="footer_contents" data-tag-content="블로그 전체 글 보기">블로그 전체 글 보기</a></li>
+              <li><a href="{{ '/tag/ads' | relative_url }}" data-tag-index="footer_contents" data-tag-content="광고 글 목록 보기">광고 글 목록 보기</a></li>
+              <li><a href="{{ '/tag/ga' | relative_url }}" data-tag-index="footer_contents" data-tag-content="GA 글 목록 보기">GA 글 목록 보기</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3>리소스</h3>
+            <ul>
+              <li><a href="{{ '/event' | relative_url }}" data-tag-index="footer_contents" data-tag-content="GA 글 목록 보기">이벤트</a></li>
+              <li><a href="{{ '/dmiq' | relative_url }}" data-tag-index="footer_contents" data-tag-content="DMIQ 테스트">DMIQ 테스트</a></li>
+              <li><a href="https://www.youtube.com/c/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%A7%88%EC%BC%80%ED%8C%85/" target="_blank" data-tag-index="footer_contents" data-tag-content="유튜브">유튜브</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12">
+          <h3>Social</h3>
+          {% include social-link.html %}
+        </div>
+      </div>
       <div class="col col-12">
-        {% include social-link.html %}
         <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.data.settings.eng_name}}</a>. All rights reserved.</div>
       </div>
     </div>
   </div>
 </footer>
 <!-- end footer -->
+
+<!-- Mobile Footer -->
+<footer class="footer d-md-block d-lg-none">
+  {% if site.data.settings.cover__image %}
+    <div class="footer-cover">
+      <div class="cover-image">
+        <img class="lazy" data-src="{{site.data.settings.cover__image}}" alt="{{site.data.settings.title}}">
+      </div>
+    </div>
+  {% endif %}
+  <div class="container footer_content">
+    <div class="row footer__m">
+      <div class="col-12 mb-5">
+        <h3>최근 글</h3>
+        {% if site.posts.size > 0 %}
+          {% for post in site.categories.blog offset:0 limit:3 %}
+            {% include footer-recent-article.html %}
+          {% endfor %}
+        {% endif %}
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-6">
+            <h3>컨설팅</h3>
+            <ul>
+              <li><a href="{{site.data.settings.introduce_file}}" target="_blank" data-tag-index="footer_contents" data-tag-content="서비스 소개서 다운로드">서비스 소개서 다운로드</a></li>
+              <li><a class="blank_link" onclick="openContactForm();" data-tag-index="footer_contents" data-tag-content="컨설팅 문의">컨설팅 문의</a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h3>리소스</h3>
+            <ul>
+              <li><a href="{{ '/event' | relative_url }}" data-tag-index="footer_contents" data-tag-content="GA 글 목록 보기">이벤트</a></li>
+              <li><a href="{{ '/dmiq' | relative_url }}" data-tag-index="footer_contents" data-tag-content="DMIQ 테스트">DMIQ 테스트</a></li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h3>블로그</h3>
+            <ul>
+              <li><a href="{{ '/blog' | relative_url }}" data-tag-index="footer_contents" data-tag-content="블로그 전체 글 보기">블로그 전체 글 보기</a></li>
+              <li><a href="{{ '/tag/ads' | relative_url }}" data-tag-index="footer_contents" data-tag-content="광고 글 목록 보기">광고 글 목록 보기</a></li>
+              <li><a href="{{ '/tag/ga' | relative_url }}" data-tag-index="footer_contents" data-tag-content="GA 글 목록 보기">GA 글 목록 보기</a></li>
+            </ul>
+          </div>
+          {% if site.data.settings.social %}
+          <div class="col-6">
+            <h3>Social</h3>
+            <ul>
+              {% for social in site.data.settings.social %}
+              <li><a href="{{social.link}}" target="_blank" data-tag-index="footer_social" data-tag-content="{{social.name}}">{{social.name}}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="col col-12">
+      <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.data.settings.eng_name}}</a>. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+<!-- end Mobile Footer -->

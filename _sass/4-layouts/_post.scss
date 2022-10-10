@@ -106,6 +106,16 @@
   color: $heading-font-color;
 }
 
+.post__content ol li {
+  font-size: 1em;
+  list-style-type: decimal;
+}
+
+.post__content ul li {
+  font-size: 1em;
+  list-style-type: disc;
+}
+
 .post__content img,
 .page__content img,
 .project-content img,
@@ -121,6 +131,7 @@
 .post__content a,
 .page__content a,
 .project-content a {
+  word-break: break-all;
   border-bottom: 2px solid $border-color;
   transition: $global-transition;
 
@@ -477,4 +488,13 @@
   .error__button {
     border: none;
   }
+}
+
+// 기타 영역
+div .callout {
+  background-color: rgb(241, 241, 239);
+  border-radius: 10px;
+  padding: 1em 1em 1em 1em;
+  word-break: break-all;
+  margin-bottom: 1em;
 }

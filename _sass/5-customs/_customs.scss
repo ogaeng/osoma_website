@@ -29,3 +29,49 @@
     border-color: rgba($primary-color, 0.7);
   }
 }
+
+// Footer custom
+.footer_recent_post_title {
+  font-size: 0.9rem;
+}
+
+.footer_content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.footer_content p {
+  font-size: 0.9rem;
+}
+
+.footer_content ul,li {
+  font-size: 0.9rem;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.blank_link {
+  cursor: pointer;
+}
+
+.footer__m {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.lecture_video {
+  border-radius: 16px;
+}
+
+@media only screen and (max-width: 768px){
+  .lecture_video {
+    border-radius: 8px;
+  }
+}
+
+.summary_toggle {
+  font-weight: $heading-font-weight;
+  line-height: $heading-line-height;
+  font-size: $font-size-h3;
+  margin-bottom: $font-size-h3;
+}

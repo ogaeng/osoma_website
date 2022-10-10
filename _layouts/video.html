@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="post-head">
+    {% if page.tags.size >= 1 %}
+      <div class="post-tags__box">
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tag/{{ tag }}" class="post__tag" data-tag-index="blog_tag" data-tag-content="{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <h1 class="post-title">{{ page.title }}</h1>
+  </div>
+</div>
+
+{% if page.video_id %}
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <div class="ratio ratio-16x9">
+        <iframe class="lecture_video" src="https://www.youtube.com/embed/{{ page.video_id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!-- begin post -->
+{% assign member = {{page.docs_author}} -%}
+<div class="container">
+  <article class="post animate">
+    <div class="post__date mt-4 mb-4">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+    </div>
+    <div class="post__info">
+      {% for member in page.docs_author %}
+      <div class="post__author">
+        <a class="post__author-image" data-tag-index="blog_author_img" data-tag-title="{{page.title}}" data-tag-content="{{page.author}}">
+          <img class="lazy" data-src="{{site.baseurl}}{{site.data.authors[member].avatar}}" alt="{{page.author}}">
+        </a>
+        <div class="post__author-info">
+          <a class="post__author-link" data-tag-index="blog_author_name" data-tag-title="{{page.title}}" data-tag-content="{{page.author}}">{{site.data.authors[member].name}}</a>
+        </div>
+      </div>
+      {% endfor %}
+
+      {%include share.html %}
+    </div>
+
+    <div class="post__content">
+      {{ content }}
+    </div>
+
+
+    {% include post-navigation.html %}
+
+  </article>
+</div>
+<!-- end post -->
+
+{% include related-posts.html %}
+
+<!-- Event Tag -->
+<script>
+  // Tags Array set
+  var tag_array = [];
+  {% for tag in page.tags %}
+    var tag_fragment = '{{ tag }}';
+    tag_array.push(tag_fragment);
+  {% endfor %}
+
+  var author_array = [];
+  {% for author in page.docs_author %}
+    var author_fragment = '{{ author }}';
+    author_array.push(author_fragment);
+  {% endfor %}
+
+  // dataLayer set
+  dataLayer.push({
+    'event': 'view_article',
+    'ids': '{{page.ids}}',
+    'title': '{{page.title}}',
+    'author': author_array,
+    'tags': tag_array,
+    'page_index': 'blog_article',
+    'event_id': generateRandomCode(32)
+  });
+
+</script>
+
+{% include code-copy.html %}

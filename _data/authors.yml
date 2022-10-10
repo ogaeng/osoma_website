@@ -41,7 +41,7 @@ ann:
 hong:
   name: 홍승협
   avatar: /images/authors/hong.jpg
-  bio:
+  bio: 마케팅을 알고 고객 데이터를 알면 백전백승입니다.
   blog:
 
 habin:
@@ -49,3 +49,9 @@ habin:
   avatar: /images/authors/habin.jpg
   bio:
   blog:
+
+heejun:
+  name: 김희준
+  avatar: /images/authors/heejun.jpg
+  bio: 호기심이 많고 새로운 것을 알아가는 걸 즐깁니다. 생소한 디지털 마케팅 지식을 쉽게 알려드릴게요.
+  blog: https://heejun.kim

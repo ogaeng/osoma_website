@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko" data-textdirection="ltr">
+  <head>
+    {% include check/check-head.html %}
+  </head>
+
+  <!-- BEGIN: Body-->
+  <body class="1-column" data-open="hover" data-col="1-column">
+  <!-- <body> -->
+
+
+    {% if site.data.settings.cover__image %}
+      <div class="top-cover">
+        <div class="cover-image">
+          <img class="lazy" data-src="{{site.data.settings.cover__image}}" alt="{{site.data.settings.title}}">
+        </div>
+      </div>
+    {% endif %}
+
+    {% include header.html %}
+
+    <!-- begin content -->
+    <main class="content animate" aria-label="Content">
+      {{ content }}
+    </main>
+    <!-- end content -->
+
+    {% include contact-form.html %}
+
+    {% include section-subscribe.html %}
+
+    <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+
+    {% include check/check-footer.html %}
+
+    {% include check/check-js-add.html %}
+  </body>
+</html>

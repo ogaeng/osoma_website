@@ -183,3 +183,7 @@ window.addEventListener("load", function(){
   });
 
 });
+
+function openContactForm() {
+  document.querySelector(".contact-modal").classList.add("is-visible");
+}

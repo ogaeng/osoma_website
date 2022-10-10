@@ -12,11 +12,41 @@
   margin-bottom: 40px;
   text-align: center;
 
-  .subscribe__title {
+  .hero__title {
     position: relative;
     display: inline-block;
     margin-bottom: 32px;
     font-size: 56px;
+    font-weight: 900;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -34%;
+      left: -9%;
+      transform: rotate(-45deg);
+      display: block;
+      width: 130px;
+      height: 100px;
+      background-image: -webkit-repeating-radial-gradient(center center, rgba($primary-color, .7), rgba($primary-color, .7) 2px, transparent 2px, transparent 100%);
+      background-image: -moz-repeating-radial-gradient(center center, rgba($primary-color, .7), rgba($primary-color, .7) 2px, transparent 2px, transparent 100%);
+      background-image: -ms-repeating-radial-gradient(center center, rgba($primary-color, .7), rgba($primary-color, .7) 2px, transparent 2px, transparent 100%);
+      background-image: repeating-radial-gradient(center center, rgba($primary-color, .7), rgba($primary-color, .7) 2px, transparent 2px, transparent 100%);
+      -webkit-background-size: 15px 15px;
+      -moz-background-size: 15px 15px;
+      background-size: 15px 15px;
+      opacity: 0.8;
+      user-select: none;
+    }
+  }
+
+  .subscribe__title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 32px;
+    // font-size: 56px;
+    font-size: 40px;
     font-weight: 900;
 
     &::after {
@@ -59,6 +89,15 @@
       }
     }
 
+    .hero__title {
+      font-size: 36px;
+
+      &::after {
+        top: -64%;
+        left: -11%;
+      }
+    }
+
     .subscribe__subtitle {
       #ityped {
         font-size: 20px;
@@ -68,6 +107,12 @@
 
   @media only screen and (max-width: 360px) {
     .subscribe__title {
+      &::after {
+        top: -34%;
+        left: -9%;
+      }
+    }
+    .hero__title {
       &::after {
         top: -34%;
         left: -9%;
@@ -129,4 +174,8 @@
   100% {
     color: $primary-color;
   }
+}
+
+.contact_bg {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1012%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c148 C 48%2c133.8 144%2c59 240%2c77 C 336%2c95 384%2c248.8 480%2c238 C 576%2c227.2 624%2c42.2 720%2c23 C 816%2c3.8 864%2c119.8 960%2c142 C 1056%2c164.2 1104%2c109.2 1200%2c134 C 1296%2c158.8 1392%2c239.6 1440%2c266L1440 560L0 560z' fill='rgba(54%2c 188%2c 238%2c 0.05)'%3e%3c/path%3e%3cpath d='M 0%2c352 C 48%2c375.4 144%2c466 240%2c469 C 336%2c472 384%2c350.8 480%2c367 C 576%2c383.2 624%2c544.6 720%2c550 C 816%2c555.4 864%2c416.2 960%2c394 C 1056%2c371.8 1104%2c444.2 1200%2c439 C 1296%2c433.8 1392%2c382.2 1440%2c368L1440 560L0 560z' fill='rgba(66%2c 53%2c 208%2c 0.27)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1012'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
 }

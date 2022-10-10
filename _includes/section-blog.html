@@ -16,15 +16,15 @@
 
           <div class="row">
             {% if site.posts.size > 0 %}
-              {% for post in site.categories.blog offset:0 limit:6 %}
+              {% for post in site.posts offset:0 limit:6 %}
                 {% include article-content.html %}
               {% endfor %}
             {% endif %}
           </div>
 
           <div class="subscribe-form pt-3">
-            <a class="button button--big subscribe-button" href="{{ '/blog' | relative_url }}" data-tag-index="main" data-tag-content="블로그 전체 글 보기">
-              전체 글 보기
+            <a class="outline__button outline__button--big" href="{{ '/blog' | relative_url }}" data-tag-index="main" data-tag-content="블로그 전체 글 보기">
+              블로그 전체 글 보기
             </a>
           </div>
 

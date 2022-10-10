@@ -1,0 +1,57 @@
+<div class="content">
+  <div class="content-body">
+    <section id="run" class="subscribe section">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            <div class="subscribe__inner">
+              <div class="subscribe__info">
+                <h1 class="hero__title">
+                  DMIQ(Digital Marketing IQ Test)
+                </h1>
+                <div id="hero-subtitle" class="author__bio pt-1">
+                  우리 팀의 <span class="text-span" style="font-weight:800;">디지털 트랜스포메이션</span> 역량을 알아보고 디지털 마케팅 진단 리포트를 받아보세요.
+                </div>
+                <div class="test_time pt-2">
+                  검사 소요 시간: 약 10분(54문항)
+                </div>
+              </div>
+              <div class="subscribe-form">
+                <a id="run-btn" class="button button--big subscribe-button">
+                  테스트 시작하기
+                </a>
+              </div>
+              <div class="hero-subtitle author__bio mt-3 text-center">
+                테스트 결과 파일을 가지고 있다면<br>업로드하여 바로 보고서를 확인하세요.
+              </div>
+              <div class="subscribe-form mt-2">
+                <label class="outline__button outline__button--big" for="chooseFile">파일 업로드</label>
+                <input class="file" id="chooseFile" type="file" onchange="readExcel(this.value);">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 보고서 안내 모달 -->
+      <div id="error-file-modal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body mt-3 text-center">
+              <p>
+                파일을 인식할 수 없습니다. 확인 후 다시 업로드 해주세요.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">닫기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        {% include section-blog.html %}
+      </div>
+    </section>
+  </div>
+</div>

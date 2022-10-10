@@ -80,9 +80,9 @@ blockquote {
   position: relative;
   margin-top: 30px;
   padding: 25px 0 15px 48px;
-  font-size: 32px;
+  font-size: 1.2em;
   line-height: 42px;
-  font-weight: 900;
+  font-weight: 600;
   font-style: normal;
 
   &::before {
@@ -111,13 +111,13 @@ blockquote {
   }
 
   @media only screen and (max-width: $desktop) {
-    font-size: 24px;
+    font-size: 1.2em;
     line-height: 34px;
   }
 
   @media only screen and (max-width: $mobile) {
     padding: 25px 0 15px 25px;
-    font-size: 20px;
+    font-size: 1.2em;
     line-height: 30px;
     text-align: left;
   }
@@ -226,6 +226,7 @@ table {
   width: 100%;
   border-width: 1px;
   border-color: $text-color;
+  text-align: center;
   border-collapse: collapse;
   color: var(--heading-font-color);
 }
@@ -233,7 +234,7 @@ table {
 table th {
   padding: 10px;
   font-size: 16px;
-  text-align: left;
+  // text-align: left;
   border: 1px solid $text-color;
   color: $white;
   font-weight: 700;
@@ -309,6 +310,7 @@ table td {
     }
   }
 }
+
 
 .footer-cover {
   bottom: 0;
