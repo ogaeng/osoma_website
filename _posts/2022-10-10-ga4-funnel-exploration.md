@@ -8,7 +8,7 @@ permalink: /blog/ga4-funnel-exploration/
 categories:
   - blog
   - GA
-date:   2022-10-11 14:00:00 +9:00
+date:   2022-10-10 15:00:00 +9:00
 image:  '/images/posts/ga4-funnel-exploration/thumb.png'
 tags:   [GA, GA4]
 description: 구글 애널리틱스 4의 퍼널 분석 보고서인 유입경로 탐색 분석 기법의 사용법을 소개합니다.
