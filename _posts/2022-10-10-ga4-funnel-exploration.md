@@ -3,7 +3,7 @@ layout: post
 division: blog
 author: hong
 ids: ga4-funnel-exploration
-title:  "GA4 유입경로 탐색 분석 보고서의 모든 것"
+title:  "GA4 유입경로 탐색 분석 기법을 이용한 퍼널 분석 가이드"
 permalink: /blog/ga4-funnel-exploration/
 categories:
   - blog
