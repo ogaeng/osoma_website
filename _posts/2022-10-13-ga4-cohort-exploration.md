@@ -8,7 +8,7 @@ permalink: /blog/ga4-cohort-exploration/
 categories:
   - blog
   - GA
-date:   2022-10-13 00:00:00 +9:00
+date:   2022-10-13 00:01:00 +9:00
 image:  '/images/posts/ga4-cohort-exploration/thumb.png'
 tags:   [GA, GA4]
 description: 구글 애널리틱스 4의 코호트 분석 보고서인 동질 집단 탐색 분석 기법에 대해서 소개합니다.
