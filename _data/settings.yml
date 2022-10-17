@@ -15,7 +15,7 @@ menu__settings:
     - title: 'Blog'
       url: '/blog/'
     - title: 'GA'
-      url: '/tag/ga'
+      url: '/tag/GA'
     - title: 'Ads'
       url: '/tag/ads'
     - title: 'Event'
