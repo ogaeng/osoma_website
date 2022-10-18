@@ -21,7 +21,7 @@ title: 문의 남기기
   </div>
 
   <form id="contact_page" class="form" action="https://formspree.io/f/xyylvqaa" method="POST">
-    <div class="form__group">
+    <!-- <div class="form__group">
       <select id="form-select" class="form-select form__input" aria-label="문의 구분" name="index">
         <option selected disabled>어떤 문의를 하시나요?</option>
         <option value="신규런칭-전략수립">신규 런칭/전략 수립</option>
@@ -31,7 +31,7 @@ title: 문의 남기기
         <option value="광고 최적화">광고 최적화</option>
         <option value="내부 역량 강화">내부 역량 강화</option>
       </select>
-    </div>
+    </div> -->
     <div class="form__group">
       <label class="form__label screen-reader-text" for="form-name-page">이름</label>
       <input class="form__input" id="form-name-page" type="text" name="name" placeholder="담당자 이름" required>
@@ -41,13 +41,13 @@ title: 문의 남기기
       <input class="form__input" id="form-email-page" type="email" name="email" placeholder="담당자 이메일 주소" required>
     </div>
     <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-company-page-page">회사명</label>
-      <input class="form__input" id="form-company-page" type="text" name="company" placeholder="회사명" required>
+      <label class="form__label screen-reader-text" for="form-company-page-page">회사명/서비스명</label>
+      <input class="form__input" id="form-company-page" type="text" name="company" placeholder="회사명/서비스명" required>
     </div>
-    <div class="form__group">
+    <!-- <div class="form__group">
       <label class="form__label screen-reader-text" for="form-website-page">웹사이트</label>
       <input class="form__input" id="form-website-page" type="text" name="website" placeholder="웹사이트 주소" required>
-    </div>
+    </div> -->
     <div class="form__group">
       <label class="form__label screen-reader-text" for="form-text-page">문의 내용</label>
       <textarea class="form__input" id="form-text-page" name="message" rows="8" placeholder="문의 내용" required></textarea>
@@ -94,7 +94,6 @@ title: 문의 남기기
       'name': document.querySelector('#form-name-page').value,
       'email': document.querySelector('#form-email-page').value,
       'company': document.querySelector('#form-company-page').value,
-      'website': document.querySelector('#form-website-page').value,
       'text': document.querySelector('#form-text-page').value
     };
 

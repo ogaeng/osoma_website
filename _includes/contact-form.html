@@ -26,7 +26,7 @@
             </div>
 
             <form id="contact" class="form" action="https://formspree.io/f/xyylvqaa" method="POST">
-              <div class="form__group">
+              <!-- <div class="form__group">
                 <select id="form-select" class="form-select form__input" aria-label="문의 구분" name="index">
                   <option selected disabled>이 곳을 눌러 문의 유형을 선택하세요</option>
                   <option value="신규런칭-전략수립">신규 런칭/전략 수립</option>
@@ -36,7 +36,7 @@
                   <option value="광고 최적화">광고 최적화</option>
                   <option value="내부 역량 강화">내부 역량 강화</option>
                 </select>
-              </div>
+              </div> -->
               <div class="form__group">
                 <label class="form__label screen-reader-text" for="form-name">이름</label>
                 <input class="form__input" id="form-name" type="text" name="name" placeholder="담당자 이름" required>
@@ -46,13 +46,13 @@
                 <input class="form__input" id="form-email" type="email" name="email" placeholder="담당자 이메일 주소" required>
               </div>
               <div class="form__group">
-                <label class="form__label screen-reader-text" for="form-company">회사명</label>
-                <input class="form__input" id="form-company" type="text" name="company" placeholder="회사명" required>
+                <label class="form__label screen-reader-text" for="form-company">회사명/서비스명</label>
+                <input class="form__input" id="form-company" type="text" name="company" placeholder="회사명/서비스명" required>
               </div>
-              <div class="form__group">
+              <!-- <div class="form__group">
                 <label class="form__label screen-reader-text" for="form-website">웹사이트</label>
                 <input class="form__input" id="form-website" type="text" name="website" placeholder="웹사이트 주소" required>
-              </div>
+              </div> -->
               <div class="form__group">
                 <label class="form__label screen-reader-text" for="form-text">문의 내용</label>
                 <textarea class="form__input" id="form-text" name="message" rows="8" placeholder="문의 내용" required></textarea>
@@ -104,7 +104,6 @@
       'name': document.querySelector('#form-name').value,
       'email': document.querySelector('#form-email').value,
       'company': document.querySelector('#form-company').value,
-      'website': document.querySelector('#form-website').value,
       'text': document.querySelector('#form-text').value
     };
 
