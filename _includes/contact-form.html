@@ -26,6 +26,7 @@
             </div>
 
             <form id="contact" class="form" action="https://formspree.io/f/xyylvqaa" method="POST">
+              <input type="hidden" id="cid" name="cid" value="" />
               <!-- <div class="form__group">
                 <select id="form-select" class="form-select form__input" aria-label="문의 구분" name="index">
                   <option selected disabled>이 곳을 눌러 문의 유형을 선택하세요</option>
@@ -103,6 +104,11 @@
 </script> -->
 
 <script>
+  window.addEventListener('load', function () {
+    var inputCid = ga.getAll()[0].get('clientId');
+    document.getElementById("cid").value = inputCid;
+  });
+
   var formSubmit = function(){
     var contents = {
       'name': document.querySelector('#form-name').value,
