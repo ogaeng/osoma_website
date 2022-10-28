@@ -762,62 +762,92 @@ function createChart() {
   // 제품/서비스
   if (90 <= product_score) {
     product_result_txt = result_text["product"]["1"];
-  } else if (80 <= product_score && product_score < 90) {
+  } else if (85 <= product_score && product_score < 90) {
     product_result_txt = result_text["product"]["2"];
-  } else if (70 <= product_score && product_score < 80) {
+  } else if (80 <= product_score && product_score < 85) {
     product_result_txt = result_text["product"]["3"];
-  } else if (60 <= product_score && product_score < 70) {
+  } else if (75 <= product_score && product_score < 80) {
     product_result_txt = result_text["product"]["4"];
-  } else if (0 <= product_score && product_score < 60) {
+  } else if (70 <= product_score && product_score < 75) {
     product_result_txt = result_text["product"]["5"];
+  } else if (65 <= product_score && product_score < 70) {
+    product_result_txt = result_text["product"]["6"];
+  } else if (60 <= product_score && product_score < 65) {
+    product_result_txt = result_text["product"]["7"];
+  } else if (0 <= product_score && product_score < 60) {
+    product_result_txt = result_text["product"]["8"];
   }
   // 데이터
   if (90 <= data_score) {
     data_result_txt = result_text["data"]["1"];
-  } else if (80 <= data_score && data_score < 90) {
+  } else if (85 <= data_score && data_score < 90) {
     data_result_txt = result_text["data"]["2"];
-  } else if (70 <= data_score && data_score < 80) {
+  } else if (80 <= data_score && data_score < 85) {
     data_result_txt = result_text["data"]["3"];
-  } else if (60 <= data_score && data_score < 70) {
+  } else if (75 <= data_score && data_score < 80) {
     data_result_txt = result_text["data"]["4"];
-  } else if (0 <= data_score && data_score < 60) {
+  } else if (70 <= data_score && data_score < 75) {
     data_result_txt = result_text["data"]["5"];
+  } else if (65 <= data_score && data_score < 70) {
+    data_result_txt = result_text["data"]["6"];
+  } else if (60 <= data_score && data_score < 65) {
+    data_result_txt = result_text["data"]["7"];
+  } else if (0 <= data_score && data_score < 60) {
+    data_result_txt = result_text["data"]["8"];
   }
   // 리소스
   if (90 <= resource_score) {
     resource_result_txt = result_text["resource"]["1"];
-  } else if (80 <= resource_score && resource_score < 90) {
+  } else if (85 <= resource_score && resource_score < 90) {
     resource_result_txt = result_text["resource"]["2"];
-  } else if (70 <= resource_score && resource_score < 80) {
+  } else if (80 <= resource_score && resource_score < 85) {
     resource_result_txt = result_text["resource"]["3"];
-  } else if (60 <= resource_score && resource_score < 70) {
+  } else if (75 <= resource_score && resource_score < 80) {
     resource_result_txt = result_text["resource"]["4"];
-  } else if (0 <= resource_score && resource_score < 60) {
+  } else if (70 <= resource_score && resource_score < 75) {
     resource_result_txt = result_text["resource"]["5"];
+  } else if (65 <= resource_score && resource_score < 70) {
+    resource_result_txt = result_text["resource"]["6"];
+  } else if (60 <= resource_score && resource_score < 65) {
+    resource_result_txt = result_text["resource"]["7"];
+  } else if (0 <= resource_score && resource_score < 60) {
+    resource_result_txt = result_text["resource"]["8"];
   }
   // 스킬
   if (90 <= skill_score) {
     skill_result_txt = result_text["skill"]["1"];
-  } else if (80 <= skill_score && skill_score < 90) {
+  } else if (85 <= skill_score && skill_score < 90) {
     skill_result_txt = result_text["skill"]["2"];
-  } else if (70 <= skill_score && skill_score < 80) {
+  } else if (80 <= skill_score && skill_score < 85) {
     skill_result_txt = result_text["skill"]["3"];
-  } else if (60 <= skill_score && skill_score < 70) {
+  } else if (75 <= skill_score && skill_score < 80) {
     skill_result_txt = result_text["skill"]["4"];
-  } else if (0 <= skill_score && skill_score < 60) {
+  } else if (70 <= skill_score && skill_score < 75) {
     skill_result_txt = result_text["skill"]["5"];
+  } else if (65 <= skill_score && skill_score < 70) {
+    skill_result_txt = result_text["skill"]["6"];
+  } else if (60 <= skill_score && skill_score < 65) {
+    skill_result_txt = result_text["skill"]["7"];
+  } else if (0 <= skill_score && skill_score < 60) {
+    skill_result_txt = result_text["skill"]["8"];
   }
   // 매체
   if (90 <= media_score) {
     media_result_txt = result_text["media"]["1"];
-  } else if (80 <= media_score && media_score < 90) {
+  } else if (85 <= media_score && media_score < 90) {
     media_result_txt = result_text["media"]["2"];
-  } else if (70 <= media_score && media_score < 80) {
+  } else if (80 <= media_score && media_score < 85) {
     media_result_txt = result_text["media"]["3"];
-  } else if (60 <= media_score && media_score < 70) {
+  } else if (75 <= media_score && media_score < 80) {
     media_result_txt = result_text["media"]["4"];
-  } else if (0 <= media_score && media_score < 60) {
+  } else if (70 <= media_score && media_score < 75) {
     media_result_txt = result_text["media"]["5"];
+  } else if (65 <= media_score && media_score < 70) {
+    media_result_txt = result_text["media"]["6"];
+  } else if (60 <= media_score && media_score < 65) {
+    media_result_txt = result_text["media"]["7"];
+  } else if (0 <= media_score && media_score < 60) {
+    media_result_txt = result_text["media"]["8"];
   }
 
   // HTML에 텍스트 표시
