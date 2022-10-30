@@ -5,3 +5,5 @@ _site
 .DS_Store
 s3_website.yml
 video
+_pages/consulting.html
+_includes/consulting
