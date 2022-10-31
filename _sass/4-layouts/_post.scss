@@ -141,6 +141,10 @@
   }
 }
 
+.post__content blockquote {
+  word-break: break-all;
+}
+
 .post-tags__box {
   display: flex;
   justify-content: center;
@@ -490,6 +494,7 @@
   }
 }
 
+
 // 기타 영역
 div .callout {
   background-color: rgb(241, 241, 239);
@@ -497,4 +502,37 @@ div .callout {
   padding: 1em 1em 1em 1em;
   word-break: break-all;
   margin-bottom: 1em;
+}
+
+// 하단 팝업
+#post_bottom_popup {
+  // border-top-left-radius: 30px;
+  // border-top-right-radius: 30px;
+  z-index: 100;
+  background-color: #120f3e;
+}
+
+.popup-x {
+  position: absolute !important;
+  top: 3%;
+  right: 1%;
+}
+
+.popup-none-day {
+  // position: absolute;
+  font-size: 0.8rem;
+  // bottom: 3%;
+  // right: 3%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.popup-bottom-heading {
+  margin-bottom: 15px !important;
+}
+
+.popup-bottom-button {
+  font-size: 1.1rem !important;
+  padding: 0.5rem 2rem !important;
+  border-radius: 0.5rem;
 }
