@@ -75,3 +75,28 @@
   font-size: $font-size-h3;
   margin-bottom: $font-size-h3;
 }
+
+.landing_featured {
+  font-size: 5rem;
+}
+
+.landing_featured_icon {
+  width: 5rem;
+}
+
+.landing_banner_bg_1 {
+  background-color: #8C1313;
+}
+
+.landing_banner_bg_2 {
+  background-image: url(/images/landing/bg-02.jpg);
+}
+
+.landing_hr {
+  overflow: auto;
+  margin: 25px;
+}
+
+.landing_report {
+  width: 80%;
+}
