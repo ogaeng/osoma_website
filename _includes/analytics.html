@@ -32,7 +32,19 @@ e=(!e||e.length===0?"$default_instance":e).toLowerCase()
 </script>
 
 <script>
+  function generateRandomCode(n) {
+    var str = ''
+    for (let i = 0; i < n; i++) {
+      str += Math.floor(Math.random() * 10)
+    }
+    const time = Date.now();
+    return `${str}.${time}`;
+  }
+
   window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    'event_id': generateRandomCode(12)
+  });
 </script>
 
 <!-- Google Tag Manager -->
@@ -42,13 +54,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5D8V3RJ');</script>
 <!-- End Google Tag Manager -->
-
-<script>
-  function generateRandomCode(n) {
-    var str = ''
-    for (let i = 0; i < n; i++) {
-      str += Math.floor(Math.random() * 10)
-    }
-    return str
-  }
-</script>
