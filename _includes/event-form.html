@@ -4,6 +4,7 @@
 
 <form id="eventReg" class="form" action="https://script.google.com/macros/s/AKfycbwqMbTqoLDP4RZIE8Q0fcBatG5XD1La6H-UvzQ8MSEFa0RBOH5sitWZ6z5aYagJme6z9w/exec" method="POST" target="blankiframe">
   <input type="hidden" name="event" value="{{page.title}}" />
+  <input type="hidden" name="event_id" value="{{page.ids}}" />
   <input type="hidden" id="event-cid" name="cid" value="" />
   <div class="form__group">
     <label class="form__label screen-reader-text" for="event-name">이름</label>
@@ -29,6 +30,10 @@
     <input class="form-check-input" type="checkbox" value="" id="event-agree" required>
     <label class="form__label form-check-label" for="event-agree">행사 안내 및 공지 발송을 위한 개인 정보 수집에 동의합니다.</label>
   </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="newsletter-agree" required>
+    <label class="form__label form-check-label" for="newsletter-agree">뉴스레터 구독에 동의합니다.</label>
+  </div>
 
   <div style="padding-top:3.2rem;">
   </div>
@@ -40,6 +45,10 @@
 
 <div class="col col-12" style="display:none;" id="submit_complete">
   <h4 class="text-center">신청이 완료되었습니다.</h4>
+  <p class="text-center">
+    1시간 이내로 등록 확정 메일이 도착합니다.<br>
+    1시간 후에도 메일이 도착하지 않는다면 메일함의 스팸, 프로모션 탭 등을 확인해주세요.
+  </p>
 </div>
 
 <iframe name="blankiframe" style="display:none;"></iframe>
@@ -53,7 +62,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>참가 신청이 완료되었습니다.</p>
+        <p>
+          참가 신청이 완료되었습니다.<br>
+          1시간 이내로 등록 확정 메일이 도착합니다.
+        </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
@@ -62,16 +74,6 @@
   </div>
 </div>
 
-
-<!-- emailjs Init -->
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("l6lrh8HbQjz4EaC4N");
-   })();
-</script>
 
 <script>
   window.addEventListener('load', function () {
@@ -91,19 +93,6 @@
 
     var myModal = new bootstrap.Modal(document.getElementById('eventSubmitModal'));
     myModal.show();
-
-    // emailjs send
-    var templateParams = {
-        to_name: nameVal,
-        to_email: emailVal
-    };
-
-    emailjs.send('service_f370eus', 'template_8753wge', templateParams)
-        .then(function(response) {
-           console.log('SUCCESS!', response.status, response.text);
-        }, function(error) {
-           console.log('FAILED...', error);
-        });
 
     document.getElementById('eventReg').style.display = 'none'; // hide form
     document.getElementById('submit_complete').style.display = 'block';

@@ -7,5 +7,6 @@ Disallow: /search-result
 Disallow: /app-assets
 Disallow: /video
 Disallow: /assets
+Disallow: /images/authors/
 
 Sitemap: https://osoma.kr/sitemap.xml
