@@ -16,7 +16,9 @@
       <p class="post_author_bottom_text">{{site.data.authors[member].bio}}</p>
 
       <div class="article-tags__box">
+        {% if site.data.authors[member].blog %}
         <a class="article__tag" href="{{site.data.authors[member].blog}}" target="_blank" data-tag-index="blog_author_blog" data-tag-title="{{page.title}}" data-tag-content="{{page.author}}">작성자 개인 블로그 보러가기</a>
+        {% endif %}
       </div>
 
     </div>

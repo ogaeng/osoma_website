@@ -42,7 +42,7 @@ hong:
   name: 홍승협
   avatar: /images/authors/hong.jpg
   bio: 마케팅을 알고 고객 데이터를 알면 백전백승입니다.
-  blog:
+  blog: https://hongxha.com/
 
 habin:
   name: 박하빈
