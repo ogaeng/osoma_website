@@ -45,6 +45,14 @@ e=(!e||e.length===0?"$default_instance":e).toLowerCase()
   dataLayer.push({
     'event_id': generateRandomCode(12)
   });
+
+  if (!localStorage.post_popup_user) {
+    if (Math.random() < 0.5){
+      localStorage.post_popup_user = "a";
+    } else {
+      localStorage.post_popup_user = "b";
+    }
+  }
 </script>
 
 <!-- Google Tag Manager -->

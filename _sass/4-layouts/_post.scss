@@ -508,8 +508,9 @@ div .callout {
 #post_bottom_popup {
   // border-top-left-radius: 30px;
   // border-top-right-radius: 30px;
-  z-index: 100;
+  z-index: 9999;
   background-color: #120f3e;
+  display: none;
 }
 
 .popup-x {
@@ -535,4 +536,64 @@ div .callout {
   font-size: 1.1rem !important;
   padding: 0.5rem 2rem !important;
   border-radius: 0.5rem;
+}
+
+// 상단 팝업
+#post_top_popup {
+  overflow: hidden;
+  z-index: 9999;
+  height: 70px;
+  background-color: #120f3e;
+  padding: 1em 1em 1em 1em;
+  word-break: break-all;
+  margin-bottom: 1em;
+  display: none;
+}
+
+.popup-top-heading {
+  // margin-bottom: 15px !important;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.popup-top-button {
+  font-size: 1rem !important;
+}
+
+.popup-top-x {
+  position: absolute !important;
+  top: 25%;
+  right: 1%;
+}
+
+.popup-header {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: $mobile) {
+  #post_top_popup {
+    height: 100px;
+  }
+
+  .popup-top-heading {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+  }
+
+  .popup-top-button {
+    position: relative;
+    top: -16px;
+    font-size: 13px !important;
+  }
+
+  .popup-top-x {
+    position: absolute !important;
+    top: 10%;
+    right: 1%;
+  }
+
+  .popup-header {
+    margin-top: 80px;
+  }
 }
