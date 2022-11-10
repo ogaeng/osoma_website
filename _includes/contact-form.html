@@ -119,7 +119,8 @@
 
     dataLayer.push({
       'event': 'contactSubmit',
-      'value': contents
+      'value': contents,
+      'event_id': generateRandomCode(12)
     });
 
     // document.getElementById('contact').style.display = 'none'; // hide form

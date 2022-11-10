@@ -61,7 +61,8 @@
     if (emailValue.match(regExp) != null) {
       dataLayer.push({
         'event': 'emailSubscribe',
-        'value': emailValue
+        'value': emailValue,
+        'event_id': generateRandomCode(12)
       });
     }
   };

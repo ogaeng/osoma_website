@@ -88,7 +88,8 @@
       'event': 'eventSubmit',
       'title': '{{ page.title }}',
       'ids': '{{ page.ids }}',
-      'email': emailVal
+      'email': emailVal,
+      'event_id': generateRandomCode(12)
     });
 
     var myModal = new bootstrap.Modal(document.getElementById('eventSubmitModal'));
