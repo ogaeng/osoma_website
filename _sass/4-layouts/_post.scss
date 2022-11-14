@@ -108,12 +108,12 @@
 
 .post__content ol li {
   font-size: 1em;
-  list-style-type: decimal;
+  list-style-type: decimal !important;
 }
 
 .post__content ul li {
   font-size: 1em;
-  list-style-type: disc;
+  list-style-type: disc !important;
 }
 
 .post__content img,
