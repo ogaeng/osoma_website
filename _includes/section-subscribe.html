@@ -17,8 +17,13 @@
           <form class="subscribe-form validate" action="{% if site.data.settings.mailchimp__settings.mailchimp__identifier %}//{{site.data.settings.mailchimp__settings.mailchimp__identifier}}{% else %}#{% endif %}" method="POST"
             id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
             <label class="screen-reader-text" for="mce-EMAIL">Email address</label>
-            <input class="subscribe-email required email" id="mce-EMAIL" type="text" name="EMAIL"
-              placeholder="여기에 이메일을 입력하세요" required>
+            <input class="subscribe-email required email" id="mce-EMAIL" type="text" name="EMAIL" placeholder="여기에 이메일을 입력하세요" required>
+
+            <div class="form-check">
+              <p class="fs-6">뉴스레터 구독은 <a href="/marketing-agree/" target="_blank" style="text-decoration: underline;">광고성 정보 수신에 동의</a>하는 것으로 간주합니다.</p>
+            </div>
+
+
             <button class="button button--big subscribe-button" id="membedded-subscribe" type="submit" name="subscribe">{{ site.data.settings.mailchimp__settings.mailchimp__button__text }}</button>
           </form>
 
