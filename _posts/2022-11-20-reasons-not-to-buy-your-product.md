@@ -3,7 +3,7 @@ layout: post
 division: blog
 author: yena
 ids: reasons-not-to-buy-your-product
-title:  "[컨설팅 사례]고객이 당신의 제품을 구매하지 않는 이유"
+title:  "고객이 당신의 제품을 구매하지 않는 이유"
 permalink: /blog/reasons-not-to-buy-your-product/
 categories:
   - blog
