@@ -127,3 +127,18 @@ footer_contents:
     - {title: "이벤트", link: "{{ '/event' | relative_url }}"}
     - {title: "DMIQ 테스트", link: "{{ '/dmiq' | relative_url }}"}
     - {title: "유튜브", link: "https://www.youtube.com/c/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%A7%88%EC%BC%80%ED%8C%85/"}
+
+# 파트너 로고 목록
+partners:
+- {name: "삼성 C랩 아웃사이드", logo: "samsungclab.png"}
+- {name: "KT Alpha", logo: "ktalpha.png"}
+- {name: "한국관광공사", logo: "kortour.png"}
+- {name: "신한 S브릿지", logo: "sbridge.png"}
+- {name: "KOTRA", logo: "kotra.png"}
+- {name: "서울관광재단", logo: "sto.png"}
+- {name: "안국건강", logo: "angook.png"}
+- {name: "메타버스월드", logo: "itam.png"}
+- {name: "앱코", logo: "abko.png"}
+- {name: "더프트앤도프트", logo: "duftndoft.png"}
+- {name: "카바조", logo: "carvazo.png"}
+- {name: "설로인", logo: "sirloin.png"}
