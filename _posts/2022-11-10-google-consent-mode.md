@@ -11,7 +11,7 @@ categories:
   - consent
 date:   2022-11-10 00:00:00 +9:00
 image:  '/images/posts/google-consent-mode/thumb.png'
-tags:   [GA, ads, consent]
+tags:   [GA, ads, consent, privacy, cookie]
 description: 이미 해외의 많은 회사에서 적용하고 있는 구글의 개인정보 보호 관련 기술입니다. 이번 글에서는 구체적으로 동의 모드가 무엇이고 왜 사용해야 하는지 알아보도록 하겠습니다.
 ---
 
