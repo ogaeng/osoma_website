@@ -80,9 +80,8 @@ blockquote {
   position: relative;
   margin-top: 30px;
   padding: 25px 0 15px 48px;
-  font-size: 1.2em;
-  line-height: 42px;
-  font-weight: 600;
+  // font-size: 1.2em;
+  line-height: 1.5;
   font-style: normal;
 
   &::before {
@@ -112,13 +111,13 @@ blockquote {
 
   @media only screen and (max-width: $desktop) {
     font-size: 1.2em;
-    line-height: 34px;
+    line-height: 1.5;
   }
 
   @media only screen and (max-width: $mobile) {
     padding: 25px 0 15px 25px;
-    font-size: 1.2em;
-    line-height: 30px;
+    font-size: 1em;
+    line-height: 1.5;
     text-align: left;
   }
 }
