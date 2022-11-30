@@ -10,7 +10,7 @@ categories:
   - Looker-Studio
 date:   2022-11-28 01:00:00 +9:00
 image:  '/images/posts/looker-studio-ga-api-quota/thumb.png'
-tags:   [looker-studio, GA4]
+tags:   [looker-studio, GA4, GA]
 description: Looker Studio를 사용할 때 GA4 API의 할당량이 무엇인지, 어떻게 하면 오류 없이 데이터를 불러올 수 있는지 알아보도록 하겠습니다.
 ---
 
@@ -111,7 +111,7 @@ BigQuery와 GA4를 연결하게 되면 위와 같이 일자별로 발생한 이�
 
 단, 빅쿼리를 사용할 때는 두 가지 큰 장벽이 있는데요, 1) 쿼리문을 작성할 줄 모르면 사용하기 어렵다는 점, 2) 데이터를 추출과 저장에 비용이 든다는 점입니다.
 
-사실 루커 스튜디오 및 GA4 사용자가 가장 기대하는 방향은 구글 애널리틱스에서 사용자들의 불편함을 캐치하고, 그 기준을 완화하거나 다른 방안을 제시해주는 것인데요. 구글의 Brian Start가 이 물음에 ‘모든 고객은 이 제한 사항을 준수해야 한다’고 답한 것으로 보아, 당분간은 할당량 관련 내용에 변동은 없을 것으로 예상됩니다. (해당 내용이 구글의 공식 입장을 대변하는 것은 아닙니다.)
+사실 루커 스튜디오 및 GA4 사용자가 가장 기대하는 방향은 구글 애널리틱스에서 사용자들의 불편함을 캐치하고, 그 기준을 완화하거나 다른 방안을 제시해주는 것인데요. 구글의 Brian Stark가 이 물음에 ‘모든 고객은 이 제한 사항을 준수해야 한다’고 답한 것으로 보아, 당분간은 할당량 관련 내용에 변동은 없을 것으로 예상됩니다. (해당 내용이 구글의 공식 입장을 대변하는 것은 아닙니다.)
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The GA4 API quotas are listed here: <a href="https://t.co/2YKKvskQd4">https://t.co/2YKKvskQd4</a>. Any client will have to conform to these limits. We don&#39;t provide different quotas for LS than for a non-Google client. Everyone is playing by the same rules.</p>&mdash; Brian Stark (@bhstark) <a href="https://twitter.com/bhstark/status/1592727306619228160?ref_src=twsrc%5Etfw">November 16, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
