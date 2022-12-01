@@ -118,6 +118,8 @@ social:
 
 introduce_file: https://drive.google.com/file/d/1r6mJ-qBfcgREjrxifVmBE7ryNrBK1Cfm/view?usp=sharing
 
+data_intro_file: https://drive.google.com/file/d/1Q_rAfsZ7xugelg6dWz58z6VBS0nEHQh7/view?usp=sharing
+
 footer_contents:
   blog:
     - {title: "블로그 전체 글 보기", link: "{{ '/blog' | relative_url }}"}
