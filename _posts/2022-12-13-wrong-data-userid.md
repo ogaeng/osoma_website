@@ -11,7 +11,7 @@ categories:
 date:   2022-12-03 11:30:00 +9:00
 image:  '/images/posts/wrong-data-userid/thumb.png'
 tags:   [case, data, GA, GTM]
-description:
+description: User ID가 수집되고 있지 않거나 잘못 수집되는 경우를 개선합니다.
 ---
 
 사용자 ID(User ID)는 사용자에게 할당된 고유의 회원 ID로 명확하게 사용자를 식별하는 데 사용됩니다. User ID를 사용하면 여러 세션과 다양한 기기 및 플랫폼에서 발생하는 사용자 활동을 연결하여 분석할 수 있으므로 구글 애널리틱스 4(GA4) 세팅 시 함께 설정하는 경우가 많은데요. 데이터의 정합성을 살펴보면 User ID가 수집되고 있지 않거나 잘못 수집하고 있는 경우가 종종 확인됩니다. 다수의 기업에서 공통으로 발생한 문제와 해결 과정을 알아보도록 하겠습니다.
