@@ -60,4 +60,4 @@ description: 마케터 분들을 위해 구글 애널리틱스 4를 이용해 �
 ## 연사 소개
 
 {% include event-speaker.html %}
-{% include event-form.html %}
+{% include event-end.html %}
