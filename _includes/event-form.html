@@ -2,10 +2,11 @@
   <h2 class="contact-title">참가 신청하기</h2>
 </div>
 
-<form id="eventReg" class="form" action="https://script.google.com/macros/s/AKfycbyQLKMdlzxKAwjM474gBPHBkW3nQpJjzLMEGJl8WMeo1XhlQ-Trt0YFIEt9gmyHVKUr4g/exec" method="POST" target="blankiframe">
+<form id="eventReg" class="form" action="https://script.google.com/macros/s/AKfycbwNV9I7B6MUWWAz2tsWR7XYgkRTwg7_vG0PW8u8h4e-5MEJadMW-sZ8jwaH8CjJ1DWCRg/exec" method="POST" target="blankiframe">
   <input type="hidden" name="event" value="{{page.title}}" />
   <input type="hidden" name="event_id" value="{{page.ids}}" />
   <input type="hidden" id="event-cid" name="cid" value="" />
+  <input type="hidden" id="event-amid" name="amid" value="" />
   <div class="form__group">
     <label class="form__label screen-reader-text" for="event-name">이름</label>
     <input class="form__input" id="event-name" type="text" name="name" placeholder="이름" required>
@@ -24,7 +25,7 @@
   </div>
   <div class="form__group">
     <label class="form__label screen-reader-text" for="event-question">사전 질문 내용</label>
-    <textarea class="form__input" id="event-question" name="question" rows="8" placeholder="사전 질문 내용"></textarea>
+    <textarea class="form__input" id="event-question" name="question" rows="8" placeholder="사전 질문 내용(선택 사항)"></textarea>
   </div>
   <div>
     <p class="fs-6">
@@ -85,6 +86,9 @@
   window.addEventListener('load', function () {
     var eInputCid = ga.getAll()[0].get('clientId');
     document.getElementById("event-cid").value = eInputCid;
+    if(amplitude._instances.$default_instance.options.deviceId){
+      document.getElementById("event-amid").value = amplitude._instances.$default_instance.options.deviceId;
+    }
   });
 
   var eventSubmit = function(){
