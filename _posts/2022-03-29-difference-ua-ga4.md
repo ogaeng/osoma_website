@@ -101,7 +101,6 @@ UA(GA3)에 익숙한 마케터라면 자주 살펴보았을 ‘이탈률'지표�
 
 - 참여율 문서: [https://support.google.com/analytics/answer/10999789](https://support.google.com/analytics/answer/10999789?hl=ko){:target="_blank"}
 - GA4 측정항목/측정기준 안내문서: [https://support.google.com/analytics/answer/9143382](https://support.google.com/analytics/answer/9143382?hl=ko){:target="_blank"}
-- 참여율 관련 포스팅: [https://brunch.co.kr/@e9c7009de84443b/77](https://brunch.co.kr/@e9c7009de84443b/77){:target="_blank"}
 
 ### 맞춤 보고서 bye 🤚 탐색 분석 hi 🙌
 
@@ -159,9 +158,6 @@ GA4는 기존의 User ID와 더불어 Google signal 데이터를 활용해 사�
 
 또한 유니버설 애널리틱스와 달리 Google 애널리틱스 4 속성에는 기본적으로 모든 보고서, 분석, 통계에 User ID가 통합되어 있으며 별도의 User-ID 보고서 보기가 필요하지 않습니다.
 
-- GA4 사용자 식별기준 포스팅(파인데이터랩): [https://finedata.tistory.com/19](https://finedata.tistory.com/19){:target="_blank"}
-- GA4 사용자 식별자 그림 설명 포스팅(다차타): [https://dachata.com/google-analytics-4/post/ga4-user-identification/](https://dachata.com/google-analytics-4/post/ga4-user-identification/){:target="_blank"}
-- GA4 팩트체크 포스팅(발모어 책방): [https://brunch.co.kr/@jaehoshindler/15](https://brunch.co.kr/@jaehoshindler/15){:target="_blank"}
 - GA4 신호데이터 공식문서: [https://support.google.com/analytics/answer/9445345](https://support.google.com/analytics/answer/9445345){:target="_blank"}
 - GA4 User ID 공식문서: [https://support.google.com/analytics/answer/9213390](https://support.google.com/analytics/answer/9213390?hl=ko){:target="_blank"}
 
@@ -196,7 +192,6 @@ GA4는 기존의 User ID와 더불어 Google signal 데이터를 활용해 사�
 - UI, 이벤트구조, 보고서 화면 비교 : [https://freshblown.com/google-analytics-ga4/](https://freshblown.com/google-analytics-ga4/){:target="_blank"}
 - 인트렌치 - UA vs GA4 비교 : [https://entrench-consulting.com/ko/analytics-consulting/ga4로-달라진-구글애널리틱스-특징-6가지/#page-content](https://entrench-consulting.com/ko/analytics-consulting/ga4%EB%A1%9C-%EB%8B%AC%EB%9D%BC%EC%A7%84-%EA%B5%AC%EA%B8%80%EC%95%A0%EB%84%90%EB%A6%AC%ED%8B%B1%EC%8A%A4-%ED%8A%B9%EC%A7%95-6%EA%B0%80%EC%A7%80/#page-content){:target="_blank"} (수집기준, 사용자식별기준, 빅쿼리, 데이터수집양, 향상된측정 머신러닝을 다룸)
 - 데이터 집계방식을 그림으로 표현한 포스팅 : [https://nujnow.tistory.com/14](https://nujnow.tistory.com/14){:target="_blank"}
-- 데이터수집기준에 대해 다룬 포스팅 : [https://hypemarc.com/ga4-ga-difference/](https://hypemarc.com/ga4-ga-difference/){:target="_blank"}
 - 데이터 수집기준에 대해 다루고, 코멘트를 덧붙인 포스팅 : [https://marketingbr.tistory.com/168](https://marketingbr.tistory.com/168){:target="_blank"}
 - 데이터스트림 방식에 대해 언급한 포스팅 : [https://sooupforlee.tistory.com/entry/Chapter-13-1-GA4의-차이점-이해하기](https://sooupforlee.tistory.com/entry/Chapter-13-1-GA4%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0){:target="_blank"}
 - GA4 신규기능을 정리해둔 포스팅 : [https://www.openads.co.kr/content/contentDetail?contsId=6200](https://www.openads.co.kr/content/contentDetail?contsId=6200){:target="_blank"}
