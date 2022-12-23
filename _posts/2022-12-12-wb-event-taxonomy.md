@@ -57,4 +57,4 @@ description: 데이터 수집을 위해 꼭 필요한 단계인 이벤트 설계
 ## 연사 소개
 
 {% include event-speaker.html %}
-{% include event-form.html %}
+{% include event-end.html %}
