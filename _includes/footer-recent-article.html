@@ -1,14 +1,28 @@
-<div class="footer_blog_area col-12">
+<div class="footer_blog_area col-12 footer_recent_div">
   <div class="row">
     <div class="col-4">
-      <a href="{{post.url | prepend: site.baseurl}}" data-tag-index="recent_blog_img" data-tag-title="{{post.title}}" data-tag-content="{{post.ids}}">
+      <a
+        href="{{post.url | prepend: site.baseurl}}"
+        data-tag-index="recent_blog_img"
+        data-tag-title="{{post.title}}"
+        data-tag-content="{{post.ids}}"
+      >
         <div class="">
-          <img class="lazy rounded" data-src="{{post.image | prepend: site.baseurl}}" alt="{{ page.title }}">
+          <img
+            class="lazy rounded"
+            data-src="{{post.image | prepend: site.baseurl}}"
+            alt="{{ page.title }}"
+          />
         </div>
       </a>
     </div>
     <div class="col-8">
-      <a href="{{post.url | prepend: site.baseurl}}" data-tag-index="recent_blog_title" data-tag-title="{{post.title}}" data-tag-content="{{post.ids}}">
+      <a
+        href="{{post.url | prepend: site.baseurl}}"
+        data-tag-index="recent_blog_title"
+        data-tag-title="{{post.title}}"
+        data-tag-content="{{post.ids}}"
+      >
         <p class="footer_recent_post_title">{{post.title}}</p>
       </a>
     </div>

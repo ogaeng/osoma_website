@@ -27,7 +27,7 @@
 
             <form id="contact" class="form" action="https://formspree.io/f/xyylvqaa" method="POST">
               <input type="hidden" id="cid" name="cid" value="" />
-              <input type="hidden" id="cid" name="amid" value="" />
+
               <!-- <div class="form__group">
                 <select id="form-select" class="form-select form__input" aria-label="문의 구분" name="index">
                   <option selected disabled>이 곳을 눌러 문의 유형을 선택하세요</option>
@@ -108,9 +108,6 @@
   window.addEventListener('load', function () {
     var inputCid = ga.getAll()[0].get('clientId');
     document.getElementById("cid").value = inputCid;
-    if(amplitude._instances.$default_instance.options.deviceId){
-      document.getElementById("amid").value = amplitude._instances.$default_instance.options.deviceId;
-    }
   });
 
   var formSubmit = function(){

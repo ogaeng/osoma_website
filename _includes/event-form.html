@@ -6,7 +6,6 @@
   <input type="hidden" name="event" value="{{page.title}}" />
   <input type="hidden" name="event_id" value="{{page.ids}}" />
   <input type="hidden" id="event-cid" name="cid" value="" />
-  <input type="hidden" id="event-amid" name="amid" value="" />
   <div class="form__group">
     <label class="form__label screen-reader-text" for="event-name">이름</label>
     <input class="form__input" id="event-name" type="text" name="name" placeholder="이름" required>
@@ -86,9 +85,6 @@
   window.addEventListener('load', function () {
     var eInputCid = ga.getAll()[0].get('clientId');
     document.getElementById("event-cid").value = eInputCid;
-    if(amplitude._instances.$default_instance.options.deviceId){
-      document.getElementById("event-amid").value = amplitude._instances.$default_instance.options.deviceId;
-    }
   });
 
   var eventSubmit = function(){

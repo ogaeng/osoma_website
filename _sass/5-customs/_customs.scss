@@ -1,6 +1,4 @@
-
 #search-menu {
-
 }
 
 #search-input {
@@ -19,7 +17,7 @@
   outline: none;
   color: $text-color;
   // background: transparent;
-  transition: border-color .2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
 
   &::placeholder {
     color: $gray;
@@ -44,7 +42,8 @@
   font-size: 0.9rem;
 }
 
-.footer_content ul,li {
+.footer_content ul,
+li {
   font-size: 0.9rem;
   list-style-type: none;
   margin-left: 0;
@@ -63,7 +62,7 @@
   border-radius: 16px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
   .lecture_video {
     border-radius: 8px;
   }
@@ -85,7 +84,7 @@
 }
 
 .landing_banner_bg_1 {
-  background-color: #8C1313;
+  background-color: #8c1313;
 }
 
 .landing_banner_bg_2 {
@@ -114,7 +113,7 @@ hr.pricing {
 }
 
 .bg-lightgrey {
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 ul.data-list-style li {
@@ -128,4 +127,9 @@ ul.data-list-style li {
 .pricing-period {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.footer_recent_div {
+  max-height: 60px;
+  margin-bottom: 10px;
 }

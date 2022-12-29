@@ -22,7 +22,6 @@ title: 문의 남기기
 
   <form id="contact_page" class="form" action="https://formspree.io/f/xyylvqaa" method="POST">
     <input type="hidden" id="cid-page" name="cid" value="" />
-    <input type="hidden" id="amid-page" name="cid" value="" />
     <!-- <div class="form__group">
       <select id="form-select" class="form-select form__input" aria-label="문의 구분" name="index">
         <option selected disabled>어떤 문의를 하시나요?</option>
@@ -98,9 +97,6 @@ title: 문의 남기기
   window.addEventListener('load', function () {
     var inputCid = ga.getAll()[0].get('clientId');
     document.getElementById("cid-page").value = inputCid;
-    if(amplitude._instances.$default_instance.options.deviceId){
-      document.getElementById("amid-page").value = amplitude._instances.$default_instance.options.deviceId;
-    }
   });
 
   var formSubmitPage = function(){
