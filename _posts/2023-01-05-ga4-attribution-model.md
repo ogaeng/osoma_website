@@ -24,7 +24,7 @@ description: GA4의 기여 분석 모델의 종류를 이해하고 활용하는 
 
 GA4에서는 다음과 같은 7가지 기여 모델이 사용됩니다.
 
-![GA4 기여모델](/images/posts/ga4-attribution-model/01.png)
+![GA4 기여모델](/images/posts/ga4-attribution-model/01-m.png)
 
 GA4 각각의 기여 분석 모델을 살펴보기 전 반드시 알고 가야 할 사실이 있습니다. 바로 GA4에서 전환 경로가 직접 방문(direct / none)으로만 구성되지 않는 한, 모든 기여 분석 모델에서 직접 방문에는 기여도가 부여되지 않는다는 것인데요.
 
