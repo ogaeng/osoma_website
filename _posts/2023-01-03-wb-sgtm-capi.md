@@ -56,4 +56,4 @@ description: 1월 19일 오후 8시, 구글 태그 매니저 서버 컨테이너
 ## 연사 소개
 
 {% include event-speaker.html %}
-{% include event-form.html %}
+{% include event-end.html %}
