@@ -31,6 +31,7 @@ document.querySelector('#A').addEventListener('click', function(){
   var preValue = document.querySelector('#'+type).value;
   var sum = parseFloat(preValue)+testNum[q-1]['A'];
   document.querySelector('#'+type).value = sum;
+  selectedAnswer[q-1] = 'A';
   dataLayer.push({
     'event': 'e_dmiq_answer_click',
     'question_no': q-1,
@@ -45,6 +46,7 @@ document.querySelector('#B').addEventListener('click', function(){
   var preValue = document.querySelector('#'+type).value;
   var sum = parseFloat(preValue)+testNum[q-1]['B'];
   document.querySelector('#'+type).value = sum;
+  selectedAnswer[q-1] = 'B';
   dataLayer.push({
     'event': 'e_dmiq_answer_click',
     'question_no': q-1,
@@ -60,6 +62,7 @@ document.querySelector('#C').addEventListener('click', function(){
   var sum = parseFloat(preValue)+testNum[q-1]['C'];
   document.querySelector('#'+type).value = sum;
   testAnswer[q-1] = 'C';
+  selectedAnswer[q-1] = 'C';
   dataLayer.push({
     'event': 'e_dmiq_answer_click',
     'question_no': q-1,
@@ -75,6 +78,7 @@ document.querySelector('#D').addEventListener('click', function(){
   var sum = parseFloat(preValue)+testNum[q-1]['D'];
   document.querySelector('#'+type).value = sum;
   testAnswer[q-1] = 'D';
+  selectedAnswer[q-1] = 'D';
   dataLayer.push({
     'event': 'e_dmiq_answer_click',
     'question_no': q-1,
@@ -987,6 +991,14 @@ function createChart() {
     commentsMedia
   ];
 
+  selectedAnswer['sum_score'] = sumscore;
+  selectedAnswer['avg_score'] = avg_score;
+  selectedAnswer['product_score'] = product_score;
+  selectedAnswer['data_score'] = data_score;
+  selectedAnswer['resource_score'] = resource_score;
+  selectedAnswer['skill_score'] = skill_score;
+  selectedAnswer['media_score'] = media_score;
+
 
   dataLayer.push({
     'event': 'e_dmiq_result',
@@ -999,6 +1011,7 @@ function createChart() {
       'skill_score': skill_score,
       'media_score': media_score
     },
+    'dmiq_json': JSON.stringify(selectedAnswer),
     'event_id': generateRandomCode(32)
   });
 
