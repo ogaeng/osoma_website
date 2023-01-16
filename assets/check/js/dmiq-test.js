@@ -1,6 +1,6 @@
 var q = 1;
 var testAnswer = {};
-let selectedAnswer = {};
+var selectedAnswer = {};
 
 // 문제
 const testNum = {
