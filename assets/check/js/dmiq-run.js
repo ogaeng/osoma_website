@@ -992,7 +992,7 @@ function createChart() {
   ];
 
   selectedAnswer['sum_score'] = sumscore;
-  selectedAnswer['avg_score'] = avg_score;
+  selectedAnswer['avg_score'] = avgscore;
   selectedAnswer['product_score'] = product_score;
   selectedAnswer['data_score'] = data_score;
   selectedAnswer['resource_score'] = resource_score;
