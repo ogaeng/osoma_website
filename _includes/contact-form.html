@@ -106,7 +106,7 @@
 
 <script>
   window.addEventListener('load', function () {
-    var inputCid = ga.getAll()[0].get('clientId');
+    var inputCid = get_cookie('_ga');
     document.getElementById("cid").value = inputCid;
   });
 
@@ -117,19 +117,8 @@
       'company': encode64(document.querySelector('#form-company').value),
       'phone': encode64(document.querySelector('#form-phone').value),
       'text': encode64(document.querySelector('#form-text').value),
-      'cid': get_cookie('_ga'),
-      '_e': 'submit_contact'
+      'cid': get_cookie('_ga')
     };
-
-    $.ajax({
-      url: "https://cdp.osoma.kr/contact",
-      type: "POST",
-      data: contents,
-      dataType: "json",
-      success: function() {
-        console.log("문의 제출 완료");
-      }
-    });
 
     dataLayer.push({
       'event': 'contactSubmit',
