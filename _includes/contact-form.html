@@ -112,12 +112,24 @@
 
   var formSubmit = function(){
     var contents = {
-      'name': document.querySelector('#form-name').value,
-      'email': document.querySelector('#form-email').value,
-      'company': document.querySelector('#form-company').value,
-      'phone': document.querySelector('#form-phone').value,
-      'text': document.querySelector('#form-text').value
+      'name': encode64(document.querySelector('#form-name').value),
+      'email': encode64(document.querySelector('#form-email').value),
+      'company': encode64(document.querySelector('#form-company').value),
+      'phone': encode64(document.querySelector('#form-phone').value),
+      'text': encode64(document.querySelector('#form-text').value),
+      'cid': get_cookie('_ga'),
+      '_e': 'submit_contact'
     };
+
+    $.ajax({
+      url: "https://cdp.osoma.kr/contact",
+      type: "POST",
+      data: contents,
+      dataType: "json",
+      success: function() {
+        console.log("문의 제출 완료");
+      }
+    });
 
     dataLayer.push({
       'event': 'contactSubmit',
