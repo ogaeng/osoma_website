@@ -1,0 +1,44 @@
+---
+layout: default
+title: 블로그 검색
+permalink: /search/
+---
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="section__info">
+          <div class="section__head">
+            <h2 class="section__title">블로그 검색</h2>
+          </div>
+          <div id="hero-subtitle" class="author__bio text-center mt-3">
+            궁금한 키워드 및 주제를 검색하세요.
+          </div>
+        </div>
+        <div class="row">
+          <input type="text" id="search-input" placeholder="검색어를 입력하세요.">
+          <div class="col offset-lg-2 col-lg-8">
+            <ul id="results-container"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
+
+<script>
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.baseurl }}/search.json',
+    searchResultTemplate: `{% include search/search-result.html %}`,
+    limit: 20,
+    fuzzy: false,
+    exclude: ['Welcome']
+  });
+</script>

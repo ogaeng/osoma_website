@@ -11,5 +11,6 @@ Disallow: /images/authors/
 Disallow: /images/partners/
 Disallow: /privacy-policy/
 Disallow: /marketing-agree/
+Disallow: /search/
 
 Sitemap: https://osoma.kr/sitemap.xml
