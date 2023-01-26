@@ -31,7 +31,7 @@ GA4의 모든 보고서는 측정기준과 측정항목으로 이루어져 있�
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/posts/ga4-dimension-metrics/01.png" alt="기본 보고서 중 획득 트래픽 보고서 | 측정기준과 측정항목으로 구성">
+    <img src="/images/posts/ga4-dimension-metrics/01-n.png" alt="기본 보고서 중 획득 트래픽 보고서 | 측정기준과 측정항목으로 구성">
   </div>
   <em>기본 보고서 중 획득 트래픽 보고서 | 측정기준과 측정항목으로 구성</em>
 </div>
