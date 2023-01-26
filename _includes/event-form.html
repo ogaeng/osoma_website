@@ -83,18 +83,30 @@
 
 <script>
   window.addEventListener('load', function () {
-    var eInputCid = ga.getAll()[0].get('clientId');
+    var eInputCid = get_cookie('_ga');
     document.getElementById("event-cid").value = eInputCid;
   });
 
   var eventSubmit = function(){
-    var nameVal = document.querySelector('#event-name').value;
-    var emailVal = document.querySelector('#event-email').value;
+    const regxPhone = (num) => {
+      let cg = num.replace('+8210', '010');
+      let ch = cg.replace('+82-10', '010');
+      let result = ch.replace(/-/g, "").replace(/\./g, "");
+      return result;
+    };
+    const contents = {
+      'name': encode64(document.querySelector('#event-name').value),
+      'email': encode64(document.querySelector('#event-email').value),
+      'company': encode64(document.querySelector('#event-company').value),
+      'phone': encode64(regxPhone(document.querySelector('#event-phone').value)),
+      'cid': get_cookie('_ga')
+    };
+    const emailVal = document.querySelector('#event-email').value;
     dataLayer.push({
       'event': 'eventSubmit',
       'title': '{{ page.title }}',
       'ids': '{{ page.ids }}',
-      'email': emailVal,
+      'value': contents,
       'event_id': generateRandomCode(12)
     });
 
