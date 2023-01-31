@@ -2,7 +2,7 @@
 .article {
   margin-bottom: 32px;
   will-change: transform;
-  transition: transform .2s;
+  transition: transform 0.2s;
 
   &:hover {
     transform: translateY(-3px);
@@ -21,7 +21,6 @@
   transform: translate(0);
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
 }
-
 
 .image-wrap {
   background: $background-color-alt;
@@ -61,10 +60,14 @@
     font-size: 12px;
     line-height: 10px;
     font-weight: 800;
-    text-transform: capitalize;
+    text-transform: none;
     border-radius: 16px;
     color: $white;
-    background: linear-gradient(90deg, $primary-color 0%, $secondary-color 167%);
+    background: linear-gradient(
+      90deg,
+      $primary-color 0%,
+      $secondary-color 167%
+    );
 
     &:hover {
       &:before {
@@ -85,7 +88,11 @@
       border-radius: 16px;
       will-change: transform;
       transition: opacity 0.35s;
-      background: linear-gradient(90deg, $primary-color 0%, $secondary-color 107%);
+      background: linear-gradient(
+        90deg,
+        $primary-color 0%,
+        $secondary-color 107%
+      );
     }
 
     &:last-child {
@@ -122,7 +129,6 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
 }
 
 .article__author-image {

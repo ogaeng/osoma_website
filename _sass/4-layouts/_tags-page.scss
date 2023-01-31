@@ -1,8 +1,7 @@
 /* Tags Page */
 .tag {
-
   .page-title {
-    text-transform: capitalize;
+    text-transform: none;
   }
 
   .tag-meta {
@@ -25,7 +24,7 @@
       }
 
       &::after {
-        content: '';
+        content: "";
         display: block;
         height: 0;
         width: 100%;
