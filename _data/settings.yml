@@ -20,6 +20,8 @@ menu__settings:
       url: '/tag/GA'
     - title: 'Case'
       url: '/tag/case'
+    - title: 'Edu'
+      url: 'https://edu.osoma.kr/'
     - title: 'Event'
       url: '/event/'
     - title: 'DMIQ'
