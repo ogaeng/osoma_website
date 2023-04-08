@@ -11,3 +11,5 @@ _posts/2022-11-22-playbook-utm.md
 images/playbook
 _includes/playbook-form.html
 _pages/legacy
+Brewfile
+Brewfile.lock.json
