@@ -56,7 +56,7 @@ description: 구글 태그 관리자(Google Tag Manager)에서 카카오 픽셀 
 
 ## 1. 템플릿 추가 방법
 
-[**템플릿 Github 저장소**](https://github.com/opensource-marketing/kakao-pixel-event-builder-gtm-template){:target="\_blank"}에 접속해 템플릿 파일인 `template.tpl` 파일을 내려받습니다.
+[**템플릿 Github 저장소**](https://github.com/opensource-marketing/kakao-pixel-event-builder-gtm-template){:target="\_blank"}에 접속해 템플릿 파일인 `template.tpl` 파일을 내려받습니다.(파일에서 우클릭 ➡️ 다른 이름으로 링크 저장)
 
 다운로드 후 템플릿 사용을 위해 구글 태그 매니저 웹 컨테이너에 템플릿을 추가해야 합니다.
 
