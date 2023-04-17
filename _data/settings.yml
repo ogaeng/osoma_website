@@ -1,3 +1,4 @@
+---
 #-------------------------------
 # Site Settings
 
@@ -10,27 +11,26 @@ thumbnail: /images/main_thumb.jpg
 
 menu__settings:
   menu__items:
-    - title: 'Home'
-      url: '/'
-    - title: 'Blog'
-      url: '/blog/'
-    - title: 'Data'
-      url: '/data-consulting/'
-    - title: 'GA'
-      url: '/tag/GA'
-    - title: 'Case'
-      url: '/tag/case'
-    - title: 'Edu'
-      url: 'https://edu.osoma.kr/'
-    - title: 'DMIQ'
-      url: '/dmiq/'
+    - title: "Home"
+      url: "/"
+    - title: "Blog"
+      url: "/blog/"
+    - title: "Data"
+      url: "/data-consulting/"
+    - title: "GA"
+      url: "/tag/GA"
+    - title: "Case"
+      url: "/tag/case"
+    - title: "Edu"
+      url: "https://edu.osoma.kr/"
+    - title: "DMIQ"
+      url: "/dmiq/"
 
 # Call to action button
 cta__button__text: 컨설팅 문의
 
 # Add global cover image (This field adds a background to the top and bottom of the site.)
-cover__image: '/images/37.jpg'
-
+cover__image: "/images/37.jpg"
 
 #-------------------------------
 # Author Settings
@@ -39,34 +39,32 @@ author:
   name: 오픈소스마케팅
   title: 오픈소스마케팅
   bio: 오픈소스마케팅은 파트너의 비즈니스 성장과 디지털 마케팅 최적화를 위한 방향성을 제안하며, 코칭 서비스를 제공하는 디지털 마케팅 전문 컨설팅 팀입니다.
-  image: '/images/01.jpg'
-  avatar: '/images/avatar.jpg'
+  image: "/images/01.jpg"
+  avatar: "/images/avatar.jpg"
   button__text: 회사소개서 다운로드
-
 
 #-------------------------------
 # Projects Settings
 
 projects__settings:
-  projects__title:  # Add a 'text-span' class to highlight text.
+  projects__title: # Add a 'text-span' class to highlight text.
   projects__description:
-
 
 #-------------------------------
 # Testimonials Section
 
-testimonial__title:  # Add a 'text-span' class to highlight text.
+testimonial__title: # Add a 'text-span' class to highlight text.
 
 testimonial-items:
   - name: ""
     image: ""
-    designation : ""
-    content : ""
+    designation: ""
+    content: ""
 
   - name: ""
     image: ""
-    designation : ""
-    content : ""
+    designation: ""
+    content: ""
 
 #-------------------------------
 # Blog Section
@@ -74,7 +72,6 @@ testimonial-items:
 blog__settings:
   blog__title: 최신 <span class="text-span">소식</span> # Add a 'text-span' class to highlight text.
   blog__description:
-
 
 #-------------------------------
 # Contact Settings
@@ -87,7 +84,6 @@ contact__settings:
 # NOTE
 # Avenco comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
 
-
 #-------------------------------
 # Newsletter Settings
 mailchimp__settings:
@@ -96,14 +92,11 @@ mailchimp__settings:
   mailchimp__identifier: osoma.us20.list-manage.com/subscribe/post?u=85d5c5fbf1124f4e577a13861&amp;id=3e12916440 # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
   mailchimp__button__text: 구독하기 # Add your button text
 
-
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier:  # add your shortname for Disqus Comment. For example anvodstudio-demo
-
+disqus-identifier: # add your shortname for Disqus Comment. For example anvodstudio-demo
 
 #-------------------------------
-
 
 #-------------------------------
 # Footer Settings
@@ -111,10 +104,10 @@ disqus-identifier:  # add your shortname for Disqus Comment. For example anvodst
 # Example of adding a new link to the footer - {icon: "ion-logo-facebook", link: "https://facebook.com"}
 # Other icons can be found at https://ionicons.com/v4/
 social:
-- {name: "유튜브", icon: "ion-logo-youtube", link: "https://www.youtube.com/channel/UC0-tqcM8MkMIUM1nEr_0Vtw"}
-- {name: "페이스북", icon: "brandico:facebook-rect", link: "https://facebook.com/osoma.kr"}
-- {name: "링크드인", icon: "brandico:linkedin-rect", link: "https://www.linkedin.com/company/opensourcemarketing"}
-- {name: "카카오톡", icon: "vs:kakaotalk", link: "http://pf.kakao.com/_PLzxcj"}
+  - { name: "유튜브", icon: "ion-logo-youtube", link: "https://www.youtube.com/channel/UC0-tqcM8MkMIUM1nEr_0Vtw" }
+  - { name: "페이스북", icon: "brandico:facebook-rect", link: "https://facebook.com/osoma.kr" }
+  - { name: "링크드인", icon: "brandico:linkedin-rect", link: "https://www.linkedin.com/company/opensourcemarketing" }
+  - { name: "카카오톡", icon: "vs:kakaotalk", link: "http://pf.kakao.com/_PLzxcj" }
 
 introduce_file: https://drive.google.com/file/d/1r6mJ-qBfcgREjrxifVmBE7ryNrBK1Cfm/view?usp=sharing
 
@@ -122,25 +115,25 @@ data_intro_file: https://drive.google.com/file/d/1Q_rAfsZ7xugelg6dWz58z6VBS0nEHQ
 
 footer_contents:
   blog:
-    - {title: "블로그 전체 글 보기", link: "{{ '/blog' | relative_url }}"}
-    - {title: "광고 글 목록 보기", link: "{{ '/tag/ads' | relative_url }}"}
-    - {title: "GA 글 목록 보기", link: "{{ '/tag/ga' | relative_url }}"}
+    - { title: "블로그 전체 글 보기", link: "{{ '/blog' | relative_url }}" }
+    - { title: "광고 글 목록 보기", link: "{{ '/tag/ads' | relative_url }}" }
+    - { title: "GA 글 목록 보기", link: "{{ '/tag/ga' | relative_url }}" }
   resource:
-    - {title: "이벤트", link: "{{ '/event' | relative_url }}"}
-    - {title: "DMIQ 테스트", link: "{{ '/dmiq' | relative_url }}"}
-    - {title: "유튜브", link: "https://www.youtube.com/c/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%A7%88%EC%BC%80%ED%8C%85/"}
+    - { title: "이벤트", link: "{{ '/event' | relative_url }}" }
+    - { title: "DMIQ 테스트", link: "{{ '/dmiq' | relative_url }}" }
+    - { title: "유튜브", link: "https://www.youtube.com/c/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%A7%88%EC%BC%80%ED%8C%85/" }
 
 # 파트너 로고 목록
 partners:
-- {name: "삼성 C랩 아웃사이드", logo: "samsungclab.png"}
-- {name: "KT Alpha", logo: "ktalpha.png"}
-- {name: "한국관광공사", logo: "kortour.png"}
-- {name: "신한 S브릿지", logo: "sbridge.png"}
-- {name: "KOTRA", logo: "kotra.png"}
-- {name: "서울관광재단", logo: "sto.png"}
-- {name: "안국건강", logo: "angook.png"}
-- {name: "메타버스월드", logo: "itam.png"}
-- {name: "앱코", logo: "abko.png"}
-- {name: "더프트앤도프트", logo: "duftndoft.png"}
-- {name: "카바조", logo: "carvazo.png"}
-- {name: "설로인", logo: "sirloin.png"}
+  - { name: "한화호텔&리조트", logo: "hanwha.png" }
+  - { name: "KT Alpha", logo: "ktalpha.png" }
+  - { name: "한국관광공사", logo: "kortour.png" }
+  - { name: "신한 S브릿지", logo: "sbridge.png" }
+  - { name: "KOTRA", logo: "kotra.png" }
+  - { name: "서울관광재단", logo: "sto.png" }
+  - { name: "안국건강", logo: "angook.png" }
+  - { name: "메타버스월드", logo: "itam.png" }
+  - { name: "앱코", logo: "abko.png" }
+  - { name: "더프트앤도프트", logo: "duftndoft.png" }
+  - { name: "카바조", logo: "carvazo.png" }
+  - { name: "설로인", logo: "sirloin.png" }

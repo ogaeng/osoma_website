@@ -13,3 +13,5 @@ _includes/playbook-form.html
 _pages/legacy
 Brewfile
 Brewfile.lock.json
+.vscode
+.prettierrc
