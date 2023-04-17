@@ -125,6 +125,7 @@ footer_contents:
 
 # 파트너 로고 목록
 partners:
+  - { name: "삼성전자C랩", logo: "samsungclab.png" }
   - { name: "한화호텔&리조트", logo: "hanwha.png" }
   - { name: "KT Alpha", logo: "ktalpha.png" }
   - { name: "한국관광공사", logo: "kortour.png" }
@@ -135,5 +136,4 @@ partners:
   - { name: "메타버스월드", logo: "itam.png" }
   - { name: "앱코", logo: "abko.png" }
   - { name: "더프트앤도프트", logo: "duftndoft.png" }
-  - { name: "카바조", logo: "carvazo.png" }
   - { name: "설로인", logo: "sirloin.png" }
