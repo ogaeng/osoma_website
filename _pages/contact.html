@@ -6,22 +6,25 @@ title: 문의 남기기
 <div class="form-box mb-5">
   <div class="contact-head">
     {% if site.data.settings.contact__settings.contact__title %}
-      <h2 class="contact-title">{{ site.data.settings.contact__settings.contact__title }}</h2>
+    <h2 class="contact-title">{{ site.data.settings.contact__settings.contact__title }}</h2>
     {% endif %}
     {% if site.data.settings.contact__settings.contact__description %}
-      <p class="contact-description">{{ site.data.settings.contact__settings.contact__description }}</p>
+    <p class="contact-description">{{ site.data.settings.contact__settings.contact__description }}</p>
     {% endif %}
-    <p class="contact-description"><i class="ion ion-ios-mail-unread"></i> <a href="mailto:contact@osoma.kr" data-tag-index="contact" data-tag-content="이메일">contact@osoma.kr</a></p>
+    <p class="contact-description"><i class="ion ion-ios-mail-unread"></i> <a href="mailto:contact@osoma.kr"
+        data-tag-index="contact" data-tag-content="이메일">contact@osoma.kr</a></p>
   </div>
 
   <div class="contact__btn__div">
-    <a class="contact__btn" href="{{site.data.settings.introduce_file}}" target="_blank" data-tag-index="contact" data-tag-content="서비스 소개서 보기">
+    <a class="contact__btn" href="{{site.data.settings.introduce_file}}" target="_blank" data-tag-index="contact"
+      data-tag-content="서비스 소개서 보기">
       <span class="circle-bg"><i class="ion ion-md-arrow-down button-arrow"></i></span> 서비스 소개서 보기
     </a>
   </div>
 
   <form id="contact_page" class="form" action="https://formspree.io/f/xyylvqaa" method="POST">
     <input type="hidden" id="cid-page" name="cid" value="" />
+    <input type="hidden" id="page-location" name="page-location" value="" />
     <!-- <div class="form__group">
       <select id="form-select" class="form-select form__input" aria-label="문의 구분" name="index">
         <option selected disabled>어떤 문의를 하시나요?</option>
@@ -58,7 +61,8 @@ title: 문의 남기기
       <textarea class="form__input" id="form-text-page" name="message" rows="8" placeholder="문의 내용" required></textarea>
     </div>
     <div class="form__group form__group-button">
-      <button class="g-recaptcha button button--middle" type="submit">전송하기 <i class="ion ion-ios-paper-plane"></i></button>
+      <button class="g-recaptcha button button--middle" type="submit">전송하기 <i
+          class="ion ion-ios-paper-plane"></i></button>
     </div>
     <input type="hidden" name="_subject" value="[osoma.kr]에서 문의가 도착했습니다." />
   </form>
@@ -97,9 +101,10 @@ title: 문의 남기기
   window.addEventListener('load', function () {
     var inputCid = ga.getAll()[0].get('clientId');
     document.getElementById("cid-page").value = inputCid;
+    document.getElementById("page-location").value = location.href;
   });
 
-  var formSubmitPage = function(){
+  var formSubmitPage = function () {
     var contents = {
       'name': document.querySelector('#form-name-page').value,
       'email': document.querySelector('#form-email-page').value,
