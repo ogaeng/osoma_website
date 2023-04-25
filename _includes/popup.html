@@ -1,0 +1,32 @@
+<div id="post_top_popup" class="container-fluid position-fixed top-0 start-0">
+  <div class="row">
+    <div class="col col-12 text-center text-white">
+      <a id="close-post-top-popup" type="button" class="btn-close btn-close-white popup-top-x" aria-label="Close" data-tag-index="popup" data-tag-content="팝업_닫기"></a>
+      {% if page.tags contains 'GA' or page.tags contains 'GTM' %}
+        <h4 id="popup_text" class="popup-top-heading">GA4 도입을 위해 고민 중이신가요?</h4>
+        <a type="button" href="{{ '/ga-consulting/' | relative_url }}" class="popup-top-button btn btn-light"  data-tag-index="popup" data-tag-content="GA4 컨설팅 살펴보기">GA4 컨설팅 살펴보기</a>
+      {% else %}
+        <h4 id="popup_text class="popup-top-heading">우리 회사에 맞는 디지털 마케팅 진단이 필요하신가요?</h4>
+        <a type="button" onclick="openContactForm();" class="popup-top-button btn btn-light" data-tag-index="popup" data-tag-content="상담 요청하기">상담 요청하기</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('main_header').className += " popup-header";
+  dataLayer.push({
+    'popup_text': document.querySelector('#popup_text').textContent
+  });
+
+  if (sessionStorage.post_popup_close == "true") {
+    document.getElementById('post_top_popup').style.display = 'none';
+    document.getElementById('main_header').classList.remove('popup-header');
+  }
+
+  document.getElementById('close-post-top-popup').addEventListener('click', function () {
+    document.getElementById('post_top_popup').style.display = 'none';
+    sessionStorage.post_popup_close = "true";
+    document.getElementById('main_header').classList.remove('popup-header');
+  });
+</script>

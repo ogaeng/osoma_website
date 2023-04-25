@@ -135,4 +135,20 @@
     // document.getElementById('contact_complete').style.display = 'block';
   };
   document.querySelector('#contact').addEventListener('submit', formSubmit);
+
+  window.onload = function() {
+    var popupElement = document.querySelector('#contact-modal');
+    if (popupElement !== null && sessionStorage.post_popup_close !== "true") {
+      document.getElementById('contact-modal').className += " popup-header";
+      document.getElementById('close-post-top-popup').addEventListener('click', function () {
+        document.getElementById('contact-modal').classList.remove('popup-header');
+      });
+    }
+  };
+
+  if (sessionStorage.post_popup_close == "true") {
+    document.getElementById('contact-modal').classList.remove('popup-header');
+  }
+
+
 </script>
