@@ -26,19 +26,13 @@
     <label class="form__label screen-reader-text" for="event-question">사전 질문 내용</label>
     <textarea class="form__input" id="event-question" name="question" rows="8" placeholder="사전 질문 내용(선택 사항)"></textarea>
   </div>
-  <div>
-    <p class="fs-6">
-      개인 정보 수집에 동의하시면 오픈소스마케팅의 서비스 및 운영 프로그램에 대한 소개 및 최신 소식을 메일로 수신하는데 동의하게 됩니다. <a href="/privacy-policy/" target="_blank">[개인정보처리방침]  </a>
-      <a href="/marketing-agree/" target="_blank">[마케팅 정보 활용 동의]</a>
-    </p>
-  </div>
   <div class="form-check">
     <input class="form-check-input" type="checkbox" value="" id="event-agree" required>
-    <label class="form__label form-check-label" for="event-agree">(필수)개인 정보 수집에 동의합니다.</label>
+    <label class="form__label form-check-label" for="event-agree">(필수)<a href="/privacy-policy/" target="_blank">행사 안내를 위한 개인 정보 수집</a>에 동의합니다.</label>
   </div>
   <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="newsletter-agree" required>
-    <label class="form__label form-check-label" for="newsletter-agree">(필수)마케팅 활용 및 서비스 관련 정보 수신에 동의합니다.</label>
+    <input name="newsletter-agree" class="form-check-input" type="checkbox" value="" id="newsletter-agree">
+    <label class="form__label form-check-label" for="newsletter-agree">(선택)<a href="/marketing-agree/" target="_blank">서비스 및 운영 프로그램 소개 및 최신 소식에 대한 메일 수신</a>에 동의합니다.</label>
   </div>
 
   <div style="padding-top:3.2rem;">
@@ -87,6 +81,15 @@
     document.getElementById("event-cid").value = eInputCid;
   });
 
+  const checkBox = document.getElementById('newsletter-agree');
+  checkBox.addEventListener('change', function() {
+    if (this.checked) {
+      checkBox.value = 'ad-allowed';
+    } else {
+      checkBox.value = '';
+    }
+  });
+
   var eventSubmit = function(){
     const regxPhone = (num) => {
       let cg = num.replace('+8210', '010');
@@ -99,6 +102,7 @@
       'email': encode64(document.querySelector('#event-email').value),
       'company': encode64(document.querySelector('#event-company').value),
       'phone': encode64(regxPhone(document.querySelector('#event-phone').value)),
+      'agree': checkBox.checked,
       'cid': get_cookie('_ga')
     };
     const emailVal = document.querySelector('#event-email').value;
@@ -118,3 +122,4 @@
   };
   document.querySelector('#eventReg').addEventListener('submit', eventSubmit);
 </script>
+
