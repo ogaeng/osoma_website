@@ -19,10 +19,10 @@ menu__settings:
       url: "/data-consulting/"
     - title: "GA4"
       url: "/ga-consulting/"
-    - title: "Case"
-      url: "/tag/case"
     - title: "Edu"
       url: "https://edu.osoma.kr/"
+    - title: "Webinar"
+      url: "/event/"
     - title: "DMIQ"
       url: "/dmiq/"
 
