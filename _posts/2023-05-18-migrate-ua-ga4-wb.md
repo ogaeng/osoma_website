@@ -52,4 +52,4 @@ description: 2023년 6월 1일 오후 8시, UA에서 GA4로 전환하려는 모�
 
 {% include event-speaker.html %}
 
-{% include event-form.html %}
+{% include event-end.html %}
