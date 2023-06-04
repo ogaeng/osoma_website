@@ -140,11 +140,17 @@
 
   window.onload = function() {
     var popupElement = document.querySelector('#contact-modal');
+    var bannerElement = document.querySelector('#post_top_popup');
     if (popupElement !== null && sessionStorage.post_popup_close !== "true") {
-      document.getElementById('contact-modal').className += " popup-header";
-      document.getElementById('close-post-top-popup').addEventListener('click', function () {
-        document.getElementById('contact-modal').classList.remove('popup-header');
-      });
+      if (bannerElement !== null){
+        popupElement.classList.add("popup-header");
+      }
+      var closeButton = document.getElementById('close-post-top-popup');
+      if (closeButton) {
+        closeButton.addEventListener('click', function () {
+          popupElement.classList.remove("popup-header");
+        });
+      }
     }
   };
 

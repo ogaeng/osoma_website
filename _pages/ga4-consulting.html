@@ -512,7 +512,22 @@ description: 오픈소스마케팅의 GA4 컨설팅 서비스는 이벤트 설�
   </div>
 </section>
 
-{% include section-partners.html %} {% include section-blog.html %}
+{% include section-partners.html %}
+
+<div class="container animate">
+  <div class="section__info">
+    <div class="section__head">
+      <h2 class="section__title">관련 글</h2>
+    </div>
+  </div>
+  <div class="row">
+      {% if site.posts.size > 0 %}
+        {% for post in site.categories.case offset:0 %}
+          {% include article-content.html %}
+        {% endfor %}
+      {% endif %}
+  </div>
+</div>
 
 <script>
   dataLayer.push({
