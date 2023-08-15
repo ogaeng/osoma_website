@@ -15,3 +15,4 @@ Disallow: /search/
 Disallow: /ads-landing-01/
 
 Sitemap: https://osoma.kr/sitemap.xml
+#DaumWebMasterTool:e76a134f9fe7d7d1c4fa31a275995c48d0e36323b0ca795eed9ddf3868d05287:3dXOErr8edjNdQfRgXKGdA==
