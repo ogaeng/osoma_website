@@ -125,12 +125,12 @@ footer_contents:
 
 # 파트너 로고 목록
 partners:
-  - { name: "삼성전자C랩", logo: "samsungclab.png" }
   - { name: "신세계사이먼", logo: "shinsegaesimon.png" }
   - { name: "한화호텔&리조트", logo: "hanwha.png" }
   - { name: "대림", logo: "daelim.png" }
   - { name: "동원디어푸드", logo: "dongwon.png" }
   - { name: "KT Alpha", logo: "ktalpha.png" }
+  - { name: "삼성전자C랩", logo: "samsungclab.png" }
   - { name: "한국관광공사", logo: "kortour.png" }
   - { name: "KOTRA", logo: "kotra.png" }
   - { name: "ABC마트", logo: "abcmart.png" }
