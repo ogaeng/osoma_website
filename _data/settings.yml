@@ -123,7 +123,7 @@ footer_contents:
     - { title: "DMIQ 테스트", link: "{{ '/dmiq' | relative_url }}" }
     - { title: "유튜브", link: "https://www.youtube.com/c/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%EB%A7%88%EC%BC%80%ED%8C%85/" }
 
-# 파트너 로고 목록
+# 파트너 로고 리스트
 partners:
   - { name: "신세계사이먼", logo: "shinsegaesimon.png" }
   - { name: "한화호텔&리조트", logo: "hanwha.png" }
