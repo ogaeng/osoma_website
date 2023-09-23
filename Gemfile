@@ -13,3 +13,4 @@ gem "faraday-retry", "~> 2.2"
 
 gem "webrick", ">= 0"
 gem "liquid", "~> 4.0.4"
+gem "public_suffix", "~> 5.0.3"
