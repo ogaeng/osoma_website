@@ -91,6 +91,10 @@
   });
 
   var eventSubmit = function(){
+    const emailValue = document.querySelector('#event-email').value;
+    const uid = CryptoJS.SHA256(emailValue).toString();
+    setUidCookie(uid, 730);
+
     const regxPhone = (num) => {
       let cg = num.replace('+8210', '010');
       let ch = cg.replace('+82-10', '010');
@@ -110,8 +114,7 @@
       'event': 'eventSubmit',
       'title': '{{ page.title }}',
       'ids': '{{ page.ids }}',
-      'value': contents,
-      'event_id': generateRandomCode(12)
+      'value': contents
     });
 
     var myModal = new bootstrap.Modal(document.getElementById('eventSubmitModal'));

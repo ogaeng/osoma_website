@@ -118,6 +118,10 @@
   });
 
   var formSubmit = function () {
+    const emailValue = document.querySelector('#form-email').value;
+    const uid = CryptoJS.SHA256(emailValue).toString();
+    setUidCookie(uid, 730);
+
     var contents = {
       'name': encode64(document.querySelector('#form-name').value),
       'email': encode64(document.querySelector('#form-email').value),
@@ -129,8 +133,7 @@
 
     dataLayer.push({
       'event': 'contactSubmit',
-      'value': contents,
-      'event_id': generateRandomCode(12)
+      'value': contents
     });
 
     // document.getElementById('contact').style.display = 'none'; // hide form
