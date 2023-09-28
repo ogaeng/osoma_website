@@ -13,15 +13,12 @@
     },
   });
 
-  async function loadFeatures() {
-    await gb.loadFeatures();
-    console.log("Features loaded");
-  }
-  loadFeatures();
-
-  if (gb.isOn("osoma-web")) {
-    console.log("Feature is enabled!")
-  }
+  gb.loadFeatures().then(() => {
+    // Check if a feature is enabled
+    if (gb.isOn("osoma-web")) {
+      console.log("Feature enabled!");
+    }
+  });
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

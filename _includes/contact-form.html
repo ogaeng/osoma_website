@@ -27,7 +27,7 @@
             </a>
           </div>
 
-          <form id="contact" class="form" action="https://smartforms.dev/submit/640167d20dd8ac0a531ff727" method="POST">
+          <form id="contact" class="form" action="https://ctapi.osoma.kr" method="POST" target="contactblankiframe">
             <input type="hidden" id="cid" name="cid" value="" />
             <input type="hidden" id="location" name="location" value="" />
 
@@ -69,18 +69,16 @@
 현재 고민 상황, 서비스의 링크, 오픈소스마케팅에게 컨설팅 받기를 원하는 영역 등을 입력해주시면 더욱 좋습니다."
                 required></textarea>
             </div>
-            <div class="g-recaptcha" data-sitekey="6LeCcoEhAAAAABX3zxn3bw3tXPSPiYPcBjD1QvfO"></div>
             <div class="form__group form__group-button">
-              <button class="button button--middle" type="submit">전송하기 <i class="ion ion-ios-paper-plane"></i></button>
+              <button class="button button--middle g-recaptcha" data-callback="formSubmit" data-sitekey="6LeCcoEhAAAAABX3zxn3bw3tXPSPiYPcBjD1QvfO" data-action="submit" type="submit">전송하기 <i class="ion ion-ios-paper-plane"></i></button>
             </div>
-            <!-- <input type="hidden" name="_subject" value="[osoma.kr]에서 문의가 도착했습니다." /> -->
           </form>
 
-          <!-- <div class="col col-12" style="display:none;" id="contact_complete">
+          <div class="col col-12" style="display:none;" id="contact_complete">
               <h4 class="text-center">문의가 제출되었습니다.</h4>
-            </div> -->
+            </div>
 
-          <!-- <iframe name="contactblankiframe" style="display:none;"></iframe> -->
+          <iframe name="contactblankiframe" style="display:none;"></iframe>
 
         </div>
 
@@ -90,34 +88,13 @@
 </div>
 <!-- end contact -->
 
-<!-- <script>
-  function onSubmit(token) {
-    document.getElementById("contact").submit();
-    var contents = {
-      'name': document.querySelector('#form-name').value,
-      'email': document.querySelector('#form-email').value,
-      'company': document.querySelector('#form-company').value,
-      'website': document.querySelector('#form-website').value,
-      'text': document.querySelector('#form-text').value
-    };
-
-    dataLayer.push({
-      'event': 'contactSubmit',
-      'value': contents
-    });
-
-    document.getElementById('contact').style.display = 'none'; // hide form
-    document.getElementById('contact_complete').style.display = 'block';
-  }
-</script> -->
-
 <script>
   window.addEventListener('load', function () {
     document.getElementById("location").value = location.href;
     document.getElementById("cid").value = get_cookie('_ga');
   });
 
-  var formSubmit = function () {
+  var formSubmit = function(token) {
     const emailValue = document.querySelector('#form-email').value;
     const uid = CryptoJS.SHA256(emailValue).toString();
     setUidCookie(uid, 730);
@@ -136,10 +113,12 @@
       'value': contents
     });
 
-    // document.getElementById('contact').style.display = 'none'; // hide form
-    // document.getElementById('contact_complete').style.display = 'block';
+    document.getElementById("contact").submit();
+
+    document.getElementById('contact').style.display = 'none'; // hide form
+    document.getElementById('contact_complete').style.display = 'block';
   };
-  document.querySelector('#contact').addEventListener('submit', formSubmit);
+  // document.querySelector('#contact').addEventListener('submit', formSubmit);
 
   window.onload = function() {
     var popupElement = document.querySelector('#contact-modal');
