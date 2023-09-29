@@ -38,7 +38,7 @@
   </div>
 
   <div class="form__group form__group-button">
-    <button class="button button--middle" type="submit" data-callback="eventSubmit" data-sitekey="6LeCcoEhAAAAABX3zxn3bw3tXPSPiYPcBjD1QvfO" data-action="submit" data-badge="inline">신청하기 <i class="ion ion-ios-paper-plane"></i></button>
+    <button class="button button--middle" type="submit" data-action="submit">신청하기 <i class="ion ion-ios-paper-plane"></i></button>
   </div>
 </form>
 
@@ -54,9 +54,6 @@
     1시간 후에도 메일이 도착하지 않는다면 메일함의 스팸, 프로모션 탭 등을 확인해주세요.
   </p>
 </div>
-
-<!-- <iframe name="blankiframe" style="display:none;"></iframe> -->
-<p class="t-tiny">This site is protected by Google reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
 
 <!-- 신청 완료 Modal -->
 <div id="eventSubmitModal" class="modal" tabindex="-1">
@@ -93,8 +90,6 @@
       return result;
     };
 
-    const recaptchaToken = grecaptcha.getResponse();
-
     let form = e.target; // e.target을 통해 이벤트가 발생한 폼을 참조
     let formData = new FormData(form);
 
@@ -105,8 +100,6 @@
     if (formData.has('newsletter-agree')) {
       formData.set('newsletter-agree', 'ad-allowed');
     }
-
-    formData.append('g-recaptcha-response', recaptchaToken);
 
     const uid = CryptoJS.SHA256(emailValue).toString();
     setUidCookie(uid, 730);
@@ -134,12 +127,12 @@
         console.log('Success:', data);
         document.getElementById('spinner').style.display = 'none';
 
-        // dataLayer.push({
-        //   'event': 'eventSubmit',
-        //   'title': '{{ page.title }}',
-        //   'ids': '{{ page.ids }}',
-        //   'value': contents
-        // });
+        dataLayer.push({
+          'event': 'eventSubmit',
+          'title': '{{ page.title }}',
+          'ids': '{{ page.ids }}',
+          'value': contents
+        });
         
         // 제출 완료 메시지
         document.getElementById('eventReg').style.display = 'none'; // hide form
