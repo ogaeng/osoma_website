@@ -12,6 +12,7 @@ date:   2022-12-06 00:00:00 +9:00
 image:  '/images/posts/ga4-path-exploration/thumb.png'
 tags:   [GA, GA4]
 description: 구글 애널리틱스 4의 경로 탐색 분석(Path exploration) 기법의 사용 방법을 소개합니다.
+keywords: [GA,탐색,경로탐색분석,분석]
 ---
 
 - 우리 홈페이지에 처음 방문한 사람이 가장 먼저 발견하는 페이지는 어디일까?

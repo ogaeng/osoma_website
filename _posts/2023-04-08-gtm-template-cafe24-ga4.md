@@ -12,7 +12,8 @@ categories:
 date: 2023-04-08 16:00:00 +9:00
 image: "/images/posts/gtm-template-cafe24-ga4/thumb.png"
 tags: [GTM, template]
-description: 구글 태그 관리자(Google Tag Manager)에서 카페24 쇼핑몰에서 구글 애널리틱스 4 기본 전자상거래 이벤트와 마개변수를 손쉽게 추가할 수 있는 태그 템플릿 이용 방법을 안내합니다.
+description: 구글 태그 관리자(Google Tag Manager)에서 카페24 쇼핑몰에서 구글 애널리틱스 4 기본 전자상거래 이벤트와 매개변수를 손쉽게 추가할 수 있는 태그 템플릿 이용 방법을 안내합니다.
+keywords: [GA,GTM,카페24,전자상거래,세팅,템플릿]
 ---
 
 이 글은 구글 태그 관리자(Google Tag Manager)의 Web 컨테이너를 이용해 카페24 쇼핑몰에서 구글 애널리틱스 4 전자상거래 이벤트와 매개변수를 설정할 수 있는 태그 템플릿의 이용 가이드입니다.

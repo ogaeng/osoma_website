@@ -12,6 +12,7 @@ image:  '/images/events/howtodevstudy-formkt/thumb.jpg'
 tags:   [event]
 startdate: 2022-07-28 20:00:00 +09:00
 description: 2022년 7월 28일 오후 8시, 마케터를 위한 개발 공부 방법에 대해 소개합니다.
+keywords: [개발,공부]
 ---
 
 마케터에게 정말 개발 언어 공부가 필요할까?

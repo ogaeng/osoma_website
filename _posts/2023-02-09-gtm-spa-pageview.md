@@ -11,6 +11,7 @@ date: 2023-02-09 01:00:00 +9:00
 image: "/images/posts/gtm-spa-pageview/thumb.png"
 tags: [GTM, SPA]
 description: react나 vue와 같은 Single Page Application 환경에서 GTM 기록 변경 트리거 활용 방법을 설명합니다.
+keywords: [GTM,SPA,세팅,페이지뷰,트리거]
 ---
 
 SPA(Single Page Application)는 이제 마케팅 지표만큼 마케터가 실무에서 익숙하게 듣는 단어입니다. 그만큼 많은 서비스가 SPA 형태로 만들어져 있고 이는 개발 지식이 없는 마케터가 정확한 데이터를 수집하는 데 혼란을 야기하고 있습니다. 대표적인 예로 '구글 태그 매니저의 페이지뷰 트리거가 제대로 작동하지 않는 것'을 들 수 있는데요. 이번 글에선 SPA의 특징을 자세히 살펴보고 올바르게 페이지뷰 이벤트를 세팅하는 방법에 대해 알아보도록 하겠습니다.

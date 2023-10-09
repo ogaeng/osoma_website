@@ -12,6 +12,7 @@ date:   2022-12-20 16:30:00 +9:00
 image:  '/images/posts/ga4-landingpage-report/thumb.png'
 tags:   [GA, GA4]
 description: 구글 애널리틱스 4에서 유입 페이지를 확인할 수 있는 방문 페이지 보고서에 대해서 소개합니다.
+keywords: [GA,보고서,방문페이지,분석]
 ---
 
 2022년 12월, GA4에도 방문 페이지(Landing Page) 보고서가 업데이트되었습니다.

@@ -12,6 +12,7 @@ date:   2022-10-18 00:00:00 +9:00
 image:  '/images/posts/google-signal/thumb.png'
 tags:   [GA, GA4]
 description: 구글 신호 데이터와 광고 개인 최적화 구글 애널리틱스 4의 기준점 적용에 대해 알아봅니다.
+keywords: [GA,구글시그널,기준점,보고서,분석]
 ---
 
 구글 신호 데이터(Google signals)에 대해 이미 오래전부터 알고 계셨던 분들도 있을 것이고, GA4로의 전환을 본격화하면서 새롭게 접해보신 분들도 있을 것 같습니다. [GA4 설치 후 바로 세팅해야 하는 항목](https://osoma.kr/blog/ga4-start-settings/){:target="_blank"}으로 항상 등장하는 구글 신호 데이터. 왜 활성화를 권장하는지, 구글 신호 데이터는 정확하게 어떤 것인지 알아보도록 하겠습니다.

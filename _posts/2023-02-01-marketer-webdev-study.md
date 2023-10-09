@@ -11,6 +11,7 @@ date: 2023-02-01 01:00:00 +9:00
 image: "/images/posts/marketer-webdev-study/thumb.png"
 tags: [study, html, javascript]
 description: 마케터에게 웹 개발 언어 공부가 왜 필요한지, 마케터가 웹 개발 언어를 공부하면 어떤 것들이 가능해지는지, 또 실질적인 공부 방법은 무엇인지에 대해서 알아보겠습니다.
+keywords: [개발,마케터,공부,JS,HTML,웹]
 ---
 
 > “마케터도 코딩할 줄 알아야 하나요? 마케터가 공부하면 좋은 언어는 뭐가 있나요?”

@@ -12,6 +12,7 @@ date:   2022-12-09 01:00:00 +9:00
 image:  '/images/posts/ga4-dimension-metrics/thumb.png'
 tags:   [GA, GA4]
 description: GA4를 사용하기 위한 기본 지식인 측정기준과 측정항목 그리고 맞춤 측정기준과 맞춤 측정항목에 대해 알아봅니다.
+keywords: [GA,측정기준,측정항목,세팅]
 ---
 
 GA4의 모든 보고서는 측정기준과 측정항목으로 이루어져 있기 때문에 GA4를 더욱 자유자재로 사용하려면 이 측정기준과 측정항목을 명확히 이해해야 합니다.

@@ -12,6 +12,7 @@ date:   2023-03-26 00:30:00 +9:00
 image:  '/images/posts/ga4-item-custom-dimensions/thumb.png'
 tags:   [GA, GA4]
 description: GA4에서 상품 정보를 커스텀하여 추가 등록할 수 있는 항목 범위 맞춤 측정기준에 대해 소개합니다.
+keywords: [GA,측정기준,맞춤측정기준,세팅,이벤트,전자상거래]
 ---
 
 지난 2023년 3월 16일 GA4에 사용자가 커스텀하여 items 매개변수 내에 항목을 등록할 수 있는 항목(Item) 범위 맞춤 측정기준이 새롭게 등장했습니다.

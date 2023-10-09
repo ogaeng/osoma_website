@@ -12,6 +12,7 @@ date:   2022-11-28 01:00:00 +9:00
 image:  '/images/posts/looker-studio-ga-api-quota/thumb.png'
 tags:   [looker-studio, GA4, GA]
 description: Looker Studio를 사용할 때 GA4 API의 할당량이 무엇인지, 어떻게 하면 오류 없이 데이터를 불러올 수 있는지 알아보도록 하겠습니다.
+keywords: [루커스튜디오,시각화,분석,GA]
 ---
 
 GA4 연결을 통해 작성한 Looker Studio 보고서에 갑자기 오류가 발생했나요?

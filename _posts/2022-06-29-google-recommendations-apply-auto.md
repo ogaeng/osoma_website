@@ -13,6 +13,7 @@ date:   2022-06-29 00:00:00 +9:00
 image:  '/images/posts/google-recommendations-apply-auto/thumb.jpg'
 tags:   [ads, google-ads]
 description: 구글 애즈 추천 자동 적용으로 어떤 변화가 생겼는지 알아보세요.
+keywords: [구글애즈,광고,추천]
 ---
 
 최근 들어(2022년 4월 기점) Google Ads 캠페인 효율에 급격한 변화를 겪는 현상들이 많이 나타나고 있습니다.

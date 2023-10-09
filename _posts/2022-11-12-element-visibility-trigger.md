@@ -12,6 +12,7 @@ date:   2022-11-11 22:20:00 +9:00
 image:  '/images/posts/element-visibility-trigger/thumb.png'
 tags:   [GTM]
 description: 자주 언급되는 기본 트리거인 요소 공개 상태(element visibility trigger)에 대해 함께 알아보도록 하겠습니다.
+keywords: [GTM,요소공개,세팅,트리거]
 ---
 
 구글 태그 매니저(Google Tag Manager)를 말할 때 자주 언급되는 기본 트리거인 요소 공개 상태(element visibility trigger)는 우리가 **모니터, 노트북, 핸드폰 등 다양한 기기로 보는 화면에 특정 부분이 보였을 때 작동하는 트리거**로 스크롤 추적, 팝업 노출 추적을 위해 주로 사용되고 있습니다. 다만 HTML 요소를 기반으로 특정 부분이 보였는지 판단하기 때문에 제대로 사용할 수 없는 때도 있는데요. 함께 알아보도록 하겠습니다.

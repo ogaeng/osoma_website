@@ -13,6 +13,7 @@ date: 2023-01-30 18:00:00 +9:00
 image: "/images/posts/gtm-template-kakaopixel/thumb.png"
 tags: [GTM, template]
 description: 구글 태그 관리자(Google Tag Manager)에서 카카오 픽셀 이벤트와 마개변수를 손쉽게 추가할 수 있는 태그 템플릿 이용 방법을 안내합니다.
+keywords: [GTM,템플릿,카카오,광고,세팅]
 ---
 
 이 글은 구글 태그 관리자(Google Tag Manager)의 Web 컨테이너를 이용해 카카오 픽셀 이벤트와 매개변수를 설정할 수 있는 태그 템플릿의 이용 가이드입니다.

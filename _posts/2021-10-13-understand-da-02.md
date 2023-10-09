@@ -13,6 +13,7 @@ date:   2021-10-13 00:10:00 +09:00
 image:  '/images/posts/understand-da-02/thumb.jpg'
 tags:   [ads, display-ad]
 description: 디스플레이 광고의 구매 방식, 계약 방식, 참여자 등에 대해 알아봅니다.
+keywords: [광고,DA,전환,페이스북,메타,인스타그램,구글애즈,시장]
 ---
 
 "광고 비용 너무 비싼 거 같은데.. 낮출 수 있는 방법 없을까?"

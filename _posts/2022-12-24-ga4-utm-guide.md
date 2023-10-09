@@ -12,6 +12,7 @@ date:   2022-12-24 00:10:00 +9:00
 image:  '/images/posts/ga4-utm-guide/thumb.png'
 tags:   [GA, GA4]
 description: GA4 사용자의 유입 분석에 도움을 주는 UTM에 대해서 안내합니다.
+keywords: [GA,UTM,유입,분석,보고서]
 ---
 
 UTM은 웹페이지의 URL에 정보를 추가하여 온라인 마케팅 캠페인의 효과를 추적하는 방법입니다. 일반적으로 Google Analytics와 같은 웹 분석 도구와 함께 사용되어 사용자가 웹사이트와 상호 작용하는 방식을 이해하는 데 사용합니다.

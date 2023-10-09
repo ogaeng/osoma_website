@@ -13,6 +13,7 @@ date:   2022-12-16 22:30:00 +9:00
 image:  '/images/posts/ga4-bigquery-connect/thumb.png'
 tags:   [GA, GA4, bigquery]
 description: GA4에서 사용도가 점점 높아지고 있는 빅쿼리를 어떻게 연결하는지 알아보겠습니다.
+keywords: [GA,빅쿼리,세팅]
 ---
 
 ## BigQuery가 무엇인가요?

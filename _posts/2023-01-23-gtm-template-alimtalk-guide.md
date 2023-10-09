@@ -13,6 +13,7 @@ date: 2023-01-23 00:30:00 +9:00
 image: "/images/posts/gtm-template-alimtalk-guide/thumb.png"
 tags: [GTM, template]
 description: 구글 태그 관리자(Google Tag Manager) 서버 컨테이너를 이용해 NHN Cloud(구 TOAST Cloud)의 카카오톡 알림톡 발송을 할 수 있는 태그 템플릿 이용 방법을 안내합니다.
+keywords: [GTM,알림톡,세팅,템플릿]
 ---
 
 이 글은 구글 태그 관리자(Google Tag Manager) 서버 컨테이너를 이용해 NHN Cloud의 카카오톡 알림톡 발송을 할 수 있는 태그 템플릿의 이용 안내를 담고 있습니다.

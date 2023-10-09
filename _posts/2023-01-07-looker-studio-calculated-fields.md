@@ -13,6 +13,7 @@ date:   2023-01-07 01:00:00 +9:00
 image:  '/images/posts/looker-studio-calculated-fields/thumb.png'
 tags:   [looker-studio, data-visualization]
 description: Looker Studio(Data Studio)에서 계산된 필드를 사용하는 방법에 대해 소개합니다.
+keywords: [루커스튜디오,함수,시각화,분석]
 ---
 
 루커스튜디오는 구글 애널리틱스를 연결하는 것만으로도 수십 개의 측정항목을 불러와 사용할 수 있습니다. 하지만, 보고서를 작성하다 보면 새로운 항목이 필요해질 때가 있습니다. 측정항목이 부족한 외부 데이터를 연결하는 경우에는 이런 상황이 더욱 많이 발생합니다.

@@ -12,6 +12,7 @@ date:   2022-11-20 02:00:00 +9:00
 image:  '/images/posts/reasons-not-to-buy-your-product/thumb.png'
 tags:   [case, ads]
 description: 고객 구매 여정에 최적화한 디지털 마케팅 컨설팅 사례에 대해 소개합니다.
+keywords: [마케팅,제품,구매]
 ---
 
 > 왜 고객들이 우리 제품/서비스를 구매하지 않을까요?

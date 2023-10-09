@@ -17,6 +17,7 @@ image:  '/images/posts/how-to-write-event-definition/thumb.png'
 video_id: 'VprAGJyMIiQ'
 tags:   [GA, GA4]
 description: 데이터 수집과 분석의 첫 단계인 이벤트 정의서가 무엇인지 어떻게 작성하는지 알아봅시다.
+keywords: [GA,이벤트,세팅,정의서]
 ---
 
 ## 이벤트 정의서란? 🔍

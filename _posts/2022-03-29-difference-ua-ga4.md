@@ -18,6 +18,7 @@ image:  '/images/posts/difference-ua-ga4/thumb.png'
 video_id: 'oxJ8towHTlA'
 tags:   [GA, UA, GA4]
 description: 업그레이드 된 GA4는 기존 UA는 어떤 차이점이 있는지 어떤 점이 더 나아졌는지 알아봅시다.
+keywords: [UA,GA,차이]
 ---
 
 구글 애널리틱스가 업그레이드 되면서 (UA → GA4) 우리는 데이터를 더 많이 수집할 수 있게 되었고, 더욱 자유롭게 가공할 수 있게 되었어요. 그러나! 자유에는 그만큼의 대가가 따르는 법! 그만큼 습득해야할 것이 늘어났는데요, 구체적으로 어떤 부분이 달라졌는지를 살펴보아요!

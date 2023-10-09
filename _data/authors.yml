@@ -25,6 +25,7 @@ yena:
   avatar: /images/authors/yena.png
   bio: 반복적이고 단순한 작업은 그만! 더 쉽고 재미있게 업무하기
   blog: https://nice-nana.com
+  career: 오픈소스마케팅 컨설턴트
 
 jay:
   name: 이자영
@@ -37,12 +38,14 @@ ann:
   avatar: /images/authors/ann.jpg
   bio: 문제에 대한 해결책을 찾기 위해 늘 공부합니다.
   blog: https://growth-study.kr
+  career: 오픈소스마케팅 컨설턴트
 
 hong:
   name: 홍승협
   avatar: /images/authors/hong.jpg
   bio: 마케팅을 알고 고객 데이터를 알면 백전백승입니다.
   blog: https://hongxha.com/
+  career: 오픈소스마케팅 컨설턴트
 
 habin:
   name: 박하빈

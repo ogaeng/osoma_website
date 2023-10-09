@@ -17,6 +17,7 @@ image:  '/images/posts/performance-marketing-die/thumb.png'
 video_id: 'nNpS-NIYreI'
 tags:   [performance, ads]
 description: 많은 사람들이 퍼포먼스 마케팅의 미래를 걱정하는 이유, 앞으로 퍼포먼스 마케터들이 나아갈 길에 대한 오픈소스마케팅의 생각을 다음과 같이 정리해 봤습니다.
+keywords: [마케팅,퍼포먼스,생존,전략]
 ---
 
 퍼포먼스 마케팅, 이대로 괜찮은 걸까요?

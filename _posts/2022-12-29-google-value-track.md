@@ -13,6 +13,7 @@ date: 2022-12-29 22:30:00 +9:00
 image: "/images/posts/google-value-track/thumb.png"
 tags: [ads, google-ads]
 description: 구글 애즈의 동적 매개변수인 ValueTrack을 이용해 광고 유입을 추적해보세요.
+keywords: [구글애즈,광고,유입,분석]
 ---
 
 성공적인 디지털 광고 캠페인 운영을 위해서 빠트리지 말아야 할 아주 중요한 업무가 하나 있는데요. 바로 **추적(tracking)**입니다. 지금 운영 중인 캠페인의 성과를 정확하게 추적할 수 있을 때 비로소 최적화가 가능해지기 때문이죠.

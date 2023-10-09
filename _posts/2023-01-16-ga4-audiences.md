@@ -12,6 +12,7 @@ date:   2023-01-16 21:30:00 +9:00
 image:  '/images/posts/ga4-audiences/thumb.png'
 tags:   [GA, GA4]
 description: GA4 잠재고객의 활용처와 잠재고객 트리거에 대해서 알아봅니다.
+keywords: [GA,잠재고객,분석,광고,세그먼트]
 ---
 
 지난 글에서 [GA4 세그먼트의 활용법과 만드는 방법](https://osoma.kr/blog/ga4-segment/){:target="_blank"}에 대해 이야기한 적이 있습니다. 이번에는 이어서 잠재고객 활용법을 정리해 보고자 합니다. 먼저 구글 애널리틱스 4에서 잠재고객이 어떤 개념인지 간단히 살펴본 후 이를 활용하는 **네 가지 방법**을 공유해 드리겠습니다.

@@ -13,6 +13,7 @@ date:   2023-01-10 01:00:00 +9:00
 image:  '/images/posts/looker-studio-case-function/thumb.png'
 tags:   [looker-studio, data-visualization]
 description: Looker Studio(Data Studio)에서 CASE 함수를 사용하는 방법을 예시와 함께 소개합니다.
+keywords: [루커스튜디오,함수,분석,보고서,시각화]
 ---
 
 루커 스튜디오의 CASE 함수는 조건에 따라 데이터를 분류할 수 있게 해주는 논리 함수로, 우리가 원하는 대로 차트를 만들 수 있게 해주는 매우 유용한 함수입니다. 특히 조건문 안에 또 다른 함수를 넣어 중첩해 사용하면 더욱 다양한 조작이 가능합니다.
