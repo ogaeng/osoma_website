@@ -50,4 +50,4 @@ keywords: [GA, 세그먼트, 보고서, 필터, 비교, 분석]
 
 {% include event-speaker.html %}
 
-{% include event-form-fetch.html %}
+{% include event-end.html %}
