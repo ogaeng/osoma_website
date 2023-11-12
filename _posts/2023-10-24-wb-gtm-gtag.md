@@ -51,4 +51,4 @@ keywords: [GA,GTM,구글태그,업데이트,이벤트,구성,세팅]
 
 {% include event-speaker.html %}
 
-{% include event-form-fetch.html %}
+{% include event-end.html %}
