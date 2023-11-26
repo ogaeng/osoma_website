@@ -3,7 +3,7 @@ layout: post
 division: blog
 author: ogaeng
 ids: ga4-schedule-email
-title:  "GA4 보고서: 이메일 예약 기능으로 정기적으로 보고서 받아보기"
+title:  "GA4 보고서 공유: 이메일 예약 기능으로 정기적으로 보고서 받아보기"
 permalink: /blog/ga4-schedule-email/
 categories:
   - blog
