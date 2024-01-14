@@ -18,7 +18,7 @@ nohze:
   avatar: /images/authors/nohze.jpg
   bio: 퇴근시간을 당겨주는 디지털 마케팅 노하우를 공유합니다.
   blog: https://nohze.com
-  about: # {{site.baseurl}}/about/{{post.author}}
+  
 
 yena:
   name: 김예나
@@ -32,6 +32,7 @@ jay:
   avatar: /images/authors/jay.jpg
   bio:
   blog:
+  
 
 ann:
   name: 이연정
@@ -44,7 +45,7 @@ hong:
   name: 홍승협
   avatar: /images/authors/hong.jpg
   bio: 마케팅을 알고 고객 데이터를 알면 백전백승입니다.
-  blog: https://hongxha.com/
+  blog: https://digitalmarketer.co.kr
   career: 오픈소스마케팅 컨설턴트
 
 habin:
@@ -52,9 +53,11 @@ habin:
   avatar: /images/authors/habin.jpg
   bio:
   blog:
+  
 
 heejun:
   name: 김희준
   avatar: /images/authors/heejun.jpg
   bio: 호기심이 많고 새로운 것을 알아가는 걸 즐깁니다. 생소한 디지털 마케팅 지식을 쉽게 알려드릴게요.
   blog: https://heejun.kim
+  
