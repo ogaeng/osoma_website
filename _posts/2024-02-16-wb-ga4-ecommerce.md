@@ -51,4 +51,4 @@ keywords: [GA,전자상거래,보고서,분석,측정기준,측정항목]
 
 {% include event-speaker.html %}
 
-{% include event-form.html %}
+{% include event-end.html %}
