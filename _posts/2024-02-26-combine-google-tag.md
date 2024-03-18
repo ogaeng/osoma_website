@@ -9,7 +9,7 @@ categories:
   - blog
 date:   2024-02-26 00:10:00 +9:00
 image:  '/images/posts/combine-google-tag/thumb.png'
-tags:   [ga, google-ads]
+tags:   [GA, google-ads]
 description: GA와 Google Ads에서 사용할 수 있는 구글 태그와 그 결합에 대해 알아봅니다.
 keywords: [GA,GA4,구글태그,구글애즈,광고,설치,설정,구성,세팅]
 ---
