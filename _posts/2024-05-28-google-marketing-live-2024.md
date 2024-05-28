@@ -30,7 +30,7 @@ keywords: [Google,GMP,AI,광고,디멘드젠,PMAX,발표,키노트,쇼츠,유튜
 
 ## 실적 최대화(Performance Max) 캠페인 업그레이드
 
-![생성형 AI 광고 제작](/images/posts/google-marketing-live-2024/02.png)
+![PMAX 광고](/images/posts/google-marketing-live-2024/02.png)
 
 ### 새로운 수익 최적화 목표
 
@@ -44,7 +44,7 @@ keywords: [Google,GMP,AI,광고,디멘드젠,PMAX,발표,키노트,쇼츠,유튜
 
 ## 퍼스트 파티(1st-party) 데이터 관리
 
-![생성형 AI 광고 제작](/images/posts/google-marketing-live-2024/03.png)
+![당사쿠키 데이터 관리](/images/posts/google-marketing-live-2024/03.png)
 
 ### 구글 애즈 데이터 매니저 도입
 
@@ -58,7 +58,7 @@ Google Ads Data Manager는 데이터를 안전하게 관리하도록 돕습니�
 
 ## 쇼츠광고를 위한 세로형 영상/이미지 소재 등록 및 쇼츠 스티커 광고
 
-![생성형 AI 광고 제작](/images/posts/google-marketing-live-2024/04.png)
+![쇼츠 광고](/images/posts/google-marketing-live-2024/04.png)
 
 ### 세로형 영상/이미지 추가
 
@@ -72,6 +72,8 @@ Google Ads Data Manager는 데이터를 안전하게 관리하도록 돕습니�
 
 ## YouTube Ads - Brand Connect (파트너십 광고)
 
+![유튜브 광고](/images/posts/google-marketing-live-2024/05.png)
+
 ### Partnership Ads 활용
 
 YouTube BrandConnect를 통해 유튜브 크리에이터가 만든 영상을 광고로 활용할 수 있게 되었습니다. 이는 인플루언서(크리에이터)와 협력하여 우리 브랜드의 메시지를 더욱 효과적으로 전달할 수 있는 방법으로 보입니다. 그동안 이미 많은 브랜드와 인플루언서가 협력하여 제작했던 여러 컨텐츠에서 나아가 자연스럽고 높은 효율의 광고성 콘텐츠가 제작될 것으로 기대됩니다.
@@ -82,7 +84,7 @@ YouTube BrandConnect를 통해 유튜브 크리에이터가 만든 영상을 광
 
 ## Search/Shopping Ads 검색, 쇼핑광고
 
-![생성형 AI 광고 제작](/images/posts/google-marketing-live-2024/05.png)
+![검색 광고](/images/posts/google-marketing-live-2024/06.png)
 
 ### 구글판 브랜드 검색(?) 출시 예정
 
