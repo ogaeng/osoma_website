@@ -45,8 +45,16 @@
     return `${str}.${time}`;
   }
 
+  let platform;
+  if (navigator.userAgent.includes('AppWebview')) {
+    platform = 'app';
+  } else {
+    platform = 'web';
+  }
+
   window.dataLayer = window.dataLayer || [];
   dataLayer.push({
+    'platform': platform,
     'event_id': generateRandomCode(12)
   });
 </script>
