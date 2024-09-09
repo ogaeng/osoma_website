@@ -71,13 +71,13 @@ keywords: [GA,빅쿼리,세팅,분석]
 
 ## BigQuery - GA4 연결하기
 
-1\. Google Analytics 4 계정에서 [설정] 클릭 > 속성에서 스크롤 내려 BigQuery 링크 버튼 클릭합니다.
+1\. Google Analytics 4 계정에서 [관리] 클릭 > 제품 링크 > BigQuery 링크를 클릭합니다.
 
-![GA 링크](/images/posts/ga4-bigquery-connect/09.png)
+![GA 링크](/images/posts/ga4-bigquery-connect/09n.png)
 
 2\. 우측 상단 [연결] 버튼을 클릭합니다.
 
-![GA 연결](/images/posts/ga4-bigquery-connect/10.png)
+![GA 연결](/images/posts/ga4-bigquery-connect/10n.png)
 
 3\. [BigQuery 프로젝트 선택하기] 버튼을 클릭합니다.
 
@@ -91,9 +91,7 @@ keywords: [GA,빅쿼리,세팅,분석]
 
 5\. 데이터 저장 위치를 선택합니다.
 
-인터넷 선을 통해 데이터가 전송되기 때문에, 빠른 송・수신을 위해 가까운 지역을 선택하는 것이 좋습니다.
-
-\* 데이터 저장 위치를 설정할 때는 한국 내 지역이 있다면 한국 선택, 없으면 가까운 지역을 선택하는 것이 좋습니다.
+서비스가 운영되는 지역을 선택하는 것이 좋습니다.
 
 ![리전 선택](/images/posts/ga4-bigquery-connect/13.png)
 
@@ -105,22 +103,28 @@ keywords: [GA,빅쿼리,세팅,분석]
 
 ![옵션 선택](/images/posts/ga4-bigquery-connect/14.png)
 
-7\. 설정을 검토하고 [보내기] 버튼을 클릭하여 GA4 - 빅쿼리 연결 완료
+7\. 사용자 데이터 내보내기 기능 사용 여부를 체크합니다. (사용자 데이터 내보내기 체크 시 빅쿼리에 사용자 테이블이 별도로 생성됩니다)
 
-![연결 완료](/images/posts/ga4-bigquery-connect/15.png)
+![사용자 내보내기 선택](/images/posts/ga4-bigquery-connect/14n.png)
+
+8\. 설정을 검토하고 [보내기] 버튼을 클릭하여 GA4 - 빅쿼리 연결 완료
+
+![연결 완료](/images/posts/ga4-bigquery-connect/15n.png)
 
 ## BigQuery에서 GA4 데이터 보기
 
 ### 빅쿼리에서 GA4 데이터 확인하기
 
-빅쿼리에 데이터가 쌓이기 시작하면 **analytics_xxxxxxxxx** 데이터 세트 안에, events_라는 테이블과 events_intraday_ 두 가지 테이블이 확인되는데요 events_intraday_에는 스트리밍으로 누적된 데이터가, events_에는 일일 데이터가 누적됩니다. 속성 시간대를 기준으로 일일 데이터 표가 생성되며, GA4와 보고서와 마찬가지로 일일 표 업데이트에는 최대 72시간까지 소요될 수 있습니다.
+빅쿼리에 데이터가 쌓이기 시작하면 **analytics_xxxxxxxxx** 데이터 세트 안에, events_라는 테이블과 events_intraday_ 가 기록되고 사용자 데이터 내보내기를 설정했다면 pseudonymous_users_와 users_ 까지 총 네 가지 테이블이 확인되는데요 events_intraday_에는 스트리밍으로 누적된 데이터가, events_에는 일일 데이터가 누적됩니다. 속성 시간대를 기준으로 일일 데이터 표가 생성되며, GA4와 보고서와 마찬가지로 일일 표 업데이트에는 최대 72시간까지 소요될 수 있습니다.
 
-![빅쿼리 리소스](/images/posts/ga4-bigquery-connect/16.png)
+![빅쿼리 리소스](/images/posts/ga4-bigquery-connect/16n.png)
 
 #### GA4 데이터 테이블 유형
 
 - `events_YYYYMMDD`: 매일 진행되는 전체 이벤트 내보내기로 누적된 데이터
 - `events_intraday_YYYYMMDD`: 스트리밍 내보내기로 누적된 데이터, event_YYYYMMDD 테이블 완료 시 events_intraday_YYYYMMDD는 삭제됨
+- `pseudonymous_users_YYYYMMDD`: 임의로 부여된 익명의 식별자(Client ID, App Instance ID)를 사용해서 수집된 사용자 데이터
+- `users_YYYYMMDD`: user_id를 기반으로 기록된 사용자 데이터
 
 #### 빅쿼리의 주요 데이터 저장 유형
 
