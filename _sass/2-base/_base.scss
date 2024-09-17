@@ -228,6 +228,14 @@ table {
   text-align: center;
   border-collapse: collapse;
   color: var(--heading-font-color);
+
+  @media only screen and (max-width: $tablet) {
+    word-break: break-all;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    word-break: break-all;
+  }
 }
 
 table th {

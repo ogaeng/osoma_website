@@ -35,10 +35,6 @@ li.search_result_list {
 }
 
 // Footer custom
-.footer_recent_post_title {
-  font-size: 0.9rem;
-}
-
 .footer_content h3 {
   font-size: 1.2rem;
   margin-bottom: 16px;
@@ -138,6 +134,11 @@ ul.data-list-style li {
 .footer_recent_div {
   max-height: 60px;
   margin-bottom: 10px;
+  font-size: 0.9rem;
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 0.8rem;
+  }
 }
 
 .grecaptcha-badge {
