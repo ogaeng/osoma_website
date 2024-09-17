@@ -3,7 +3,7 @@ layout: post
 division: blog
 author: habin
 ids: bigquery-users-table-explain
-title:  "GA4 데이터 분석을 위한 빅쿼리(BigQuery) 스키마 - 사용자(users) 테이블 편"
+title:  "GA4 데이터 분석을 위한 빅쿼리(BigQuery) 스키마(2) - 사용자(users) 테이블 편"
 permalink: /blog/bigquery-users-table-explain
 categories:
   - blog
@@ -19,6 +19,12 @@ GA4는 단순히 이벤트 데이터를 수집하는 것에 그치지 않고, �
 만약 GA4 데이터를 BigQuery로 내보내는 과정이나 테이블 구조, 필드가 아직 익숙하지 않다면, 아래 링크를 통해 이전 글을 먼저 참고해 주세요.
 
 > [GA4 데이터 분석을 위한 빅쿼리(BigQuery) 스키마 정리 - 이벤트(events) 테이블 편](https://osoma.kr/blog/bigquery-events-table-explain/){:target="_blank"}
+
+## 목차
+
+1. [사용자(users) 테이블](#사용자users-테이블)
+2. [익명 사용자(pseudonymous_users) 테이블](#익명-사용자pseudonymous_users-테이블)
+3. [사용자 테이블 필드 목록](#사용자-테이블-필드-목록)
 
 ![사용자 테이블 구조](/images/posts/bigquery-users-table-explain/01.png)
 

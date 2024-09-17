@@ -3,7 +3,7 @@ layout: post
 division: blog
 author: habin
 ids: bigquery-events-table-explain
-title:  "GA4 데이터 분석을 위한 빅쿼리(BigQuery) 스키마 - 이벤트(events) 테이블 편"
+title:  "GA4 데이터 분석을 위한 빅쿼리(BigQuery) 스키마(1) - 이벤트(events) 테이블 편"
 permalink: /blog/bigquery-events-table-explain
 categories:
   - blog
@@ -19,6 +19,13 @@ keywords: [GA,빅쿼리,BigQuery,SQL,분석,GCP,스키마,필드,이벤트]
 이미 오래 전부터 국내외 많은 데이터 분석가들의 예측한 대로 빅쿼리의 중요성은 꾸준히 증가해왔고 지금도 현재 진행형입니다. 특히 개인정보 보호 정책 강화 등의 이유로 데이터 분석에 많은 제약이 생기면서 ‘GA4 활용을 위한 빅쿼리의 중요성’은 더욱 커지고 있습니다. 오픈소스마케팅도 최근 빅쿼리 도입과 교육을 위한 컨설팅 문의가 증가하면서 GA4와 빅쿼리 활용의 중요성에 공감하고 빠르게 활용하고자 하는 고객사들이 점점 더 많아지고 있음을 체감하고 있는데요. 
 
 이번 글에서는 빅쿼리 활용, 그 시작을 고민하고 계신 분들을 위해 빅쿼리를 활용한 GA4 데이터 분석의 가장 기초가 되는 내용인 GA4 데이터를 BigQuery로 내보내는 과정과 그 결과 생성되는 테이블 구조를 알아보겠습니다.
+
+## 목차
+
+1. [GA4 데이터를 빅쿼리(BigQuery)로 내보내기](#ga4-데이터를-빅쿼리bigquery로-내보내기)
+2. [빅쿼리(BigQuery)와 GA4의 연결 구조 이해하기](#빅쿼리bigquery와-ga4의-연결-구조-이해하기)
+3. [빅쿼리(BigQuery) 테이블 구조와 필드 이해하기](#빅쿼리bigquery-테이블-구조와-필드-이해하기)
+4. [이벤트(events) 테이블의 필드 이해하기](#이벤트events-테이블의-필드-이해하기)
 
 ## GA4 데이터를 빅쿼리(BigQuery)로 내보내기
 
