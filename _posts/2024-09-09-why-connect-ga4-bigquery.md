@@ -4,7 +4,7 @@ division: blog
 author: yena
 ids: why-connect-ga4-bigquery
 title:  "GA4와 빅쿼리(BigQuery)를 지금 바로 연결해야 하는 이유"
-permalink: /blog/why-connect-ga4-bigquery
+permalink: /blog/why-connect-ga4-bigquery/
 categories:
   - blog
 date:   2024-09-09 00:00:00 +9:00

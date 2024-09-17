@@ -4,7 +4,7 @@ division: blog
 author: habin
 ids: bigquery-users-table-explain
 title:  "GA4 데이터 분석을 위한 빅쿼리(BigQuery) 스키마(2) - 사용자(users) 테이블 편"
-permalink: /blog/bigquery-users-table-explain
+permalink: /blog/bigquery-users-table-explain/
 categories:
   - blog
 date:   2024-09-17 23:05:00 +9:00

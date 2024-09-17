@@ -4,7 +4,7 @@ division: blog
 author: habin
 ids: bigquery-events-table-explain
 title:  "GA4 데이터 분석을 위한 빅쿼리(BigQuery) 스키마(1) - 이벤트(events) 테이블 편"
-permalink: /blog/bigquery-events-table-explain
+permalink: /blog/bigquery-events-table-explain/
 categories:
   - blog
 date:   2024-09-17 23:00:00 +9:00

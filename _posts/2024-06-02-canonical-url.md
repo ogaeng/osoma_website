@@ -4,7 +4,7 @@ division: blog
 author: hong
 ids: canonical-url
 title:  "SEO의 핵심, 표준 URL이란 무엇인가?"
-permalink: /blog/canonical-url
+permalink: /blog/canonical-url/
 categories:
   - blog
 date:   2024-06-02 12:00:00 +9:00
