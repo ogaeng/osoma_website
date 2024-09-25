@@ -44,17 +44,6 @@ GA4나 앰플리튜드 같은 분석 도구는 우리 웹사이트에 스크립�
 
 > * 참고사항: 메이크샵/카페24 쇼핑몰에 한하여 서비스를 지원합니다.
 
-## 신규 서비스 출시 이벤트
-
-신규 서비스 출시 기념으로 2024년 4월까지 분석 도구 구축 문의를 남겨주시는 기업에 한하여 간편 결제 추적이 포함된 GA4/Amplitude 분석 환경 구축 에센셜 플랜 서비스를 20% 할인된 금액으로 제공합니다.
-
-![GA4 구축 프로세스](/images/posts/npay-event/04.png)
-
-- 이벤트 기간: 2024년 4월 30일까지
-- 이벤트 대상: 이벤트 기간 중 GA4/앰플리튜드 구축 문의를 남겨주신 메이크샵/카페24 쇼핑몰 사용 고객
-- 이벤트 내용: 에센셜 플랜 상품 20% 할인(간편결제 추적 포함)
-- 할인 적용가: 240만원(VAT 별도)
-
 <section class="subscribe section">
   <div class="container">
     <div class="row">
@@ -63,7 +52,7 @@ GA4나 앰플리튜드 같은 분석 도구는 우리 웹사이트에 스크립�
           <div class="subscribe__info">
             <div class="subscribe-form">
               <a onclick="openContactForm();" class="button button--big subscribe-button text-white" data-tag-index="footer_contents" data-tag-content="컨설팅 문의하기_블로그 본문">
-                지금 문의하고 할인받기
+                지금 문의하기
               </a>
             </div>
             <div class="subscribe-form mt-3">
