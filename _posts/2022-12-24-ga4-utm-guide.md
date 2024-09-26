@@ -3,7 +3,7 @@ layout: post
 division: blog
 author: hong
 ids: ga4-utm-guide
-title:  "구글 애널리틱스 4 사용자를 위한 UTM 실전 가이드"
+title:  "구글 애널리틱스 4(GA4) 사용자를 위한 UTM 실전 가이드"
 permalink: /blog/ga4-utm-guide/
 categories:
   - blog
