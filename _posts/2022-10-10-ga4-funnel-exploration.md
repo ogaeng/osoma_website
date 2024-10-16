@@ -40,7 +40,7 @@ GA4에서 가장 매력적인 기능을 꼽으라고 한다면 바로 이 유입
 - GA4(firebase)에서 자동으로 수집되는 이벤트 외 비즈니스에 필요한 맞춤 이벤트를 설정해야 합니다.
 - 유입 경로 보고서에서 보고 싶은 사용자 속성과 매개변수를 맞춤 측정기준으로 등록해야 합니다.
 
-> 유입경로 보고서 활용을 위한 GA4 컨설팅 문의가 필요하다면 <a class="blank_link" onclick="openContactForm();" data-tag-index="post" data-tag-content="컨설팅 문의">여기</a>를 클릭해 주세요.
+> 유입경로 보고서 활용을 위한 GA4 컨설팅 문의가 필요하다면 <a class="blank_link" onclick="openContactForm();">여기</a>를 클릭해 주세요.
 
 <div id="chapter3"></div>
 ## 3. GA4 유입경로 보고서 활용 팁
@@ -82,7 +82,7 @@ GA4에서 제공하는 특별한 보고서들은 대부분 탐색 메뉴에서 �
 5. 구매: 이벤트명이 purchase인 구매 이벤트가 수집되었을 때
     - (주의) 만약 구매 정보를 purchase 이벤트로 수집하지 않는다면 GA4에서 구매와 관련된 지표를 볼 수 없습니다.
 
-> GA4 이벤트 세팅에 대한 컨설팅이 필요하다면 <a class="blank_link" onclick="openContactForm();" data-tag-index="post" data-tag-content="컨설팅 문의">여기</a>를 클릭해주세요.
+> GA4 이벤트 세팅에 대한 컨설팅이 필요하다면 <a class="blank_link" onclick="openContactForm();">여기</a>를 클릭해주세요.
 
 ### 유입경로 탐색 분석 보고서 항목별 기능 알아보기
 

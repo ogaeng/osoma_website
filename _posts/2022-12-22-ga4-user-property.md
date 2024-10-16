@@ -153,7 +153,7 @@ GA4 접속 → 왼쪽 사이드 하단 관리 아이콘 클릭 → 속성 → �
 
 그러므로 이벤트 정의서를 작성할 때 사용자 속성으로 어떤 걸 기록할지 미리 고려해둔 뒤 작성을 해야 합니다. 아직 이벤트 정의서에 대해 개념이 명확하지 않으시다면 [이벤트 정의서와 작성 방법](https://osoma.kr/blog/how-to-write-event-definition/){:target="_blank"} 글을 참고해보세요
 
-> 사용자 속성을 고려한 이벤트 정의서 작성을 위한 컨설팅 문의가 필요하다면 <a class="blank_link" onclick="openContactForm();" data-tag-index="post" data-tag-content="컨설팅 문의">여기</a>를 클릭해주세요.
+> 사용자 속성을 고려한 이벤트 정의서 작성을 위한 컨설팅 문의가 필요하다면 <a class="blank_link" onclick="openContactForm();">여기</a>를 클릭해주세요.
 
 이렇게 세팅된 사용자 속성은 GA4의 다양한 곳에서 활용됩니다. 어떻게 활용되는지 차근차근 알아보도록 하겠습니다.
 
