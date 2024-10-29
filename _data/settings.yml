@@ -15,9 +15,7 @@ menu__settings:
       url: "/"
     - title: "Blog"
       url: "/blog/"
-    - title: "Data"
-      url: "/data-consulting/"
-    - title: "GA4"
+    - title: "GA4(Data)"
       url: "/ga-consulting/"
     - title: "Edu"
       url: "https://edu.osoma.kr/"
@@ -111,7 +109,7 @@ social:
 
 introduce_file: https://drive.google.com/file/d/1r6mJ-qBfcgREjrxifVmBE7ryNrBK1Cfm/view?usp=sharing
 
-data_intro_file: https://drive.google.com/file/d/1Q_rAfsZ7xugelg6dWz58z6VBS0nEHQh7/view?usp=sharing
+data_intro_file: https://drive.google.com/file/d/1OUVhsWs5lINJsm0ZNmGZlJO0yt2fu1yT/view?usp=sharing
 
 footer_contents:
   blog:
