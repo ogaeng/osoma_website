@@ -8,79 +8,64 @@
           <i class="ion ion-md-close"></i>
         </div>
 
-        <div class="form-box">
-          <div class="contact-head">
-            {% if site.data.settings.contact__settings.contact__title %}
-            <h2 class="contact-title">{{ site.data.settings.contact__settings.contact__title }}</h2>
-            {% endif %}
-            {% if site.data.settings.contact__settings.contact__description %}
-            <p class="contact-description">{{ site.data.settings.contact__settings.contact__description }}</p>
-            {% endif %}
-            <p class="contact-description"><i class="ion ion-ios-mail-unread"></i> <a href="mailto:contact@osoma.kr"
-                data-tag-index="contact" data-tag-content="이메일">contact@osoma.kr</a></p>
-          </div>
+        <form id="contact" class="form" action="https://ctapi.osoma.kr/contact" method="POST" target="contactblankiframe" onsubmit="return false;">
+          <div class="form__left-column">
+            <div class="contact-head">
+              {% if site.data.settings.contact__settings.contact__title %}
+              <h2 class="contact-title">{{ site.data.settings.contact__settings.contact__title }}</h2>
+              {% endif %}
+              {% if site.data.settings.contact__settings.contact__description %}
+              <p class="contact-description">{{ site.data.settings.contact__settings.contact__description }}</p>
+              {% endif %}
+              <p class="contact-description"><i class="ion ion-ios-mail-unread"></i> <a href="mailto:contact@osoma.kr"
+                  data-tag-index="contact" data-tag-content="이메일">contact@osoma.kr</a></p>
+            </div>
 
-          <div class="contact__btn__div">
-            <a class="contact__btn" href="{{site.data.settings.introduce_file}}" target="_blank"
-              data-tag-index="contact" data-tag-content="서비스 소개서 보기">
-              <span class="circle-bg"><i class="ion ion-md-arrow-down button-arrow"></i></span> 서비스 소개서 보기
-            </a>
-          </div>
+            <div class="contact__btn__div">
+              <a class="contact__btn" href="{{site.data.settings.introduce_file}}" target="_blank"
+                data-tag-index="contact" data-tag-content="서비스 소개서 보기">
+                <span class="circle-bg"><i class="ion ion-md-arrow-down button-arrow"></i></span> 서비스 소개서 보기
+              </a>
+            </div>
 
-          <form id="contact" class="form" action="https://ctapi.osoma.kr/contact" method="POST" target="contactblankiframe">
             <input type="hidden" id="cid" name="cid" value="" />
             <input type="hidden" id="location" name="location" value="" />
 
-            <!-- <div class="form__group">
-                <select id="form-select" class="form-select form__input" aria-label="문의 구분" name="index">
-                  <option selected disabled>이 곳을 눌러 문의 유형을 선택하세요</option>
-                  <option value="신규런칭-전략수립">신규 런칭/전략 수립</option>
-                  <option value="데이터 분석 환경 구축">데이터 분석 환경 구축</option>
-                  <option value="유입 극대화">유입 극대화</option>
-                  <option value="고객 행동 분석">고객 행동 분석</option>
-                  <option value="광고 최적화">광고 최적화</option>
-                  <option value="내부 역량 강화">내부 역량 강화</option>
-                </select>
-              </div> -->
             <div class="form__group">
-              <label class="form__label screen-reader-text" for="form-name">이름</label>
               <input class="form__input" id="form-name" type="text" name="name" placeholder="담당자 이름" required>
             </div>
             <div class="form__group">
-              <label class="form__label screen-reader-text" for="form-email">Email</label>
               <input class="form__input" id="form-email" type="email" name="email" placeholder="담당자 이메일 주소" required>
             </div>
             <div class="form__group">
-              <label class="form__label screen-reader-text" for="form-phone">연락처</label>
               <input class="form__input" id="form-phone" type="tel" name="phone" placeholder="담당자 연락처(선택)">
             </div>
             <div class="form__group">
-              <label class="form__label screen-reader-text" for="form-company">회사명/서비스명</label>
               <input class="form__input" id="form-company" type="text" name="company" placeholder="회사명/서비스명" required>
             </div>
-            <!-- <div class="form__group">
-                <label class="form__label screen-reader-text" for="form-website">웹사이트</label>
-                <input class="form__input" id="form-website" type="text" name="website" placeholder="웹사이트 주소" required>
-              </div> -->
+          </div>
+          
+          <div class="form__right-column">
             <div class="form__group">
-              <label class="form__label screen-reader-text" for="form-text">문의 내용</label>
-              <textarea class="form__input" id="form-text" name="message" rows="8" placeholder="여기에 문의 내용을 입력해주세요. 
+              <textarea class="form__input" id="form-text" name="message" placeholder="여기에 문의 내용을 입력해주세요. 
 
-현재 고민 상황, 서비스의 링크, 오픈소스마케팅에게 컨설팅 받기를 원하는 영역 등을 입력해주시면 더욱 좋습니다."
-                required></textarea>
+현재 고민 상황, 서비스의 링크, 오픈소스마케팅에게 컨설팅 받기를 원하는 영역 등을 입력해주시면 더욱 좋습니다" required></textarea>
             </div>
+            
             <div class="form__group form__group-button">
               <button type="submit" class="button button--middle g-recaptcha" data-callback="formSubmit" data-sitekey="6LeCcoEhAAAAABX3zxn3bw3tXPSPiYPcBjD1QvfO" data-action="submit" data-badge="inline">전송하기 <i class="ion ion-ios-paper-plane"></i></button>
             </div>
-          </form>
 
-          <div class="col col-12" style="display:none;" id="contact_complete">
-              <h4 class="text-center">문의가 제출되었습니다.</h4>
+            <p class="t-tiny mt-3 text-center">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
           </div>
-          <iframe name="contactblankiframe" style="display:none;"></iframe>
-          <p class="t-tiny">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
 
+        </form>
+
+        <div class="col col-12" style="display:none;" id="contact_complete">
+          <h4 class="text-center">문의가 제출되었습니다.</h4>
+          <p class="text-center">오픈소스마케팅에서 빠른 시일 내에 답변 드리겠습니다.</p>
         </div>
+        <iframe name="contactblankiframe" style="display:none;"></iframe>
 
       </div>
     </div>
@@ -113,12 +98,34 @@
       'value': contents
     });
 
-    document.getElementById("contact").submit();
+    const formData = new FormData(document.getElementById('contact'));
 
-    document.getElementById('contact').style.display = 'none'; // hide form
-    document.getElementById('contact_complete').style.display = 'block';
+    const contactForm = document.getElementById('contact');
+    const completeMessage = document.getElementById('contact_complete');
+    
+    fetch('https://ctapi.osoma.kr/contact', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        console.log('Response status:', response.status);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response;
+    })
+    .then(() => {
+        contactForm.style.display = 'none';
+        completeMessage.style.display = 'block';
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        contactForm.style.display = 'none';
+        completeMessage.style.display = 'block';
+    });
+
+    return false;
   };
-  // document.querySelector('#contact').addEventListener('submit', formSubmit);
 
   window.onload = function() {
     var popupElement = document.querySelector('#contact-modal');
