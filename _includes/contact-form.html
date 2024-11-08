@@ -61,10 +61,20 @@
 
         </form>
 
-        <div class="col col-12" style="display:none;" id="contact_complete">
-          <h4 class="text-center">문의가 제출되었습니다.</h4>
-          <p class="text-center">오픈소스마케팅에서 빠른 시일 내에 답변 드리겠습니다.</p>
+        <div class="col col-12 contact-success" style="display:none;" id="contact_complete">
+          <div class="success-icon">
+            <i class="ion ion-md-checkmark-circle-outline"></i>
+          </div>
+          <h4 class="success-title">문의가 제출되었습니다</h4>
+          <p class="success-message">오픈소스마케팅에서 빠른 시일 내에 답변 드리겠습니다</p>
         </div>
+        
+        <!-- 로딩 인디케이터 추가 -->
+        <div class="col col-12 mt-5" style="display:none;" id="contact_loading">
+          <div class="loading-spinner"></div>
+          <p class="text-center">문의를 전송중입니다...</p>
+        </div>
+
         <iframe name="contactblankiframe" style="display:none;"></iframe>
 
       </div>
@@ -102,9 +112,15 @@
 
     const contactForm = document.getElementById('contact');
     const completeMessage = document.getElementById('contact_complete');
+    const loadingMessage = document.getElementById('contact_loading');
+    
+    // 폼을 숨기고 로딩 표시
+    contactForm.style.display = 'none';
+    loadingMessage.style.display = 'block';
     
     fetch('https://ctapi.osoma.kr/contact', {
         method: 'POST',
+        credentials: 'include',
         body: formData
     })
     .then(response => {
@@ -115,12 +131,12 @@
         return response;
     })
     .then(() => {
-        contactForm.style.display = 'none';
+        loadingMessage.style.display = 'none';
         completeMessage.style.display = 'block';
     })
     .catch(error => {
         console.error('Error:', error);
-        contactForm.style.display = 'none';
+        loadingMessage.style.display = 'none';
         completeMessage.style.display = 'block';
     });
 

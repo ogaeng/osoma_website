@@ -288,3 +288,68 @@
 #contact_complete {
   margin-top: 200px;
 }
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.contact-success {
+  margin: 120px auto;
+  max-width: 500px;
+  text-align: center;
+  animation: fadeInUp .4s ease-in-out;
+  
+  .success-icon {
+    margin-bottom: 24px;
+    
+    i {
+      font-size: 72px;
+      color: $primary-color;
+      animation: scaleIn .5s ease-in-out;
+    }
+  }
+  
+  .success-title {
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 800;
+    color: $text-color;
+  }
+  
+  .success-message {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba($text-color, 0.8);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
