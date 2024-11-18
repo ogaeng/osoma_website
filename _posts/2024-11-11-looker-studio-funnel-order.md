@@ -9,7 +9,7 @@ categories:
   - blog
 date:   2024-11-11 00:30:00 +9:00
 image:  '/images/posts/looker-studio-funnel-order/thumb.png'
-tags:   [looker-studio, data-visualization]
+tags:   [looker-studio, visual]
 description: 루커 스튜디오에서 퍼널 차트를 만들고 CASE 문을 활용해 단계별 순서를 고정하는 방법을 알아봅니다.
 keywords: [루커스튜디오,시각화,퍼널,순서,고정,데이터,CASE,분석]
 ---

@@ -11,7 +11,7 @@ categories:
   - data-visualization
 date:   2023-01-10 01:00:00 +9:00
 image:  '/images/posts/looker-studio-case-function/thumb.png'
-tags:   [looker-studio, data-visualization]
+tags: [looker-studio, visual]
 description: Looker Studio(Data Studio)에서 CASE 함수를 사용하는 방법을 예시와 함께 소개합니다.
 keywords: [루커스튜디오,함수,분석,보고서,시각화]
 ---

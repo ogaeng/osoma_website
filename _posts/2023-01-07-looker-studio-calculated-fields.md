@@ -11,7 +11,7 @@ categories:
   - data-visualization
 date:   2023-01-07 01:00:00 +9:00
 image:  '/images/posts/looker-studio-calculated-fields/thumb.png'
-tags:   [looker-studio, data-visualization]
+tags:   [looker-studio, visual]
 description: Looker Studio(Data Studio)에서 계산된 필드를 사용하는 방법에 대해 소개합니다.
 keywords: [루커스튜디오,함수,시각화,분석]
 ---
