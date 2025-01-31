@@ -1,6 +1,6 @@
 ---
 layout: post
-index: blog
+division: blog
 author: yena
 ids: ad-targeting-personal-protection
 title:  "디지털 광고 타겟팅 기법과 개인정보보호 규제 속 광고 타겟팅의 미래"

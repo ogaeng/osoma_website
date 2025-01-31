@@ -1,6 +1,6 @@
 ---
 layout: post
-index: blog
+division: blog
 author: nohze
 ids: understand-da-02
 title:  "디스플레이 광고 이해하기 2 : DA 광고시장"

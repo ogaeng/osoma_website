@@ -1,6 +1,6 @@
 ---
 layout: post
-index: blog
+division: blog
 author: yena
 ids: google-ads-script-01
 title:  "Google Ads Script로 구글 광고 잔액 소진 알림 보내기"

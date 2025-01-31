@@ -1,6 +1,6 @@
 ---
 layout: post
-index: blog
+division: blog
 author: yena
 ids: understand-sa-01
 title:  "검색 광고 이해하기 1 : 검색 광고 말고는 전환이 안나오는데... 다른 광고, 꺼도 될까?"

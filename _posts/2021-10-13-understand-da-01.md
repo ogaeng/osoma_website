@@ -1,6 +1,6 @@
 ---
 layout: post
-index: blog
+division: blog
 author: nohze
 ids: understand-da-01
 title:  "디스플레이 광고 이해하기 1 : DA의 특징"

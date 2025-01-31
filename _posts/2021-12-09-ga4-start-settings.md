@@ -1,6 +1,6 @@
 ---
 layout: post
-index: blog
+division: blog
 author: nohze
 ids: ga4-start-settings
 title:  "GA4 설치 후 바로 세팅해야 하는 5가지"

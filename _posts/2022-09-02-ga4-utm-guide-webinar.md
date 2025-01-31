@@ -1,6 +1,6 @@
 ---
 layout: event
-index: event
+division: event
 author: osoma
 speaker: ogaeng
 ids: ga4-utm-guide-webinar

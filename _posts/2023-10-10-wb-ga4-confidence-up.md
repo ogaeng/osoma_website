@@ -1,6 +1,6 @@
 ---
 layout: event
-index: event
+division: event
 author: osoma
 speaker1: hong
 speaker2: ann

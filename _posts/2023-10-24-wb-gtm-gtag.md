@@ -1,6 +1,6 @@
 ---
 layout: event
-index: event
+division: event
 author: osoma
 speaker: ogaeng
 ids: wb-gtm-gtag

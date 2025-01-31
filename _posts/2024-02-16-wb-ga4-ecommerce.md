@@ -1,6 +1,6 @@
 ---
 layout: event
-index: event
+division: event
 author: osoma
 speaker: ogaeng
 ids: wb-ga4-ecommerce

@@ -1,6 +1,6 @@
 ---
 layout: post
-index: blog
+division: blog
 author: yena
 ids: lookalike-sa
 title:  "검색 광고는 다 똑같을까? 구글과 네이버 검색 광고의 차이점 알아보기"
