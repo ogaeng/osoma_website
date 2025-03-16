@@ -1,71 +1,88 @@
-<div class="contact-head" style="margin-top:8em;">
-  <h2 class="contact-title">참가 신청하기</h2>
-</div>
-
-<form id="eventReg" class="form" action="https://evapi.osoma.kr" method="POST" target="blankiframe">
-  <input type="hidden" name="event" value="{{page.title}}" />
-  <input type="hidden" name="event_id" value="{{page.ids}}" />
-  <input type="hidden" id="event-cid" name="cid" value="" />
-  <div class="form__group">
-    <label class="form__label screen-reader-text" for="event-name">이름</label>
-    <input class="form__input" id="event-name" type="text" name="name" placeholder="이름" required>
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <h2 class="event-form-title">참가 신청하기</h2>
+      
+      <form id="eventReg" class="event-form" action="https://evapi.osoma.kr" method="POST" target="blankiframe">
+        <input type="hidden" name="event" value="{{page.title}}" />
+        <input type="hidden" name="event_id" value="{{page.ids}}" />
+        <input type="hidden" id="event-cid" name="cid" value="" />
+        
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="event-name" name="name" placeholder="이름" required>
+          <label for="event-name">이름</label>
+        </div>
+        
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="event-company" name="company" placeholder="소속회사">
+          <label for="event-company">소속회사</label>
+        </div>
+        
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="event-email" name="email" placeholder="이메일 주소" required>
+          <label for="event-email">이메일 주소</label>
+        </div>
+        
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="event-phone" name="phone" placeholder="휴대전화번호(010-1234-5678)" required>
+          <label for="event-phone">휴대전화번호(010-1234-5678)</label>
+        </div>
+        
+        <div class="form-floating mb-4">
+          <textarea class="form-control" id="event-question" name="question" style="height: 150px" placeholder="사전 질문 내용(선택 사항)"></textarea>
+          <label for="event-question">사전 질문 내용(선택 사항)</label>
+        </div>
+        
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="event-agree" required>
+          <label class="form-check-label" for="event-agree">
+            (필수) <a href="/privacy-policy/" target="_blank" class="text-decoration-none">행사 안내를 위한 개인 정보 수집</a>에 동의합니다.
+          </label>
+        </div>
+        
+        <div class="form-check mb-4">
+          <input name="newsletter-agree" class="form-check-input" type="checkbox" value="" id="newsletter-agree">
+          <label class="form-check-label" for="newsletter-agree">
+            (선택) <a href="/marketing-agree/" target="_blank" class="text-decoration-none">서비스 및 운영 프로그램 소개 및 최신 소식에 대한 메일 수신</a>에 동의합니다.
+          </label>
+        </div>
+        
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary btn-lg" type="submit">
+            신청하기 <i class="bi bi-send"></i>
+          </button>
+        </div>
+      </form>
+      
+      <div class="event-success mt-4" style="display:none;" id="submit_complete">
+        <h4>신청이 완료되었습니다.</h4>
+        <p class="mb-0">
+          1시간 이내로 등록 확정 메일이 도착합니다.<br>
+          1시간 후에도 메일이 도착하지 않는다면 메일함의 스팸, 프로모션 탭 등을 확인해주세요.
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="form__group">
-    <label class="form__label screen-reader-text" for="event-company">소속회사</label>
-    <input class="form__input" id="event-company" type="text" name="company" placeholder="소속회사">
-  </div>
-  <div class="form__group">
-    <label class="form__label screen-reader-text" for="event-email">Email</label>
-    <input class="form__input" id="event-email" type="email" name="email" placeholder="이메일 주소" required>
-  </div>
-  <div class="form__group">
-    <label class="form__label screen-reader-text" for="event-phone">휴대 전화 번호</label>
-    <input class="form__input" id="event-phone" type="text" name="phone" placeholder="휴대전화번호(010-1234-5678)" required>
-  </div>
-  <div class="form__group">
-    <label class="form__label screen-reader-text" for="event-question">사전 질문 내용</label>
-    <textarea class="form__input" id="event-question" name="question" rows="8" placeholder="사전 질문 내용(선택 사항)"></textarea>
-  </div>
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="event-agree" required>
-    <label class="form__label form-check-label" for="event-agree">(필수)<a href="/privacy-policy/" target="_blank">행사 안내를 위한 개인 정보 수집</a>에 동의합니다.</label>
-  </div>
-  <div class="form-check">
-    <input name="newsletter-agree" class="form-check-input" type="checkbox" value="" id="newsletter-agree">
-    <label class="form__label form-check-label" for="newsletter-agree">(선택)<a href="/marketing-agree/" target="_blank">서비스 및 운영 프로그램 소개 및 최신 소식에 대한 메일 수신</a>에 동의합니다.</label>
-  </div>
-
-  <div style="padding-top:3.2rem;">
-  </div>
-
-  <div class="form__group form__group-button">
-    <button class="button button--middle" type="submit">신청하기 <i class="ion ion-ios-paper-plane"></i></button>
-  </div>
-</form>
-
-<div class="col col-12" style="display:none;" id="submit_complete">
-  <h4 class="text-center">신청이 완료되었습니다.</h4>
-  <p class="text-center">
-    1시간 이내로 등록 확정 메일이 도착합니다.<br>
-    1시간 후에도 메일이 도착하지 않는다면 메일함의 스팸, 프로모션 탭 등을 확인해주세요.
-  </p>
 </div>
 
 <iframe name="blankiframe" style="display:none;"></iframe>
 
 <!-- 신청 완료 Modal -->
-<div id="eventSubmitModal" class="modal" tabindex="-1">
-  <div class="modal-dialog">
+<div class="modal fade" id="eventSubmitModal" tabindex="-1" aria-labelledby="eventSubmitModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">신청 완료</h5>
+        <h5 class="modal-title" id="eventSubmitModalLabel">신청 완료</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>
-          참가 신청이 완료되었습니다.<br>
-          1시간 이내로 등록 확정 메일이 도착합니다.
-        </p>
+        <div class="text-center">
+          <i class="bi bi-check-circle text-success" style="font-size: 3rem;"></i>
+          <p class="mt-3">
+            참가 신청이 완료되었습니다.<br>
+            1시간 이내로 등록 확정 메일이 도착합니다.
+          </p>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
@@ -73,7 +90,6 @@
     </div>
   </div>
 </div>
-
 
 <script>
   window.addEventListener('load', function () {

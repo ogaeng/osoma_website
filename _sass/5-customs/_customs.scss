@@ -179,3 +179,50 @@ ul.data-list-style li {
   background: rgba(0,0,0,0.5);
   z-index: 2;
 }
+
+// Event Form
+#eventReg {
+  margin-bottom: 5rem;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.event-form-title {
+  color: #212529;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.event-form .form-floating {
+  margin-bottom: 1.5rem;
+}
+
+.event-form .form-check {
+  margin-bottom: 1rem;
+}
+
+.event-form .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.event-form .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  transform: translateY(-2px);
+}
+
+.event-success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
