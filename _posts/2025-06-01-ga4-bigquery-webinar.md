@@ -60,4 +60,4 @@ keywords: [GA,빅쿼리,BigQuery,데이터마트,웨어하우스,SQL,GCP]
 
 {% include event-speaker.html %}
 
-{% include event-form.html %}
+{% include event-end.html %}
