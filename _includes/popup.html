@@ -1,4 +1,4 @@
-<div id="post_top_popup" class="container-fluid position-fixed top-0 start-0">
+<!-- <div id="post_top_popup" class="container-fluid position-fixed top-0 start-0">
   <div class="row">
     <div class="col col-12 text-center text-white">
       <a id="close-post-top-popup" type="button" class="btn-close btn-close-white popup-top-x" aria-label="Close" data-tag-index="popup" data-tag-content="팝업_닫기"></a>
@@ -11,22 +11,22 @@
       {% endif %}
     </div>
   </div>
-</div>
+</div> -->
 
-<!-- <div id="post_top_popup" class="container-fluid position-fixed top-0 start-0">
+<div id="post_top_popup" class="container-fluid position-fixed top-0 start-0">
   <div class="row">
     <div class="col col-12 text-center text-white">
       <a id="close-post-top-popup" type="button" class="btn-close btn-close-white popup-top-x" aria-label="Close" data-tag-index="popup" data-tag-content="팝업_닫기"></a>
       {% if page.tags contains 'GA' or page.tags contains 'GTM' or page.tags contains 'bigquery' %}
-        <h4 id="popup_text" class="popup-top-heading">'빅쿼리를 활용하기 전 꼭 알아야 할 것들' 웨비나를 신청하세요!</h4>
-        <a type="button" href="{{ '/event/ga4-bigquery-webinar/' | relative_url }}" class="popup-top-button btn btn-light"  data-tag-index="popup" data-tag-content="팝업_웨비나 신청하기">웨비나 신청하기</a>
+        <h4 id="popup_text" class="popup-top-heading">'프롬프트만으로 GA4 데이터 불러오기! GA MCP X Gemini CLI 실습' 웨비나를 신청하세요!</h4>
+        <a type="button" href="{{ '/event/ga4-gemini-mcp-webinar/' | relative_url }}" class="popup-top-button btn btn-light"  data-tag-index="popup" data-tag-content="팝업_웨비나 신청하기">웨비나 신청하기</a>
       {% else %}
         <h4 id="popup_text" class="popup-top-heading">우리 회사에 맞는 디지털 마케팅 진단이 필요하신가요?</h4>
         <a type="button" onclick="openContactForm();" class="popup-top-button btn btn-light" data-tag-index="popup" data-tag-content="팝업_컨설팅 상담 요청하기">상담 요청하기</a>
       {% endif %}
     </div>
   </div>
-</div> -->
+</div>
 
 <script>
   document.getElementById('main_header').className += " popup-header";
