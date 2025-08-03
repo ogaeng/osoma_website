@@ -56,4 +56,4 @@ Gemini, Claude, ChatGPT 등 다양한 생성형 AI 도구가 마케팅 실무에
 
 {% include event-speaker.html %}
 
-{% include event-form.html %}
+{% include event-end.html %}
