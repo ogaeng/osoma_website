@@ -115,6 +115,10 @@ Our team consists of certified Google Analytics experts and growth hackers who u
 - **Privacy & Compliance**: GDPR/CCPA compliance, consent management, data retention
 - **Marketing Attribution**: Multi-touch attribution, data-driven attribution, incrementality testing
 
+## Documentation
+
+- https://osoma.kr/ga-consulting.md
+
 ## Articles
 
 - [디스플레이 광고 이해하기 1 : DA의 특징](https://osoma.kr/blog/understand-da-01/): 쉽게 접할 수 있는 디스플레이 광고의 특징에 대해서 알아봅니다.
