@@ -9,7 +9,7 @@ categories:
   - blog
 date:   2025-10-14 11:55:00 +9:00
 image:  '/images/posts/ga4-data-import-ads-meta/thumb.png'
-tags:   [ga,ga4]
+tags:   [GA,GA4]
 description: GA4의 데이터 가져오기 기능 중 비용 데이터 기능의 업데이트 사항에 대해 알려드립니다. (Meta 커넥터를 중심으로)
 keywords: [GA4,GA4,meta,광고,데이터,import,연동]
 ---
