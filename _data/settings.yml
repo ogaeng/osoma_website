@@ -5,9 +5,9 @@
 eng_name: Opensource Marketing
 title: 오픈소스마케팅
 tagline: 오소마 | 디지털 마케팅 전문 컨설팅 팀
-logo: /images/logo/logo_980x518_no-bg_dark.png
+logo: /images/logo/logo-600x100.png
 description: 오소마는 파트너의 비즈니스 성장과 디지털 마케팅 최적화를 위한 방향성을 제안하며, 코칭 서비스를 제공하는 디지털 마케팅 전문 컨설팅 팀입니다.
-thumbnail: /images/main_thumb.jpg
+thumbnail: /images/osoma-thumb.png
 
 menu__settings:
   menu__items:
@@ -21,8 +21,6 @@ menu__settings:
       url: "https://edu.osoma.kr/"
     - title: "Webinar"
       url: "/event/"
-    - title: "DMIQ"
-      url: "/dmiq/"
 
 # Call to action button
 cta__button__text: 컨설팅 문의
