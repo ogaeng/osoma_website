@@ -8,7 +8,7 @@
           <i class="ion ion-md-close"></i>
         </div>
 
-        <form id="contact" class="form" action="https://ctapi.osoma.kr/contact" method="POST" target="contactblankiframe" onsubmit="return false;">
+        <form id="contact" class="form" action="https://osoma.kr/submit/contact" method="POST">
           <div class="form__left-column">
             <div class="contact-head">
               {% if site.data.settings.contact__settings.contact__title %}
@@ -52,11 +52,14 @@
 현재 고민 상황, 서비스의 링크, 오픈소스마케팅에게 컨설팅 받기를 원하는 영역 등을 입력해주시면 더욱 좋습니다" required></textarea>
             </div>
             
-            <div class="form__group form__group-button">
-              <button type="submit" class="button button--middle g-recaptcha" data-callback="formSubmit" data-sitekey="6LeCcoEhAAAAABX3zxn3bw3tXPSPiYPcBjD1QvfO" data-action="submit" data-badge="inline">전송하기 <i class="ion ion-ios-paper-plane"></i></button>
+            <!-- Cloudflare Turnstile -->
+            <div class="form__group">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAACGkT2LhIrrC8nR5" data-theme="light"></div>
             </div>
-
-            <p class="t-tiny mt-3 text-center">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+            
+            <div class="form__group form__group-button">
+              <button type="submit" class="button button--middle">전송하기 <i class="ion ion-ios-paper-plane"></i></button>
+            </div>
           </div>
 
         </form>
@@ -69,7 +72,17 @@
           <p class="success-message">오픈소스마케팅에서 빠른 시일 내에 답변 드리겠습니다</p>
         </div>
         
-        <!-- 로딩 인디케이터 추가 -->
+        <!-- 에러 메시지 -->
+        <div class="col col-12 contact-error" style="display:none;" id="contact_error">
+          <div class="error-icon">
+            <i class="ion ion-md-close-circle-outline"></i>
+          </div>
+          <h4 class="error-title">문의 전송에 실패했습니다</h4>
+          <p class="error-message">일시적인 오류가 발생했습니다. 잠시 후 다시 시도해주세요.</p>
+          <button class="button button--middle" id="retry-button">다시 시도하기</button>
+        </div>
+        
+        <!-- 로딩 인디케이터 -->
         <div class="col col-12 mt-5" style="display:none;" id="contact_loading">
           <div class="loading-spinner"></div>
           <p class="text-center">문의를 전송중입니다...</p>
@@ -89,7 +102,10 @@
     document.getElementById("cid").value = get_cookie('_ga');
   });
 
-  var formSubmit = function(token) {
+  // 폼 제출 처리
+  document.getElementById('contact').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
     const emailValue = document.querySelector('#form-email').value;
     const uid = CryptoJS.SHA256(emailValue).toString();
     setUidCookie(uid, 730);
@@ -108,7 +124,14 @@
       'value': contents
     });
 
-    const formData = new FormData(document.getElementById('contact'));
+    const formData = new FormData(this);
+    
+    // Turnstile 토큰이 자동으로 cf-turnstile-response로 포함됨
+    const turnstileResponse = formData.get('cf-turnstile-response');
+    if (!turnstileResponse) {
+      alert('보안 확인을 완료해주세요.');
+      return false;
+    }
 
     const contactForm = document.getElementById('contact');
     const completeMessage = document.getElementById('contact_complete');
@@ -118,7 +141,9 @@
     contactForm.style.display = 'none';
     loadingMessage.style.display = 'block';
     
-    fetch('https://ctapi.osoma.kr/contact', {
+    const errorMessage = document.getElementById('contact_error');
+    
+    fetch('https://osoma.kr/submit/contact', {
         method: 'POST',
         credentials: 'include',
         body: formData
@@ -137,11 +162,31 @@
     .catch(error => {
         console.error('Error:', error);
         loadingMessage.style.display = 'none';
-        completeMessage.style.display = 'block';
+        errorMessage.style.display = 'block';
     });
 
     return false;
-  };
+  });
+
+  // 다시 시도하기 버튼 핸들러
+  document.addEventListener('DOMContentLoaded', function() {
+    const retryButton = document.getElementById('retry-button');
+    if (retryButton) {
+      retryButton.addEventListener('click', function() {
+        const contactForm = document.getElementById('contact');
+        const errorMessage = document.getElementById('contact_error');
+        
+        // 에러 메시지 숨기고 폼 다시 표시
+        errorMessage.style.display = 'none';
+        contactForm.style.display = 'flex';
+        
+        // Turnstile 위젯 리셋 (새로운 토큰 생성)
+        if (typeof turnstile !== 'undefined') {
+          turnstile.reset();
+        }
+      });
+    }
+  });
 
   window.onload = function() {
     var popupElement = document.querySelector('#contact-modal');

@@ -22,104 +22,163 @@ title: 문의 남기기
     </a>
   </div>
 
-  <form id="contact_page" class="form" action="https://formspree.io/f/xyylvqaa" method="POST">
+  <form id="contact_page" class="contact-form" action="https://osoma.kr/submit/contact" method="POST">
     <input type="hidden" id="cid-page" name="cid" value="" />
-    <input type="hidden" id="page-location" name="page-location" value="" />
-    <!-- <div class="form__group">
-      <select id="form-select" class="form-select form__input" aria-label="문의 구분" name="index">
-        <option selected disabled>어떤 문의를 하시나요?</option>
-        <option value="신규런칭-전략수립">신규 런칭/전략 수립</option>
-        <option value="데이터 분석 환경 구축">데이터 분석 환경 구축</option>
-        <option value="유입 극대화">유입 극대화</option>
-        <option value="고객 행동 분석">고객 행동 분석</option>
-        <option value="광고 최적화">광고 최적화</option>
-        <option value="내부 역량 강화">내부 역량 강화</option>
-      </select>
-    </div> -->
-    <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-name-page">이름</label>
-      <input class="form__input" id="form-name-page" type="text" name="name" placeholder="담당자 이름" required>
+    <input type="hidden" id="page-location" name="location" value="" />
+    
+    <div class="form__left-column">
+      <div class="form__group">
+        <label class="form__label screen-reader-text" for="form-name-page">이름</label>
+        <input class="form__input" id="form-name-page" type="text" name="name" placeholder="담당자 이름" required>
+      </div>
+      <div class="form__group">
+        <label class="form__label screen-reader-text" for="form-email-page">Email</label>
+        <input class="form__input" id="form-email-page" type="email" name="email" placeholder="담당자 이메일 주소" required>
+      </div>
+      <div class="form__group">
+        <label class="form__label screen-reader-text" for="form-phone-page">연락처</label>
+        <input class="form__input" id="form-phone-page" type="tel" name="phone" placeholder="담당자 연락처(선택)">
+      </div>
+      <div class="form__group">
+        <label class="form__label screen-reader-text" for="form-company-page">회사명/서비스명</label>
+        <input class="form__input" id="form-company-page" type="text" name="company" placeholder="회사명/서비스명" required>
+      </div>
     </div>
-    <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-email-page">Email</label>
-      <input class="form__input" id="form-email-page" type="email" name="email" placeholder="담당자 이메일 주소" required>
+    
+    <div class="form__right-column">
+      <div class="form__group">
+        <label class="form__label screen-reader-text" for="form-text-page">문의 내용</label>
+        <textarea class="form__input" id="form-text-page" name="message" placeholder="여기에 문의 내용을 입력해주세요. 
+
+현재 고민 상황, 서비스의 링크, 오픈소스마케팅에게 컨설팅 받기를 원하는 영역 등을 입력해주시면 더욱 좋습니다" required></textarea>
+      </div>
+      
+      <!-- Cloudflare Turnstile -->
+      <div class="form__group">
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAACGkT2LhIrrC8nR5" data-theme="light"></div>
+      </div>
+      
+      <div class="form__group form__group-button">
+        <button class="button button--middle" type="submit">전송하기 <i class="ion ion-ios-paper-plane"></i></button>
+      </div>
     </div>
-    <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-phone-page">연락처</label>
-      <input class="form__input" id="form-phone-page" type="tel" name="phone" placeholder="담당자 연락처(선택)">
-    </div>
-    <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-company-page-page">회사명/서비스명</label>
-      <input class="form__input" id="form-company-page" type="text" name="company" placeholder="회사명/서비스명" required>
-    </div>
-    <!-- <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-website-page">웹사이트</label>
-      <input class="form__input" id="form-website-page" type="text" name="website" placeholder="웹사이트 주소" required>
-    </div> -->
-    <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-text-page">문의 내용</label>
-      <textarea class="form__input" id="form-text-page" name="message" rows="8" placeholder="문의 내용" required></textarea>
-    </div>
-    <div class="form__group form__group-button">
-      <button class="g-recaptcha button button--middle" type="submit">전송하기 <i
-          class="ion ion-ios-paper-plane"></i></button>
-    </div>
-    <input type="hidden" name="_subject" value="[osoma.kr]에서 문의가 도착했습니다." />
   </form>
 
-  <!-- <div class="col col-12" style="display:none;" id="contact_complete_page">
-    <h4 class="text-center">문의가 제출되었습니다.</h4>
-  </div> -->
-
-  <!-- <iframe name="contactblankiframepage" style="display:none;"></iframe> -->
+  <div class="col col-12 contact-success" style="display:none;" id="contact_complete_page">
+    <div class="success-icon">
+      <i class="ion ion-md-checkmark-circle-outline"></i>
+    </div>
+    <h4 class="success-title">문의가 제출되었습니다</h4>
+    <p class="success-message">오픈소스마케팅에서 빠른 시일 내에 답변 드리겠습니다</p>
+  </div>
+  
+  <!-- 에러 메시지 -->
+  <div class="col col-12 contact-error" style="display:none;" id="contact_error_page">
+    <div class="error-icon">
+      <i class="ion ion-md-close-circle-outline"></i>
+    </div>
+    <h4 class="error-title">문의 전송에 실패했습니다</h4>
+    <p class="error-message">일시적인 오류가 발생했습니다. 잠시 후 다시 시도해주세요.</p>
+    <button class="button button--middle" id="retry-button-page">다시 시도하기</button>
+  </div>
+  
+  <!-- 로딩 인디케이터 -->
+  <div class="col col-12 mt-5" style="display:none;" id="contact_loading_page">
+    <div class="loading-spinner"></div>
+    <p class="text-center">문의를 전송중입니다...</p>
+  </div>
 
 </div>
 <!-- end contact -->
 
-<!-- <script>
-  function onSubmitPage(token) {
-    document.getElementById("contact_page").submit();
-    var contents = {
-      'name': document.querySelector('#form-name-page').value,
-      'email': document.querySelector('#form-email-page').value,
-      'company': document.querySelector('#form-company-page').value,
-      'website': document.querySelector('#form-website-page').value,
-      'text': document.querySelector('#form-text-page').value
-    };
-
-    dataLayer.push({
-      'event': 'contactSubmit',
-      'value': contents
-    });
-
-    document.getElementById('contact_page').style.display = 'none'; // hide form
-    document.getElementById('contact_complete_page').style.display = 'block';
-  }
-</script> -->
-
 <script>
   window.addEventListener('load', function () {
-    var inputCid = ga.getAll()[0].get('clientId');
-    document.getElementById("cid-page").value = inputCid;
     document.getElementById("page-location").value = location.href;
+    document.getElementById("cid-page").value = get_cookie('_ga');
   });
 
-  var formSubmitPage = function () {
-    var contents = {
-      'name': document.querySelector('#form-name-page').value,
-      'email': document.querySelector('#form-email-page').value,
-      'company': document.querySelector('#form-company-page').value,
-      'phone': document.querySelector('#form-phone-page').value,
-      'text': document.querySelector('#form-text-page').value
-    };
+  // 폼 제출 처리
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('contact_page').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const emailValue = document.querySelector('#form-email-page').value;
+      const uid = CryptoJS.SHA256(emailValue).toString();
+      setUidCookie(uid, 730);
 
-    dataLayer.push({
-      'event': 'contactSubmit',
-      'value': contents
+      var contents = {
+        'name': encode64(document.querySelector('#form-name-page').value),
+        'email': encode64(document.querySelector('#form-email-page').value),
+        'company': encode64(document.querySelector('#form-company-page').value),
+        'phone': encode64(document.querySelector('#form-phone-page').value),
+        'text': encode64(document.querySelector('#form-text-page').value),
+        'cid': get_cookie('_ga')
+      };
+
+      dataLayer.push({
+        'event': 'contactSubmit',
+        'value': contents
+      });
+
+      const formData = new FormData(this);
+      
+      // Turnstile 토큰이 자동으로 cf-turnstile-response로 포함됨
+      const turnstileResponse = formData.get('cf-turnstile-response');
+      if (!turnstileResponse) {
+        alert('보안 확인을 완료해주세요.');
+        return false;
+      }
+
+      const contactForm = document.getElementById('contact_page');
+      const completeMessage = document.getElementById('contact_complete_page');
+      const errorMessage = document.getElementById('contact_error_page');
+      const loadingMessage = document.getElementById('contact_loading_page');
+      
+      // 폼을 숨기고 로딩 표시
+      contactForm.style.display = 'none';
+      loadingMessage.style.display = 'block';
+      
+      fetch('https://osoma.kr/submit/contact', {
+          method: 'POST',
+          credentials: 'include',
+          body: formData
+      })
+      .then(response => {
+          console.log('Response status:', response.status);
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+          return response;
+      })
+      .then(() => {
+          loadingMessage.style.display = 'none';
+          completeMessage.style.display = 'block';
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          loadingMessage.style.display = 'none';
+          errorMessage.style.display = 'block';
+      });
+
+      return false;
     });
 
-    // document.getElementById('contact_page').style.display = 'none'; // hide form
-    // document.getElementById('contact_complete_page').style.display = 'block';
-  };
-  document.querySelector('#contact_page').addEventListener('submit', formSubmitPage);
+    // 다시 시도하기 버튼 핸들러
+    const retryButton = document.getElementById('retry-button-page');
+    if (retryButton) {
+      retryButton.addEventListener('click', function() {
+        const contactForm = document.getElementById('contact_page');
+        const errorMessage = document.getElementById('contact_error_page');
+        
+        // 에러 메시지 숨기고 폼 다시 표시
+        errorMessage.style.display = 'none';
+        contactForm.style.display = 'grid';
+        
+        // Turnstile 위젯 리셋 (새로운 토큰 생성)
+        if (typeof turnstile !== 'undefined') {
+          turnstile.reset();
+        }
+      });
+    }
+  });
 </script>
