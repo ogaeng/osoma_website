@@ -43,6 +43,11 @@
             <div class="form__group">
               <input class="form__input" id="form-company" type="text" name="company" placeholder="회사명/서비스명" required>
             </div>
+
+            <!-- Cloudflare Turnstile -->
+            <div class="form__group">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAACGkT2LhIrrC8nR5" data-theme="light"></div>
+            </div>
           </div>
           
           <div class="form__right-column">
@@ -50,12 +55,7 @@
               <textarea class="form__input" id="form-text" name="message" placeholder="여기에 문의 내용을 입력해주세요. 
 
 현재 고민 상황, 서비스의 링크, 오픈소스마케팅에게 컨설팅 받기를 원하는 영역 등을 입력해주시면 더욱 좋습니다" required></textarea>
-            </div>
-            
-            <!-- Cloudflare Turnstile -->
-            <div class="form__group">
-              <div class="cf-turnstile" data-sitekey="0x4AAAAAACGkT2LhIrrC8nR5" data-theme="light"></div>
-            </div>
+            </div>        
             
             <div class="form__group form__group-button">
               <button type="submit" class="button button--middle">전송하기 <i class="ion ion-ios-paper-plane"></i></button>
