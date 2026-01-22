@@ -15,3 +15,11 @@ Brewfile
 Brewfile.lock.json
 .vscode
 .prettierrc
+
+# Claude, Serena
+.claude/
+.serena/
+docs/
+
+# Temp
+temp_memo/
