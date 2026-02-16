@@ -121,103 +121,108 @@ Our team consists of certified Google Analytics experts and growth hackers who u
 
 ## Articles
 
-- [디스플레이 광고 이해하기 1 : DA의 특징](https://osoma.kr/blog/understand-da-01/): 쉽게 접할 수 있는 디스플레이 광고의 특징에 대해서 알아봅니다.
-- [디스플레이 광고 이해하기 2 : DA 광고시장](https://osoma.kr/blog/understand-da-02/): 디스플레이 광고의 구매 방식, 계약 방식, 참여자 등에 대해 알아봅니다.
-- [검색 광고 이해하기 1 : 검색 광고 말고는 전환이 안나오는데... 다른 광고, 꺼도 될까?](https://osoma.kr/blog/understand-sa-01/): 검색 광고와 다른 매체를 동시에 돌릴 때 어떻게 전환을 측정해야 할까요?
-- [검색 광고는 다 똑같을까? 구글과 네이버 검색 광고의 차이점 알아보기](https://osoma.kr/blog/lookalike-sa/): 구글 검색 광고와 네이버 검색 광고의 차이점에 대해서 알아봅니다.
-- [GA4 설치 후 바로 세팅해야 하는 5가지](https://osoma.kr/blog/ga4-start-settings/): 구글 애널리틱스4 설치 후 필수적으로 설정해야 하는 5가지를 확인해 보세요.
-- [구글 자연 검색 파악을 위한 GA4와 서치 콘솔 연결하기](https://osoma.kr/blog/ga4-search-console/): 구글 애널리틱스 4와 구글 서치 콘솔을 연결해서 GA4에서 구글 자연 검색 데이터를 확인해보세요.
-- [Google Ads Script로 구글 광고 잔액 소진 알림 보내기](https://osoma.kr/blog/google-ads-script-01/): 구글 애즈 스크립트를 이용해 구글 광고 자동화하기 1편
-- [Google Ads Script로 시간대별 구글 광고 소진율 체크하기](https://osoma.kr/blog/gas-02/): 구글 광고 비용, 잘 소진되고 있을까? GAS로 시간별 광고비 소진량을 확인해보세요.
-- [유니버설 애널리틱스(UA)와 구글 애널리틱스 4(GA4)의 차이점](https://osoma.kr/blog/difference-ua-ga4/): 업그레이드 된 GA4는 기존 UA는 어떤 차이점이 있는지 어떤 점이 더 나아졌는지 알아봅시다.
-- [퍼포먼스 마케팅은 끝났다? 위기 요인과 디지털 마케터의 생존 전략](https://osoma.kr/blog/performance-marketing-die/): 많은 사람들이 퍼포먼스 마케팅의 미래를 걱정하는 이유, 앞으로 퍼포먼스 마케터들이 나아갈 길에 대한 오픈소스마케팅의 생각을 다음과 같이 정리해 봤습니다.
-- [구글 애널리틱스 4 이벤트와 매개변수](https://osoma.kr/blog/ga4-event/): GA4의 핵심 개념인 이벤트와 매개변수 그리고 맞춤 측정기준과 측정항목에 대해서 알아봅시다.
-- [이벤트 정의서와 작성 방법](https://osoma.kr/blog/how-to-write-event-definition/): 데이터 수집과 분석의 첫 단계인 이벤트 정의서가 무엇인지 어떻게 작성하는지 알아봅시다.
-- [내 캠페인을 망치러 온 나의 구원자, 구글 추천 자동 적용](https://osoma.kr/blog/google-recommendations-apply-auto/): 구글 애즈 추천 자동 적용으로 어떤 변화가 생겼는지 알아보세요.
+- [디스플레이 광고 이해하기 1 : DA의 특징](https://osoma.kr/blog/understand-da-01/) ([markdown](https://osoma.kr/blog/understand-da-01.md)): 쉽게 접할 수 있는 디스플레이 광고의 특징에 대해서 알아봅니다.
+- [디스플레이 광고 이해하기 2 : DA 광고시장](https://osoma.kr/blog/understand-da-02/) ([markdown](https://osoma.kr/blog/understand-da-02.md)): 디스플레이 광고의 구매 방식, 계약 방식, 참여자 등에 대해 알아봅니다.
+- [검색 광고 이해하기 1 : 검색 광고 말고는 전환이 안나오는데... 다른 광고, 꺼도 될까?](https://osoma.kr/blog/understand-sa-01/) ([markdown](https://osoma.kr/blog/understand-sa-01.md)): 검색 광고와 다른 매체를 동시에 돌릴 때 어떻게 전환을 측정해야 할까요?
+- [검색 광고는 다 똑같을까? 구글과 네이버 검색 광고의 차이점 알아보기](https://osoma.kr/blog/lookalike-sa/) ([markdown](https://osoma.kr/blog/lookalike-sa.md)): 구글 검색 광고와 네이버 검색 광고의 차이점에 대해서 알아봅니다.
+- [GA4 설치 후 바로 세팅해야 하는 5가지](https://osoma.kr/blog/ga4-start-settings/) ([markdown](https://osoma.kr/blog/ga4-start-settings.md)): 구글 애널리틱스4 설치 후 필수적으로 설정해야 하는 5가지를 확인해 보세요.
+- [구글 자연 검색 파악을 위한 GA4와 서치 콘솔 연결하기](https://osoma.kr/blog/ga4-search-console/) ([markdown](https://osoma.kr/blog/ga4-search-console.md)): 구글 애널리틱스 4와 구글 서치 콘솔을 연결해서 GA4에서 구글 자연 검색 데이터를 확인해보세요.
+- [Google Ads Script로 구글 광고 잔액 소진 알림 보내기](https://osoma.kr/blog/google-ads-script-01/) ([markdown](https://osoma.kr/blog/google-ads-script-01.md)): 구글 애즈 스크립트를 이용해 구글 광고 자동화하기 1편
+- [Google Ads Script로 시간대별 구글 광고 소진율 체크하기](https://osoma.kr/blog/gas-02/) ([markdown](https://osoma.kr/blog/gas-02.md)): 구글 광고 비용, 잘 소진되고 있을까? GAS로 시간별 광고비 소진량을 확인해보세요.
+- [유니버설 애널리틱스(UA)와 구글 애널리틱스 4(GA4)의 차이점](https://osoma.kr/blog/difference-ua-ga4/) ([markdown](https://osoma.kr/blog/difference-ua-ga4.md)): 업그레이드 된 GA4는 기존 UA는 어떤 차이점이 있는지 어떤 점이 더 나아졌는지 알아봅시다.
+- [퍼포먼스 마케팅은 끝났다? 위기 요인과 디지털 마케터의 생존 전략](https://osoma.kr/blog/performance-marketing-die/) ([markdown](https://osoma.kr/blog/performance-marketing-die.md)): 많은 사람들이 퍼포먼스 마케팅의 미래를 걱정하는 이유, 앞으로 퍼포먼스 마케터들이 나아갈 길에 대한 오픈소스마케팅의 생각을 다음과 같이 정리해 봤습니다.
+- [구글 애널리틱스 4 이벤트와 매개변수](https://osoma.kr/blog/ga4-event/) ([markdown](https://osoma.kr/blog/ga4-event.md)): GA4의 핵심 개념인 이벤트와 매개변수 그리고 맞춤 측정기준과 측정항목에 대해서 알아봅시다.
+- [이벤트 정의서와 작성 방법](https://osoma.kr/blog/how-to-write-event-definition/) ([markdown](https://osoma.kr/blog/how-to-write-event-definition.md)): 데이터 수집과 분석의 첫 단계인 이벤트 정의서가 무엇인지 어떻게 작성하는지 알아봅시다.
+- [내 캠페인을 망치러 온 나의 구원자, 구글 추천 자동 적용](https://osoma.kr/blog/google-recommendations-apply-auto/) ([markdown](https://osoma.kr/blog/google-recommendations-apply-auto.md)): 구글 애즈 추천 자동 적용으로 어떤 변화가 생겼는지 알아보세요.
 - [[웨비나]마케터를 위한 개발 공부 방법](https://osoma.kr/event/howtodevstudy-formkt/): 2022년 7월 28일 오후 8시, 마케터를 위한 개발 공부 방법에 대해 소개합니다.
 - [[웨비나]구글 애널리틱스 4 사용자를 위한 UTM 완벽 가이드](https://osoma.kr/event/ga4-utm-guide-webinar/): 2022년 9월 20일 오후 8시, GA4 사용자를 위한 UTM 가이드를 소개합니다.
-- [GA4 유입경로 탐색 분석 기법을 이용한 퍼널 분석 가이드](https://osoma.kr/blog/ga4-funnel-exploration/): 구글 애널리틱스 4의 퍼널 분석 보고서인 유입경로 탐색 분석 기법의 사용법을 소개합니다.
-- [코호트 차트 읽고 쓰기: GA4 동질 집단 탐색 분석 보고서 한판 정리](https://osoma.kr/blog/ga4-cohort-exploration/): 구글 애널리틱스 4의 코호트 분석 보고서인 동질 집단 탐색 분석 기법에 대해서 소개합니다.
-- [GA4의 전환수가 소수로 보이는 이유, 모델링된 전환의 이해](https://osoma.kr/blog/ga4-modeled-conversions/): 구글 애널리틱스 4의 전환 보고서의 전환수가 종종 소수로 표시되는 것을 확인하실 수 있습니다. 이는 구글이 강화된 개인 정보 보호 정책에 대한 솔루션으로 개발한 모델링된 전환에 기반해 전환수를 보여주기 때문인데요. 구체적으로 모델링된 전환이 무엇이고 어떨 때 적용되는지 알아보도록 하겠습니다.
-- [구글 신호 데이터(Google Signal)와 GA4 기준점 적용](https://osoma.kr/blog/google-signal/): 구글 신호 데이터와 광고 개인 최적화 구글 애널리틱스 4의 기준점 적용에 대해 알아봅니다.
+- [GA4 유입경로 탐색 분석 기법을 이용한 퍼널 분석 가이드](https://osoma.kr/blog/ga4-funnel-exploration/) ([markdown](https://osoma.kr/blog/ga4-funnel-exploration.md)): 구글 애널리틱스 4의 퍼널 분석 보고서인 유입경로 탐색 분석 기법의 사용법을 소개합니다.
+- [코호트 차트 읽고 쓰기: GA4 동질 집단 탐색 분석 보고서 한판 정리](https://osoma.kr/blog/ga4-cohort-exploration/) ([markdown](https://osoma.kr/blog/ga4-cohort-exploration.md)): 구글 애널리틱스 4의 코호트 분석 보고서인 동질 집단 탐색 분석 기법에 대해서 소개합니다.
+- [GA4의 전환수가 소수로 보이는 이유, 모델링된 전환의 이해](https://osoma.kr/blog/ga4-modeled-conversions/) ([markdown](https://osoma.kr/blog/ga4-modeled-conversions.md)): 구글 애널리틱스 4의 전환 보고서의 전환수가 종종 소수로 표시되는 것을 확인하실 수 있습니다. 이는 구글이 강화된 개인 정보 보호 정책에 대한 솔루션으로 개발한 모델링된 전환에 기반해 전환수를 보여주기 때문인데요. 구체적으로 모델링된 전환이 무엇이고 어떨 때 적용되는지 알아보도록 하겠습니다.
+- [구글 신호 데이터(Google Signal)와 GA4 기준점 적용](https://osoma.kr/blog/google-signal/) ([markdown](https://osoma.kr/blog/google-signal.md)): 구글 신호 데이터와 광고 개인 최적화 구글 애널리틱스 4의 기준점 적용에 대해 알아봅니다.
 - [[웨비나]구글 애널리틱스 4 AMA(20221117)](https://osoma.kr/event/ga4-ama-webinar-20221117/): 2022년 11월 17일 오후 8시, GA4에 대해서 궁금했던 것들에 대한 답을 들을 수 있습니다.
-- [GA4에서 내부 트래픽(IP)을 필터링하고 보고서에서 제외하는 방법](https://osoma.kr/blog/ga4-internal-traffic-filtering/): GA4에서 내부 트래픽 제거 작업을 진행했음에도 왜 필터링이 되지 않는지에 대한 이유를 풀어봅니다.
-- [쿠키 없이 데이터를 수집하는 기술, 구글 동의 모드(Consent Mode)](https://osoma.kr/blog/google-consent-mode/): 이미 해외의 많은 회사에서 적용하고 있는 구글의 개인정보 보호 관련 기술입니다. 이번 글에서는 구체적으로 동의 모드가 무엇이고 왜 사용해야 하는지 알아보도록 하겠습니다.
-- [성공적인 디지털 전환(DT, Digital Transformation)을 위한 3단계](https://osoma.kr/blog/dt-3steps/): 디지털 마케터를 위해 성공적인 디지털 트랜스포메이션에 대해 이야기합니다.
-- [구글 태그 매니저(GTM) 요소 공개 상태 트리거 제대로 알아보기](https://osoma.kr/blog/element-visibility-trigger/): 자주 언급되는 기본 트리거인 요소 공개 상태(element visibility trigger)에 대해 함께 알아보도록 하겠습니다.
-- [잘못 설정된 이벤트도 되살리는 GA4 이벤트 수정 & 이벤트 만들기 활용](https://osoma.kr/blog/ga4-event-modify-create/): GA4에서는 이벤트 수정과 만들기 기능을 사용해서 이벤트 세팅 당시에 놓치거나 실수했던 부분을 보완할 수 있습니다.
-- [1개월 안에 데이터가 흐르는 조직 토대 만들기](https://osoma.kr/blog/organize-data-month/): 데이터 수집을 위한 설계부터 세팅, 테스트까지 올인원 서비스로 데이터가 흐르는 조직의 토대를 만들 수 있습니다.
-- [고객이 당신의 제품을 구매하지 않는 이유](https://osoma.kr/blog/reasons-not-to-buy-your-product/): 고객 구매 여정에 최적화한 디지털 마케팅 컨설팅 사례에 대해 소개합니다.
-- [GA4 기본 보고서: 라이브러리를 활용하여 맞춤 보고서 만들기](https://osoma.kr/blog/ga4-basic-report/): 웹사이트 및 앱 분석을 위해 GA4를 도입했는데, 막상 어떻게 데이터를 확인해야 할지 몰라 GA4가 더 어렵게 느껴지셨나요? 오늘은 알고 보면 더 많이 보이는 GA4 기본 보고서에 대해서 이야기해 볼 예정입니다.
-- [마케터를 위한 웹사이트 쿠키 동의 환경의 이해](https://osoma.kr/blog/cookie-consent/): 최근 해외 또는 글로벌을 대상으로 비즈니스 하는 브랜드의 웹사이트에 들어가 보면 마주치는 것이 있습니다. 바로 쿠키 동의 배너인데요, 이 쿠키 동의가 무엇인지, 예전에는 없었던 것 같은데 왜 최근 들어 자주 보이는지, 그리고 마케팅에는 어떤 영향을 미치게 되는지 알아보겠습니다.
-- [GA4 세그먼트: UA와의 차이점부터 제대로 사용하고 잠재고객까지 만들기](https://osoma.kr/blog/ga4-segment/): UA와 달라진 GA4의 세그먼트 기능에 대해 알아봅니다.
+- [GA4에서 내부 트래픽(IP)을 필터링하고 보고서에서 제외하는 방법](https://osoma.kr/blog/ga4-internal-traffic-filtering/) ([markdown](https://osoma.kr/blog/ga4-internal-traffic-filtering.md)): GA4에서 내부 트래픽 제거 작업을 진행했음에도 왜 필터링이 되지 않는지에 대한 이유를 풀어봅니다.
+- [쿠키 없이 데이터를 수집하는 기술, 구글 동의 모드(Consent Mode)](https://osoma.kr/blog/google-consent-mode/) ([markdown](https://osoma.kr/blog/google-consent-mode.md)): 이미 해외의 많은 회사에서 적용하고 있는 구글의 개인정보 보호 관련 기술입니다. 이번 글에서는 구체적으로 동의 모드가 무엇이고 왜 사용해야 하는지 알아보도록 하겠습니다.
+- [성공적인 디지털 전환(DT, Digital Transformation)을 위한 3단계](https://osoma.kr/blog/dt-3steps/) ([markdown](https://osoma.kr/blog/dt-3steps.md)): 디지털 마케터를 위해 성공적인 디지털 트랜스포메이션에 대해 이야기합니다.
+- [구글 태그 매니저(GTM) 요소 공개 상태 트리거 제대로 알아보기](https://osoma.kr/blog/element-visibility-trigger/) ([markdown](https://osoma.kr/blog/element-visibility-trigger.md)): 자주 언급되는 기본 트리거인 요소 공개 상태(element visibility trigger)에 대해 함께 알아보도록 하겠습니다.
+- [잘못 설정된 이벤트도 되살리는 GA4 이벤트 수정 & 이벤트 만들기 활용](https://osoma.kr/blog/ga4-event-modify-create/) ([markdown](https://osoma.kr/blog/ga4-event-modify-create.md)): GA4에서는 이벤트 수정과 만들기 기능을 사용해서 이벤트 세팅 당시에 놓치거나 실수했던 부분을 보완할 수 있습니다.
+- [1개월 안에 데이터가 흐르는 조직 토대 만들기](https://osoma.kr/blog/organize-data-month/) ([markdown](https://osoma.kr/blog/organize-data-month.md)): 데이터 수집을 위한 설계부터 세팅, 테스트까지 올인원 서비스로 데이터가 흐르는 조직의 토대를 만들 수 있습니다.
+- [고객이 당신의 제품을 구매하지 않는 이유](https://osoma.kr/blog/reasons-not-to-buy-your-product/) ([markdown](https://osoma.kr/blog/reasons-not-to-buy-your-product.md)): 고객 구매 여정에 최적화한 디지털 마케팅 컨설팅 사례에 대해 소개합니다.
+- [GA4 기본 보고서: 라이브러리를 활용하여 맞춤 보고서 만들기](https://osoma.kr/blog/ga4-basic-report/) ([markdown](https://osoma.kr/blog/ga4-basic-report.md)): 웹사이트 및 앱 분석을 위해 GA4를 도입했는데, 막상 어떻게 데이터를 확인해야 할지 몰라 GA4가 더 어렵게 느껴지셨나요? 오늘은 알고 보면 더 많이 보이는 GA4 기본 보고서에 대해서 이야기해 볼 예정입니다.
+- [마케터를 위한 웹사이트 쿠키 동의 환경의 이해](https://osoma.kr/blog/cookie-consent/) ([markdown](https://osoma.kr/blog/cookie-consent.md)): 최근 해외 또는 글로벌을 대상으로 비즈니스 하는 브랜드의 웹사이트에 들어가 보면 마주치는 것이 있습니다. 바로 쿠키 동의 배너인데요, 이 쿠키 동의가 무엇인지, 예전에는 없었던 것 같은데 왜 최근 들어 자주 보이는지, 그리고 마케팅에는 어떤 영향을 미치게 되는지 알아보겠습니다.
+- [GA4 세그먼트: UA와의 차이점부터 제대로 사용하고 잠재고객까지 만들기](https://osoma.kr/blog/ga4-segment/) ([markdown](https://osoma.kr/blog/ga4-segment.md)): UA와 달라진 GA4의 세그먼트 기능에 대해 알아봅니다.
 - [UTM 플레이북](https://osoma.kr/playbook/utm/): 2022년 11월 17일 오후 8시, GA4에 대해서 궁금했던 것들에 대한 답을 들을 수 있습니다.
-- [루커 스튜디오 데이터 세트 구성 오류: GA4 API 할당량 이슈](https://osoma.kr/blog/looker-studio-ga-api-quota/): Looker Studio를 사용할 때 GA4 API의 할당량이 무엇인지, 어떻게 하면 오류 없이 데이터를 불러올 수 있는지 알아보도록 하겠습니다.
+- [루커 스튜디오 데이터 세트 구성 오류: GA4 API 할당량 이슈](https://osoma.kr/blog/looker-studio-ga-api-quota/) ([markdown](https://osoma.kr/blog/looker-studio-ga-api-quota.md)): Looker Studio를 사용할 때 GA4 API의 할당량이 무엇인지, 어떻게 하면 오류 없이 데이터를 불러올 수 있는지 알아보도록 하겠습니다.
 - [[웨비나]GA4로 마케팅 성과 분석하기](https://osoma.kr/event/ga4-acquisition-analysis/): 마케터 분들을 위해 구글 애널리틱스 4를 이용해 마케팅 성과 분석하기 웨비나를 준비했습니다.
-- [잘못 세팅된 데이터 살려드립니다: 클릭 데이터](https://osoma.kr/blog/wrong-data-click/): 잘못 설정된 방식을 개선하여 더욱 정확하고 확실한 클릭 데이터 수집이 가능합니다.
-- [GA4 경로 탐색 분석 기능을 이용한 사용자 여정 분석하기](https://osoma.kr/blog/ga4-path-exploration/): 구글 애널리틱스 4의 경로 탐색 분석(Path exploration) 기법의 사용 방법을 소개합니다.
-- [잘못 세팅된 데이터 살려드립니다: 중복 페이지뷰](https://osoma.kr/blog/duplicate-pageview/): 중복으로 수집되는 페이지뷰로 인해 잘못 집계된 수치를 살려드립니다.
-- [구글 애널리틱스 4 측정기준과 측정항목의 이해(맞춤 측정기준과 맞춤 측정항목)](https://osoma.kr/blog/ga4-dimension-metrics/): GA4를 사용하기 위한 기본 지식인 측정기준과 측정항목 그리고 맞춤 측정기준과 맞춤 측정항목에 대해 알아봅니다.
+- [잘못 세팅된 데이터 살려드립니다: 클릭 데이터](https://osoma.kr/blog/wrong-data-click/) ([markdown](https://osoma.kr/blog/wrong-data-click.md)): 잘못 설정된 방식을 개선하여 더욱 정확하고 확실한 클릭 데이터 수집이 가능합니다.
+- [GA4 경로 탐색 분석 기능을 이용한 사용자 여정 분석하기](https://osoma.kr/blog/ga4-path-exploration/) ([markdown](https://osoma.kr/blog/ga4-path-exploration.md)): 구글 애널리틱스 4의 경로 탐색 분석(Path exploration) 기법의 사용 방법을 소개합니다.
+- [잘못 세팅된 데이터 살려드립니다: 중복 페이지뷰](https://osoma.kr/blog/duplicate-pageview/) ([markdown](https://osoma.kr/blog/duplicate-pageview.md)): 중복으로 수집되는 페이지뷰로 인해 잘못 집계된 수치를 살려드립니다.
+- [구글 애널리틱스 4 측정기준과 측정항목의 이해(맞춤 측정기준과 맞춤 측정항목)](https://osoma.kr/blog/ga4-dimension-metrics/) ([markdown](https://osoma.kr/blog/ga4-dimension-metrics.md)): GA4를 사용하기 위한 기본 지식인 측정기준과 측정항목 그리고 맞춤 측정기준과 맞춤 측정항목에 대해 알아봅니다.
 - [[웨비나]데이터 수집을 위한 이벤트 설계하기 기초](https://osoma.kr/event/wb-event-taxonomy/): 데이터 수집을 위해 꼭 필요한 단계인 이벤트 설계 방법에 대한 웨비나를 준비했습니다.
-- [잘못 세팅된 데이터 살려드립니다: 사용자 ID(User ID)](https://osoma.kr/blog/wrong-data-userid/): User ID가 수집되고 있지 않거나 잘못 수집되는 경우를 개선합니다.
-- [GA4 - BigQuery 연결: GA4 데이터를 빅쿼리에 저장하기](https://osoma.kr/blog/ga4-bigquery-connect/): GA4에서 사용도가 점점 높아지고 있는 빅쿼리를 어떻게 연결하는지 알아보겠습니다.
-- [GA4 방문 페이지 보고서: 주요 기준 및 활용법 알아보기](https://osoma.kr/blog/ga4-landingpage-report/): 구글 애널리틱스 4에서 유입 페이지를 확인할 수 있는 방문 페이지 보고서에 대해서 소개합니다.
-- [구글 애널리틱스 4 사용자 속성 이해하기](https://osoma.kr/blog/ga4-user-property/): GA4에서 이벤트와 더불어 유용하게 사용할 수 있는 사용자 속성에 대해 알려드립니다.
-- [구글 애널리틱스 4(GA4) 사용자를 위한 UTM 실전 가이드](https://osoma.kr/blog/ga4-utm-guide/): GA4 사용자의 유입 분석에 도움을 주는 UTM에 대해서 안내합니다.
-- [ValueTrack 매개변수로 구글 애즈(Google Ads) 유입 정보 추적하기](https://osoma.kr/blog/google-value-track/): 구글 애즈의 동적 매개변수인 ValueTrack을 이용해 광고 유입을 추적해보세요.
-- [구글 애널리틱스 4 유입 분석의 첫 단계: 획득 보고서 보기](https://osoma.kr/blog/ga4-acquisition-report/): GA4를 활용해 유입 분석을 하려면 어떤 보고서에서, 무슨 데이터를, 어떻게 보면 좋을지 획득 보고서 보는 방법을 알아보겠습니다.
+- [잘못 세팅된 데이터 살려드립니다: 사용자 ID(User ID)](https://osoma.kr/blog/wrong-data-userid/) ([markdown](https://osoma.kr/blog/wrong-data-userid.md)): User ID가 수집되고 있지 않거나 잘못 수집되는 경우를 개선합니다.
+- [GA4 - BigQuery 연결: GA4 데이터를 빅쿼리에 저장하기](https://osoma.kr/blog/ga4-bigquery-connect/) ([markdown](https://osoma.kr/blog/ga4-bigquery-connect.md)): GA4에서 사용도가 점점 높아지고 있는 빅쿼리를 어떻게 연결하는지 알아보겠습니다.
+- [GA4 방문 페이지 보고서: 주요 기준 및 활용법 알아보기](https://osoma.kr/blog/ga4-landingpage-report/) ([markdown](https://osoma.kr/blog/ga4-landingpage-report.md)): 구글 애널리틱스 4에서 유입 페이지를 확인할 수 있는 방문 페이지 보고서에 대해서 소개합니다.
+- [구글 애널리틱스 4 사용자 속성 이해하기](https://osoma.kr/blog/ga4-user-property/) ([markdown](https://osoma.kr/blog/ga4-user-property.md)): GA4에서 이벤트와 더불어 유용하게 사용할 수 있는 사용자 속성에 대해 알려드립니다.
+- [구글 애널리틱스 4(GA4) 사용자를 위한 UTM 실전 가이드](https://osoma.kr/blog/ga4-utm-guide/) ([markdown](https://osoma.kr/blog/ga4-utm-guide.md)): GA4 사용자의 유입 분석에 도움을 주는 UTM에 대해서 안내합니다.
+- [ValueTrack 매개변수로 구글 애즈(Google Ads) 유입 정보 추적하기](https://osoma.kr/blog/google-value-track/) ([markdown](https://osoma.kr/blog/google-value-track.md)): 구글 애즈의 동적 매개변수인 ValueTrack을 이용해 광고 유입을 추적해보세요.
+- [구글 애널리틱스 4 유입 분석의 첫 단계: 획득 보고서 보기](https://osoma.kr/blog/ga4-acquisition-report/) ([markdown](https://osoma.kr/blog/ga4-acquisition-report.md)): GA4를 활용해 유입 분석을 하려면 어떤 보고서에서, 무슨 데이터를, 어떻게 보면 좋을지 획득 보고서 보는 방법을 알아보겠습니다.
 - [[웨비나]Server-side GTM 기초: GA4 데이터를 활용해 Meta 전환 API 및 Google Ads 전환 설정하기](https://osoma.kr/event/wb-sgtm-capi/): 1월 19일 오후 8시, 구글 태그 매니저 서버 컨테이너를 이용하여 메타 CAPI와 구글 애즈 전환 설정 실습을 진행합니다.
-- [구글 애널리틱스 4 기여 분석의 이해와 활용](https://osoma.kr/blog/ga4-attribution-model/): GA4의 기여 분석 모델의 종류를 이해하고 활용하는 방법에 대해 안내합니다.
-- [루커 스튜디오(데이터 스튜디오) 계산된 필드와 함수 사용법](https://osoma.kr/blog/looker-studio-calculated-fields/): Looker Studio(Data Studio)에서 계산된 필드를 사용하는 방법에 대해 소개합니다.
-- [잘못 세팅된 데이터 살려드립니다: 양식(Form) 제출](https://osoma.kr/blog/wrong-submit-form/): 잘못된 시점에 수집되는 양식 제출 데이터를 살려드립니다.
-- [루커 스튜디오(데이터 스튜디오) CASE 함수로 프로모션 성과 보고서 만들기](https://osoma.kr/blog/looker-studio-case-function/): Looker Studio(Data Studio)에서 CASE 함수를 사용하는 방법을 예시와 함께 소개합니다.
-- [디지털 광고 타겟팅 기법과 개인정보보호 규제 속 광고 타겟팅의 미래](https://osoma.kr/blog/ad-targeting-personal-protection/): 광고가 광고를 보여줄 대상을 타겟팅하는 방식과 개인정보 보호 강화라는 시대의 변화 속에 앞으로 타겟팅 광고가 마주하게 될 미래에 관해서 이야기합니다.
-- [GA4 잠재고객: 개념과 활용 방법 200% 이해하기](https://osoma.kr/blog/ga4-audiences/): GA4 잠재고객의 활용처와 잠재고객 트리거에 대해서 알아봅니다.
-- [GA4가 사용자를 식별하는 방법과 사용자 ID(User ID) 수집하기](https://osoma.kr/blog/ga4-user-id/): 구글 애널리틱스 4의 사용자 식별 방법을 이해하고 user_id를 수집하는 방법에 대해 안내합니다.
-- [카카오톡 알림톡 발송을 위한 Server-side GTM 태그 템플릿 가이드](https://osoma.kr/blog/gtm-template-alimtalk-guide/): 구글 태그 관리자(Google Tag Manager) 서버 컨테이너를 이용해 NHN Cloud(구 TOAST Cloud)의 카카오톡 알림톡 발송을 할 수 있는 태그 템플릿 이용 방법을 안내합니다.
+- [구글 애널리틱스 4 기여 분석의 이해와 활용](https://osoma.kr/blog/ga4-attribution-model/) ([markdown](https://osoma.kr/blog/ga4-attribution-model.md)): GA4의 기여 분석 모델의 종류를 이해하고 활용하는 방법에 대해 안내합니다.
+- [루커 스튜디오(데이터 스튜디오) 계산된 필드와 함수 사용법](https://osoma.kr/blog/looker-studio-calculated-fields/) ([markdown](https://osoma.kr/blog/looker-studio-calculated-fields.md)): Looker Studio(Data Studio)에서 계산된 필드를 사용하는 방법에 대해 소개합니다.
+- [잘못 세팅된 데이터 살려드립니다: 양식(Form) 제출](https://osoma.kr/blog/wrong-submit-form/) ([markdown](https://osoma.kr/blog/wrong-submit-form.md)): 잘못된 시점에 수집되는 양식 제출 데이터를 살려드립니다.
+- [루커 스튜디오(데이터 스튜디오) CASE 함수로 프로모션 성과 보고서 만들기](https://osoma.kr/blog/looker-studio-case-function/) ([markdown](https://osoma.kr/blog/looker-studio-case-function.md)): Looker Studio(Data Studio)에서 CASE 함수를 사용하는 방법을 예시와 함께 소개합니다.
+- [디지털 광고 타겟팅 기법과 개인정보보호 규제 속 광고 타겟팅의 미래](https://osoma.kr/blog/ad-targeting-personal-protection/) ([markdown](https://osoma.kr/blog/ad-targeting-personal-protection.md)): 광고가 광고를 보여줄 대상을 타겟팅하는 방식과 개인정보 보호 강화라는 시대의 변화 속에 앞으로 타겟팅 광고가 마주하게 될 미래에 관해서 이야기합니다.
+- [GA4 잠재고객: 개념과 활용 방법 200% 이해하기](https://osoma.kr/blog/ga4-audiences/) ([markdown](https://osoma.kr/blog/ga4-audiences.md)): GA4 잠재고객의 활용처와 잠재고객 트리거에 대해서 알아봅니다.
+- [GA4가 사용자를 식별하는 방법과 사용자 ID(User ID) 수집하기](https://osoma.kr/blog/ga4-user-id/) ([markdown](https://osoma.kr/blog/ga4-user-id.md)): 구글 애널리틱스 4의 사용자 식별 방법을 이해하고 user_id를 수집하는 방법에 대해 안내합니다.
+- [카카오톡 알림톡 발송을 위한 Server-side GTM 태그 템플릿 가이드](https://osoma.kr/blog/gtm-template-alimtalk-guide/) ([markdown](https://osoma.kr/blog/gtm-template-alimtalk-guide.md)): 구글 태그 관리자(Google Tag Manager) 서버 컨테이너를 이용해 NHN Cloud(구 TOAST Cloud)의 카카오톡 알림톡 발송을 할 수 있는 태그 템플릿 이용 방법을 안내합니다.
 - [[웨비나]데이터 수집을 위한 이벤트 설계하기 - 실전편](https://osoma.kr/event/230216-event-taxonomy-wb/): 데이터 수집을 위해 꼭 필요한 단계인 이벤트 설계 방법에 대한 웨비나를 준비했습니다.
-- [CMO라면 알아야 할 쿠키리스(Cookieless) 시대의 마케팅 전략](https://osoma.kr/blog/cookieless-era-strategy/): 쿠키가 사라지면 디지털 마케팅은 어떻게 변할지 어떤 전략을 세워야 할지 알아보겠습니다.
-- [카카오 픽셀 이벤트 빌더 GTM 템플릿 가이드](https://osoma.kr/blog/gtm-template-kakaopixel/): 구글 태그 관리자(Google Tag Manager)에서 카카오 픽셀 이벤트와 마개변수를 손쉽게 추가할 수 있는 태그 템플릿 이용 방법을 안내합니다.
-- [마케터의 자기 계발: 웹 개발 언어(HTML, JavaScript)를 배우면 생기는 일](https://osoma.kr/blog/marketer-webdev-study/): 마케터에게 웹 개발 언어 공부가 왜 필요한지, 마케터가 웹 개발 언어를 공부하면 어떤 것들이 가능해지는지, 또 실질적인 공부 방법은 무엇인지에 대해서 알아보겠습니다.
-- [GTM으로 SPA의 페이지뷰 이벤트 제대로 설정하기](https://osoma.kr/blog/gtm-spa-pageview/): react나 vue와 같은 Single Page Application 환경에서 GTM 기록 변경 트리거 활용 방법을 설명합니다.
-- [검색광고를 해야 하는 이유: 마케팅 운영 & 분석 두 관점](https://osoma.kr/blog/why-search-ad/): 검색광고를 왜 해야 하는지, 검색광고를 하면 어떤 이점이 있는지 정리해보도록 하겠습니다.
+- [CMO라면 알아야 할 쿠키리스(Cookieless) 시대의 마케팅 전략](https://osoma.kr/blog/cookieless-era-strategy/) ([markdown](https://osoma.kr/blog/cookieless-era-strategy.md)): 쿠키가 사라지면 디지털 마케팅은 어떻게 변할지 어떤 전략을 세워야 할지 알아보겠습니다.
+- [카카오 픽셀 이벤트 빌더 GTM 템플릿 가이드](https://osoma.kr/blog/gtm-template-kakaopixel/) ([markdown](https://osoma.kr/blog/gtm-template-kakaopixel.md)): 구글 태그 관리자(Google Tag Manager)에서 카카오 픽셀 이벤트와 마개변수를 손쉽게 추가할 수 있는 태그 템플릿 이용 방법을 안내합니다.
+- [마케터의 자기 계발: 웹 개발 언어(HTML, JavaScript)를 배우면 생기는 일](https://osoma.kr/blog/marketer-webdev-study/) ([markdown](https://osoma.kr/blog/marketer-webdev-study.md)): 마케터에게 웹 개발 언어 공부가 왜 필요한지, 마케터가 웹 개발 언어를 공부하면 어떤 것들이 가능해지는지, 또 실질적인 공부 방법은 무엇인지에 대해서 알아보겠습니다.
+- [GTM으로 SPA의 페이지뷰 이벤트 제대로 설정하기](https://osoma.kr/blog/gtm-spa-pageview/) ([markdown](https://osoma.kr/blog/gtm-spa-pageview.md)): react나 vue와 같은 Single Page Application 환경에서 GTM 기록 변경 트리거 활용 방법을 설명합니다.
+- [검색광고를 해야 하는 이유: 마케팅 운영 & 분석 두 관점](https://osoma.kr/blog/why-search-ad/) ([markdown](https://osoma.kr/blog/why-search-ad.md)): 검색광고를 왜 해야 하는지, 검색광고를 하면 어떤 이점이 있는지 정리해보도록 하겠습니다.
 - [[웨비나]구글 애널리틱스 4/구글 태그 매니저 AMA(2023-03-21)](https://osoma.kr/event/ga4-gtm-ama-wb-20230321/): 2023년 3월 21일 오후 8시, GA4와 GTM에 대해서 궁금했던 것들에 대한 답을 들을 수 있습니다.
-- [GA4 항목(Item) 범위 맞춤 측정기준 사용하기](https://osoma.kr/blog/ga4-item-custom-dimensions/): GA4에서 상품 정보를 커스텀하여 추가 등록할 수 있는 항목 범위 맞춤 측정기준에 대해 소개합니다.
-- [카페24 GA4 전자상거래 이벤트 빌더 GTM 템플릿 가이드](https://osoma.kr/blog/gtm-template-cafe24-ga4/): 구글 태그 관리자(Google Tag Manager)에서 카페24 쇼핑몰에서 구글 애널리틱스 4 기본 전자상거래 이벤트와 매개변수를 손쉽게 추가할 수 있는 태그 템플릿 이용 방법을 안내합니다.
-- [GA4 기본 채널 그룹과 맞춤 채널 그룹 활용 방법](https://osoma.kr/blog/ga4-channel-group/): 구글 애널리틱스 4의 트래픽 그룹인 기본 채널 그룹과 직접 커스텀이 가능한 맞춤 채널 그룹의 설정 및 분석 방법에 대해 알아봅니다.
+- [GA4 항목(Item) 범위 맞춤 측정기준 사용하기](https://osoma.kr/blog/ga4-item-custom-dimensions/) ([markdown](https://osoma.kr/blog/ga4-item-custom-dimensions.md)): GA4에서 상품 정보를 커스텀하여 추가 등록할 수 있는 항목 범위 맞춤 측정기준에 대해 소개합니다.
+- [카페24 GA4 전자상거래 이벤트 빌더 GTM 템플릿 가이드](https://osoma.kr/blog/gtm-template-cafe24-ga4/) ([markdown](https://osoma.kr/blog/gtm-template-cafe24-ga4.md)): 구글 태그 관리자(Google Tag Manager)에서 카페24 쇼핑몰에서 구글 애널리틱스 4 기본 전자상거래 이벤트와 매개변수를 손쉽게 추가할 수 있는 태그 템플릿 이용 방법을 안내합니다.
+- [GA4 기본 채널 그룹과 맞춤 채널 그룹 활용 방법](https://osoma.kr/blog/ga4-channel-group/) ([markdown](https://osoma.kr/blog/ga4-channel-group.md)): 구글 애널리틱스 4의 트래픽 그룹인 기본 채널 그룹과 직접 커스텀이 가능한 맞춤 채널 그룹의 설정 및 분석 방법에 대해 알아봅니다.
 - [[웨비나]사례로 살펴보는 UA → GA4 전환 가이드](https://osoma.kr/event/migrate-ua-ga4-wb/): 2023년 6월 1일 오후 8시, UA에서 GA4로 전환하려는 모든 분들을 위해 준비했습니다.
-- [GA4 탐색: 자유 형식 보고서 활용하기](https://osoma.kr/blog/ga4-free-form-exploration/): 구글 애널리틱스 4 탐색 보고서에서 가장 많이 활용되는 자유 형식 탐색(Free-form exploration) 기법에 대해 소개합니다.
-- [구글 태그 매니저(Google Tag Manager)에서 새롭게 탈바꿈한 Google 태그 안내(구 GA4 구성 태그)](https://osoma.kr/blog/gtm-new-gtag/): GTM에서 GA4 구성 태그가 구글 태그로 새롭게 변경되고 이벤트 설정 변수와 구성 설정 변수가 신규로 생겼습니다. 이번 업데이트로 무엇이 달라졌는지 알아보겠습니다.
-- [구글 애널리틱스 4, 맞춤 측정기준과 맞춤 측정항목의 정의와 사용 방법](https://osoma.kr/blog/ga4-custom-dimension-metrics/): GA4에서 기본적으로 제공하지 않는 측정기준과 측정항목을 사용자가 직접 맞춤 설정하여 사용할 수 있는 기능인 맞춤 측정기준과 맞춤 측정항목에 대해 알아보겠습니다.
+- [GA4 탐색: 자유 형식 보고서 활용하기](https://osoma.kr/blog/ga4-free-form-exploration/) ([markdown](https://osoma.kr/blog/ga4-free-form-exploration.md)): 구글 애널리틱스 4 탐색 보고서에서 가장 많이 활용되는 자유 형식 탐색(Free-form exploration) 기법에 대해 소개합니다.
+- [구글 태그 매니저(Google Tag Manager)에서 새롭게 탈바꿈한 Google 태그 안내(구 GA4 구성 태그)](https://osoma.kr/blog/gtm-new-gtag/) ([markdown](https://osoma.kr/blog/gtm-new-gtag.md)): GTM에서 GA4 구성 태그가 구글 태그로 새롭게 변경되고 이벤트 설정 변수와 구성 설정 변수가 신규로 생겼습니다. 이번 업데이트로 무엇이 달라졌는지 알아보겠습니다.
+- [구글 애널리틱스 4, 맞춤 측정기준과 맞춤 측정항목의 정의와 사용 방법](https://osoma.kr/blog/ga4-custom-dimension-metrics/) ([markdown](https://osoma.kr/blog/ga4-custom-dimension-metrics.md)): GA4에서 기본적으로 제공하지 않는 측정기준과 측정항목을 사용자가 직접 맞춤 설정하여 사용할 수 있는 기능인 맞춤 측정기준과 맞춤 측정항목에 대해 알아보겠습니다.
 - [[웨비나]GA 자신감 UP - GA4와 친해지기](https://osoma.kr/event/wb-ga4-confidence-up/): 2023년 10월 24일 오후 8시, 여러분의 GA 자신감을 올려드립니다.
-- [빅쿼리(BigQuery) 사용량 확인하기: 리전 및 사용자별 사용량 모니터링](https://osoma.kr/blog/bigquery-monitoring/): BigQuery JOBS 뷰를 이용해 기간별 사용량을 확인하는 방법을 안내합니다.
+- [빅쿼리(BigQuery) 사용량 확인하기: 리전 및 사용자별 사용량 모니터링](https://osoma.kr/blog/bigquery-monitoring/) ([markdown](https://osoma.kr/blog/bigquery-monitoring.md)): BigQuery JOBS 뷰를 이용해 기간별 사용량을 확인하는 방법을 안내합니다.
 - [[웨비나]GTM 속으로 들어온 Google 태그 이해하기](https://osoma.kr/event/wb-gtm-gtag/): 2023년 11월 16일 오후 8시, 새롭게 변화된 GA4 구성 태그에 대해 알려드립니다.
-- [Firebase Analytics와 GA4의 관계 알아보기](https://osoma.kr/blog/ga4-firebase/): 어떤 상황에서 Firebase Analytics를 써야 하는지, GA4를 결합하여 웹+앱 추적을 하려면 어떻게 해야 하는지 알아보겠습니다.
-- [구글 애널리틱스 4(GA4) 전자상거래 수익 데이터 정확성 문제 해결 방법](https://osoma.kr/blog/ga4-ecommerce-value-wrong/): GA4 전자상거래 세팅 진행 후 수익이 표시되지 않거나 예상과 다르게 표시되는 문제를 해결하는 방법에 대해 안내합니다.
-- [빅쿼리(BigQuery)로 GA4 캠페인별 세션 수, 사용자 수 출력하기](https://osoma.kr/blog/ga4-bigquery-sessions-users/): 빅쿼리를 이용해 GA4 테이블에서 유입 소스, 매체, 캠페인별 세션수와 사용자수를 출력해봅니다.
-- [GA4 보고서 공유: 이메일 예약 기능으로 정기적으로 보고서 받아보기](https://osoma.kr/blog/ga4-schedule-email/): 구글 애널리틱스 4에서 보고서를 정기적으로 받아볼 수 있는 보고서 이메일 예약 기능에 대해 알려드립니다.
-- [구글 프라이버시 샌드박스(Privacy Sandbox): 제 3자 쿠키 폐지와 디지털 마케팅의 미래](https://osoma.kr/blog/3rd-party-cookie-abolition/): 타사 쿠키가 폐지된 이후 디지털 마케팅은 어떻게 변화할까요?
-- [GA4 페이지(화면) 분석을 위한 page_view, screen_view 이벤트 이해하기](https://osoma.kr/blog/ga4-page-view-screen-view/): 구글 애널리틱스 4에서 페이지와 화면 조회를 담당하는 두 이벤트에 대해서 알아봅니다.
-- [구글 서치 콘솔(Search Console) 데이터를 빅쿼리(BigQuery)로 내보내기](https://osoma.kr/blog/searchconsole-bigquery-export/): 구글 검색 데이터를 빅쿼리로 분석하기 위한 첫 번째 단계를 소개합니다.
-- [빅쿼리(BigQuery)로 내보낸 구글 서치 콘솔(Search Console) 데이터 활용하기](https://osoma.kr/blog/searchconsole-bigquery-use/): 빅쿼리로 내보내기에 성공한 구글 검색 데이터를 어떻게 사용하는지에 대해 소개합니다.
+- [Firebase Analytics와 GA4의 관계 알아보기](https://osoma.kr/blog/ga4-firebase/) ([markdown](https://osoma.kr/blog/ga4-firebase.md)): 어떤 상황에서 Firebase Analytics를 써야 하는지, GA4를 결합하여 웹+앱 추적을 하려면 어떻게 해야 하는지 알아보겠습니다.
+- [구글 애널리틱스 4(GA4) 전자상거래 수익 데이터 정확성 문제 해결 방법](https://osoma.kr/blog/ga4-ecommerce-value-wrong/) ([markdown](https://osoma.kr/blog/ga4-ecommerce-value-wrong.md)): GA4 전자상거래 세팅 진행 후 수익이 표시되지 않거나 예상과 다르게 표시되는 문제를 해결하는 방법에 대해 안내합니다.
+- [빅쿼리(BigQuery)로 GA4 캠페인별 세션 수, 사용자 수 출력하기](https://osoma.kr/blog/ga4-bigquery-sessions-users/) ([markdown](https://osoma.kr/blog/ga4-bigquery-sessions-users.md)): 빅쿼리를 이용해 GA4 테이블에서 유입 소스, 매체, 캠페인별 세션수와 사용자수를 출력해봅니다.
+- [GA4 보고서 공유: 이메일 예약 기능으로 정기적으로 보고서 받아보기](https://osoma.kr/blog/ga4-schedule-email/) ([markdown](https://osoma.kr/blog/ga4-schedule-email.md)): 구글 애널리틱스 4에서 보고서를 정기적으로 받아볼 수 있는 보고서 이메일 예약 기능에 대해 알려드립니다.
+- [구글 프라이버시 샌드박스(Privacy Sandbox): 제 3자 쿠키 폐지와 디지털 마케팅의 미래](https://osoma.kr/blog/3rd-party-cookie-abolition/) ([markdown](https://osoma.kr/blog/3rd-party-cookie-abolition.md)): 타사 쿠키가 폐지된 이후 디지털 마케팅은 어떻게 변화할까요?
+- [GA4 페이지(화면) 분석을 위한 page_view, screen_view 이벤트 이해하기](https://osoma.kr/blog/ga4-page-view-screen-view/) ([markdown](https://osoma.kr/blog/ga4-page-view-screen-view.md)): 구글 애널리틱스 4에서 페이지와 화면 조회를 담당하는 두 이벤트에 대해서 알아봅니다.
+- [구글 서치 콘솔(Search Console) 데이터를 빅쿼리(BigQuery)로 내보내기](https://osoma.kr/blog/searchconsole-bigquery-export/) ([markdown](https://osoma.kr/blog/searchconsole-bigquery-export.md)): 구글 검색 데이터를 빅쿼리로 분석하기 위한 첫 번째 단계를 소개합니다.
+- [빅쿼리(BigQuery)로 내보낸 구글 서치 콘솔(Search Console) 데이터 활용하기](https://osoma.kr/blog/searchconsole-bigquery-use/) ([markdown](https://osoma.kr/blog/searchconsole-bigquery-use.md)): 빅쿼리로 내보내기에 성공한 구글 검색 데이터를 어떻게 사용하는지에 대해 소개합니다.
 - [[웨비나]GA4 전자상거래 측정기준, 측정항목 이해하기](https://osoma.kr/event/wb-ga4-ecommerce/): 2024년 3월 7일 오후 8시, GA4 전자상거래 측정기준과 측정항목에 대해서 알려드립니다.
-- [Google 태그와 구글 태그 결합 이해하기](https://osoma.kr/blog/combine-google-tag/): GA와 Google Ads에서 사용할 수 있는 구글 태그와 그 결합에 대해 알아봅니다.
-- [메이크샵, 카페24 쇼핑몰을 위한 GA4, Amplitude 네이버페이 결제 추적 서비스 안내](https://osoma.kr/blog/npay-event/): 간편 결제 추적을 포함한 GA4, Amplitude 구축 서비스를 소개합니다.
-- [GA4 전자상거래 이벤트의 측정기준과 측정항목 알아보기](https://osoma.kr/blog/ga4-ecommerce-metric-dimension/): GA4의 구매 프로세스와 관련된 이벤트, 상품 정보를 분석하는 방법에 대해 알아봅니다.
-- [Google Marketing Live 2024: AI로 더 스마트하고, 강력해진 광고의 진화가 시작되었습니다](https://osoma.kr/blog/google-marketing-live-2024/): 구글 마케팅 라이브 2024의 핵심 포인트를 요약하여 소개드립니다.
-- [SEO의 핵심, 표준 URL이란 무엇인가?](https://osoma.kr/blog/canonical-url/): 캐노니컬(Canonical) 태그 또는 OG:URL로 작성하는 웹사이트의 주소를 검색 엔진에 알려주는 표준 URL에 대해서 알아봅니다.
-- [GA4와 빅쿼리(BigQuery)를 지금 바로 연결해야 하는 이유](https://osoma.kr/blog/why-connect-ga4-bigquery/): 구글 애널리틱스 4와 빅쿼리를 연결해서 얻을 수 있는 장점에 대해 알아봅니다.
-- [GA4 데이터 분석을 위한 빅쿼리(BigQuery) 스키마(1) - 이벤트(events) 테이블 편](https://osoma.kr/blog/bigquery-events-table-explain/): GA4 데이터를 빅쿼리로 내보낸 후 생성되는 이벤트 테이블 구조와 필드에 대해 알아보겠습니다.
-- [GA4 데이터 분석을 위한 빅쿼리(BigQuery) 스키마(2) - 사용자(users) 테이블 편](https://osoma.kr/blog/bigquery-users-table-explain/): GA4 데이터를 빅쿼리로 내보낸 후 생성되는 사용자(users, pseudonymous_users) 테이블 구조와 필드에 대해 알아보겠습니다.
-- [모바일 앱에 GA4(Firebase Analytics) 세팅 시 필수 고려 사항 가이드](https://osoma.kr/blog/firebase-setting-essential-consider-guide/): 모바일 앱에 GA4(Firebase Analytics) 세팅 시 고려해야 할 것들에 대해 설명합니다. 네이티브 앱과 하이브리드 앱의 세팅 차이, 프레임워크별 설정 가이드, 웹사이트와 데이터 통합, User ID와 사용자 속성 설정 등 GA4 성공적인 도입을 위한 필수 고려 사항을 알아보세요.
-- [서버사이드 GTM(Server-side GTM) 소개: 장점과 사례를 바탕으로](https://osoma.kr/blog/introduce-server-side-gtm/): 서버사이드 GTM의 작동 원리와 장점, 클라이언트 사이드 태깅과의 차이점, 그리고 실제 활용 사례를 상세히 알아봅니다. 데이터 손실 방지, 웹사이트 성능 향상, 보안 강화 등 서버사이드 태깅이 제공하는 이점을 탐구하고 디지털 마케팅 전략을 한 단계 발전시키는 방법을 소개합니다.
-- [루커 스튜디오에서 퍼널 만들기 및 순서 강제 고정하기(CASE 문 활용)](https://osoma.kr/blog/looker-studio-funnel-order/): 루커 스튜디오에서 퍼널 차트를 만들고 CASE 문을 활용해 단계별 순서를 고정하는 방법을 알아봅니다.
-- [루커 스튜디오와 빅쿼리 연결: GA4 한계를 극복하는 데이터 분석의 필수 전략](https://osoma.kr/blog/looker-studio-bigquery-data-connect/): 루커 스튜디오(Looker Studio)와 빅쿼리(BigQuery)를 연결하면 GA4의 속도 문제와 데이터 샘플링 한계 등을 해결할 수 있습니다. 데이터 시각화와 고급 분석을 결합해 비즈니스 성과를 극대화하는 방법을 알아보세요.
-- [GA4 빅쿼리 테이블의 3가지 유입 소스 필드 이해하기(traffic_source 등)](https://osoma.kr/blog/bigquery-traffic-field/): GA4의 유입 정보를 담고 있는 traffic_source, collected_traffic_source, session_traffic_source_last_click 필드에 대해 알아봅니다.
-- [맥 사용자의 한글 자소분리 문제 해결을 위한 'Gmail 한글 파일명 첨부 도우미' 소개](https://osoma.kr/blog/introduce-mac-gmail-extension/): Mac 사용자가 Gmail에서 한글 파일을 첨부할 때 발생하는 자소분리 현상을 자동으로 해결해주는 크롬 확장프로그램 'Gmail 한글 파일명 첨부 도우미'의 개발 배경과 사용 방법을 소개합니다.
+- [Google 태그와 구글 태그 결합 이해하기](https://osoma.kr/blog/combine-google-tag/) ([markdown](https://osoma.kr/blog/combine-google-tag.md)): GA와 Google Ads에서 사용할 수 있는 구글 태그와 그 결합에 대해 알아봅니다.
+- [메이크샵, 카페24 쇼핑몰을 위한 GA4, Amplitude 네이버페이 결제 추적 서비스 안내](https://osoma.kr/blog/npay-event/) ([markdown](https://osoma.kr/blog/npay-event.md)): 간편 결제 추적을 포함한 GA4, Amplitude 구축 서비스를 소개합니다.
+- [GA4 전자상거래 이벤트의 측정기준과 측정항목 알아보기](https://osoma.kr/blog/ga4-ecommerce-metric-dimension/) ([markdown](https://osoma.kr/blog/ga4-ecommerce-metric-dimension.md)): GA4의 구매 프로세스와 관련된 이벤트, 상품 정보를 분석하는 방법에 대해 알아봅니다.
+- [Google Marketing Live 2024: AI로 더 스마트하고, 강력해진 광고의 진화가 시작되었습니다](https://osoma.kr/blog/google-marketing-live-2024/) ([markdown](https://osoma.kr/blog/google-marketing-live-2024.md)): 구글 마케팅 라이브 2024의 핵심 포인트를 요약하여 소개드립니다.
+- [SEO의 핵심, 표준 URL이란 무엇인가?](https://osoma.kr/blog/canonical-url/) ([markdown](https://osoma.kr/blog/canonical-url.md)): 캐노니컬(Canonical) 태그 또는 OG:URL로 작성하는 웹사이트의 주소를 검색 엔진에 알려주는 표준 URL에 대해서 알아봅니다.
+- [GA4와 빅쿼리(BigQuery)를 지금 바로 연결해야 하는 이유](https://osoma.kr/blog/why-connect-ga4-bigquery/) ([markdown](https://osoma.kr/blog/why-connect-ga4-bigquery.md)): 구글 애널리틱스 4와 빅쿼리를 연결해서 얻을 수 있는 장점에 대해 알아봅니다.
+- [GA4 데이터 분석을 위한 빅쿼리(BigQuery) 스키마(1) - 이벤트(events) 테이블 편](https://osoma.kr/blog/bigquery-events-table-explain/) ([markdown](https://osoma.kr/blog/bigquery-events-table-explain.md)): GA4 데이터를 빅쿼리로 내보낸 후 생성되는 이벤트 테이블 구조와 필드에 대해 알아보겠습니다.
+- [GA4 데이터 분석을 위한 빅쿼리(BigQuery) 스키마(2) - 사용자(users) 테이블 편](https://osoma.kr/blog/bigquery-users-table-explain/) ([markdown](https://osoma.kr/blog/bigquery-users-table-explain.md)): GA4 데이터를 빅쿼리로 내보낸 후 생성되는 사용자(users, pseudonymous_users) 테이블 구조와 필드에 대해 알아보겠습니다.
+- [모바일 앱에 GA4(Firebase Analytics) 세팅 시 필수 고려 사항 가이드](https://osoma.kr/blog/firebase-setting-essential-consider-guide/) ([markdown](https://osoma.kr/blog/firebase-setting-essential-consider-guide.md)): 모바일 앱에 GA4(Firebase Analytics) 세팅 시 고려해야 할 것들에 대해 설명합니다. 네이티브 앱과 하이브리드 앱의 세팅 차이, 프레임워크별 설정 가이드, 웹사이트와 데이터 통합, User ID와 사용자 속성 설정 등 GA4 성공적인 도입을 위한 필수 고려 사항을 알아보세요.
+- [서버사이드 GTM(Server-side GTM) 소개: 장점과 사례를 바탕으로](https://osoma.kr/blog/introduce-server-side-gtm/) ([markdown](https://osoma.kr/blog/introduce-server-side-gtm.md)): 서버사이드 GTM의 작동 원리와 장점, 클라이언트 사이드 태깅과의 차이점, 그리고 실제 활용 사례를 상세히 알아봅니다. 데이터 손실 방지, 웹사이트 성능 향상, 보안 강화 등 서버사이드 태깅이 제공하는 이점을 탐구하고 디지털 마케팅 전략을 한 단계 발전시키는 방법을 소개합니다.
+- [루커 스튜디오에서 퍼널 만들기 및 순서 강제 고정하기(CASE 문 활용)](https://osoma.kr/blog/looker-studio-funnel-order/) ([markdown](https://osoma.kr/blog/looker-studio-funnel-order.md)): 루커 스튜디오에서 퍼널 차트를 만들고 CASE 문을 활용해 단계별 순서를 고정하는 방법을 알아봅니다.
+- [루커 스튜디오와 빅쿼리 연결: GA4 한계를 극복하는 데이터 분석의 필수 전략](https://osoma.kr/blog/looker-studio-bigquery-data-connect/) ([markdown](https://osoma.kr/blog/looker-studio-bigquery-data-connect.md)): 루커 스튜디오(Looker Studio)와 빅쿼리(BigQuery)를 연결하면 GA4의 속도 문제와 데이터 샘플링 한계 등을 해결할 수 있습니다. 데이터 시각화와 고급 분석을 결합해 비즈니스 성과를 극대화하는 방법을 알아보세요.
+- [GA4 빅쿼리 테이블의 3가지 유입 소스 필드 이해하기(traffic_source 등)](https://osoma.kr/blog/bigquery-traffic-field/) ([markdown](https://osoma.kr/blog/bigquery-traffic-field.md)): GA4의 유입 정보를 담고 있는 traffic_source, collected_traffic_source, session_traffic_source_last_click 필드에 대해 알아봅니다.
+- [맥 사용자의 한글 자소분리 문제 해결을 위한 'Gmail 한글 파일명 첨부 도우미' 소개](https://osoma.kr/blog/introduce-mac-gmail-extension/) ([markdown](https://osoma.kr/blog/introduce-mac-gmail-extension.md)): Mac 사용자가 Gmail에서 한글 파일을 첨부할 때 발생하는 자소분리 현상을 자동으로 해결해주는 크롬 확장프로그램 'Gmail 한글 파일명 첨부 도우미'의 개발 배경과 사용 방법을 소개합니다.
 - [[웨비나]구글 애널리틱스 4/구글 태그 매니저 AMA(2025-04-01)](https://osoma.kr/event/ga4-gtm-ama-wb-20250401/): 2025년 4월 1일 오후 8시, GA4와 GTM에 대해서 궁금했던 것들에 대해 알려드립니다.
 - [[웨비나]빅쿼리로 GA4 데이터를 활용하기 전에 꼭 알아야 할 것들](https://osoma.kr/event/ga4-bigquery-webinar/): 2025년 6월 18일 오후 8시, 빅쿼리 Export로 GA4 데이터를 연결하기 전 고려해야 하는 내용에 대해 알려드립니다.
 - [[웨비나]프롬프트만으로 GA4 데이터 불러오기! GA MCP × Gemini CLI 실습](https://osoma.kr/event/ga4-gemini-mcp-webinar/): 2025년 8월 6일 오후 2시, 대시보드 없이 프롬프트만으로 GA4 리포트를 불러오는 방법, GA MCP × Gemini CLI 실습으로 직접 배워보세요. 마케터를 위한 AI 데이터 분석 웨비나!
+- [GA4 데이터 가져오기 기능으로 Meta, TikTok 광고의 노출, 클릭, 비용 연동하기](https://osoma.kr/blog/ga4-data-import-ads-meta/) ([markdown](https://osoma.kr/blog/ga4-data-import-ads-meta.md)): GA4의 데이터 가져오기 기능 중 비용 데이터 기능의 업데이트 사항에 대해 알려드립니다. (Meta 커넥터를 중심으로)
+- [GA4 유입경로 탐색 분석은 유입 보고서가 아니다? 퍼널 분석 핵심 Q&A](https://osoma.kr/blog/ga4-funnel-report-qna/) ([markdown](https://osoma.kr/blog/ga4-funnel-report-qna.md)): 사용자 행동 단계별 이탈, 완료를 확인할 수 있는 퍼널 차트를 만드는 GA4 유입경로 탐색. 유입경로 탐색을 명확하게 이해하고 세그먼트나 타임 윈도우 설정, 개방형 vs 폐쇄형 비교로 맞춤형 퍼널 차트를 만드는 법을 알아봅니다.
+- [GA4 설치 시 개인정보 처리 방침을 수정해야 하나요? 필수 검토 사항 총정리](https://osoma.kr/blog/ga4-setup-privacy-term/) ([markdown](https://osoma.kr/blog/ga4-setup-privacy-term.md)): GA4는 쿠키를 통해 사용자 행태 정보를 수집하므로 개인정보 처리 방침 검토가 필요합니다. GA4 도입 시 확인해야 할 5가지 개인정보 처리 방침 항목과 작성 예시를 알아봅니다.
+- [BigQuery 비용 폭탄 방지: 파티션·클러스터링 활용 가이드](https://osoma.kr/blog/bigquery-cost-optimization/) ([markdown](https://osoma.kr/blog/bigquery-cost-optimization.md)): BigQuery 비용이 갑자기 늘어났다면? 파티션과 클러스터링을 활용한 비용 최적화 방법과 쿼리 작성 베스트 프랙티스를 알아봅니다.
+- [BigQuery AI 함수로 GA4 데이터 자동 분석하기](https://osoma.kr/blog/bigquery-ai-functions-ga4/) ([markdown](https://osoma.kr/blog/bigquery-ai-functions-ga4.md)): BigQuery AI 함수(AI.GENERATE, AI.CLASSIFY 등)를 활용해 GA4 데이터를 SQL만으로 자동 분석하는 방법을 실전 예제와 함께 알아봅니다. 고객 피드백 감정 분석부터 유입 소스 자동 분류까지 비용 효율적인 데이터 분석 기법을 소개합니다.
 
 ## Main Pages
 

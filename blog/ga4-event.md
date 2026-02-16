@@ -1,0 +1,278 @@
+# 구글 애널리틱스 4 이벤트와 매개변수
+
+Source: https://osoma.kr/blog/ga4-event/
+Last Updated: 2022-05-18
+Description: GA4의 핵심 개념인 이벤트와 매개변수 그리고 맞춤 측정기준과 측정항목에 대해서 알아봅시다.
+Tags: GA, GA4
+
+---
+
+GA4는 데이터 해석을 위해 쓰는 분석 도구입니다. 따라서, 데이터를 어떻게 모으는지부터 이해하면 GA4를 잘 사용할 수 있는데, 바로 여기에서 알아야 하는 핵심 개념이 이벤트와 매개변수입니다.. 낯설지만, 오히려 간단한 이들을 파악해봅시다.
+
+1. [이벤트는 사건, 매개변수는 단서에요.](#chapter1)
+2. [UA의 이벤트와는 '개념만' 같아요.](#chapter2)
+3. [GA4에서 알아서 잡아주는 이벤트도 있어요!](#chapter3)
+4. [데이터는 \[이벤트\] 보고서에서 확인해요.](#chapter4)
+5. [GA4는 전환도 이벤트 중에 가져옵니다.](#chapter5)
+6. [알아두면 무조건 이득! 맞춤 측정기준 및 측정항목](#chapter6)
+
+<div id="chapter1"></div>
+## 1. 이벤트는 사건, 매개변수는 사건 현장의 단서
+
+- 이벤트 : 우리 비즈니스와 사용자가 일으키는 상호작용 즉, 사건 그 자체!
+- 매개변수 : 이벤트(사용자행동)가 일어날때 수집할 정보
+
+이벤트는 고객이 우리 비즈니스와 일으키는 상호작용을 말합니다. 그리고 매개변수는 상호작용이 일어날때 가져오는 정보를 말하죠. 용어가 낯설다면 <u>이벤트는 사건, 매개변수는 사건현장의 단서</u>라고 이해해도 좋아요!
+
+### [사례1] 고객이 우리 웹사이트에서 장바구니에 제품을 담는 상황
+
+→ 이벤트 : 장바구니 추가<br>
+→ 매개변수 : 상품명, 상품의 가격, 수량
+
+### [사례2] 고객이 우리 서비스(웹 또는 앱)에 회원가입을 하는 상황
+
+→ 이벤트 : 회원가입 완료<br>
+→ 매개변수 : 회원가입 수단(네이버, 카카오, 이메일 등)
+
+<div id="chapter2"></div>
+## 2. UA의 이벤트와는 '개념만' 같아요.
+
+'사용자의 행동'이라는 개념 자체는 동일한데, **<u>구조가 달라요.</u>**
+
+UA는 이벤트를 카테고리, 액션, 라벨 3계층으로 정보를 수집하는데,  GA4**는** 이벤트 - 매개변수로 데이터를 수집하기 때문에 **계층이 없습니다**
+
+<div class="gallery-box">
+  <div class="gallery">
+    <img src="https://osoma.kr/images/posts/ga4-event/01.png" alt="UA와 GA4 이벤트 구조 다이어그램">
+  </div>
+  <em>3개 계층으로 정보를 수집하는 UA vs 계층구조 없이 이벤트에 여러개의 매개변수를 수집하는 GA4</em>
+</div>
+
+또한 UA는 이벤트당 정보를 최대 3개 까지 못받았었는데, <u>GA4는 이벤트 당 매개변수를 25개까지 받을 수 있게 변경</u>되었어요. 즉, 업데이트 되면서 구조는 더 간단해지고, 수집할 수 있는 데이터는 풍부해졌어요!
+
+|버전|UA(GA3)|GA4|
+|--|--|--|
+|계층구조|카테고리 - 액션 - 라벨(3계층)|계층구조 없음|
+|이벤트 당 수집할 수 있는 데이터 수|3|25|
+
+### gtag 코드에서도 생김새 차이가 보여요!
+
+- UA 이벤트 전송 gtag ([https://developers.google.com/analytics/devguides/collection/gtagjs/events](https://developers.google.com/analytics/devguides/collection/gtagjs/events))
+
+```javascript
+gtag('event', <action>, {
+  'event_category': <category>,
+  'event_label': <label>,
+  'value': <value>
+});
+```
+
+- GA4 이벤트 전송 gtag ([https://support.google.com/analytics/answer/11396839?hl=en&ref_topic=9756175](https://support.google.com/analytics/answer/11396839?hl=en&ref_topic=9756175))
+
+```javascript
+gtag('event', 'event_name', {
+  'parameter1': <value>,
+  'parameter2': <value>
+});
+```
+
+<div id="chapter3"></div>
+## 3. GA4에서 알아서 잡아주는 이벤트도 있어요!
+
+과거 UA에서는 페이지 조회만 자동으로 전송하고, 사용자와 비즈니스의 상호작용을 측정하려면 이벤트를 새롭게 생성했어야 해요.
+
+그런데, GA4에서는 데이터 수집 기준이 모두 '이벤트'로 바뀌면서 <u>자동으로 수집하는 이벤트</u>들이 생겼어요! 덕분에 분석자는 추가로 코드를 작성하지 않아도 다양한 이벤트 데이터를 확인할 수 있는데요, 설치만 하면 자동으로 잡는 **[자동 수집 이벤트]**와 사용하겠다고 선택하면 잡기 시작하는 **[향상된 측정 이벤트]**가 있습니다.
+
+### 자동 수집 이벤트
+
+- GA4를 설치하면 자동으로 수집하는 이벤트 (별도 설정 필요 없음)
+- 대표적인 자동 수집 이벤트 : user_engagement(앱,웹) first_visit(앱,웹) 등
+
+👉 [자동 수집 이벤트 리스트 확인하기](https://support.google.com/analytics/answer/9234069)
+
+### 향상된 측정 이벤트
+
+- GA4에서 옵션으로 제공하는 이벤트 (데이터 스트림에서 설정)<br>
+** 설정경로 = [관리] > [속성] > [데이터스트림] > [웹] > [향상된 측정]
+- 대표적인 향상된 측정 이벤트 : page_view, scroll 등
+
+👉 [향상된 측정 이벤트 설정 방법 및 리스트 확인하기](https://support.google.com/analytics/answer/9216061?hl=ko&ref_topic=9756175)
+
+물론 UA와 마찬가지로 우리 비즈니스에 필요한 이벤트를 직접 만들어서 볼 수도 있어요!
+
+### 맞춤 이벤트
+
+맞춤 이벤트는 코드로 전송하는 방식과 애널리틱스 기능을 사용하는 방식이 있는데, 잘 설정하려면 gtag에 대한 이해가 필요하니 가이드를 반드시 숙지하고, 가능하다면 사전 학습 후 도전하시길 추천드려요!
+
+👉 [맞춤 이벤트 설정 도움말 바로가기](https://developers.google.com/analytics/devguides/collection/ga4/events?client_type=gtag)
+
+<div id="chapter4"></div>
+## 4. 데이터는 [이벤트] 보고서에서 확인해요.
+
+이렇게 수집한 데이터는 [이벤트] 보고서에서 확인할 수 있어요.
+
+보고서 경로 : [보고서] > [Life cycle] > [참여도] > [이벤트]
+
+측정기준은 [이벤트 이름], 기본 측정항목은 [이벤트 수], [총 사용자], [사용자당 이벤트수] 입니다. 이벤트 수만 확인할 수 있었던 UA보고서와는 달리 이벤트를 일으킨 총 사용자와 사용자당 이벤트수까지 확인할 수 있습니다.
+
+### 잠깐! 측정항목의 의미를 꼭 숙지하고, 데이터를 해석하세요.
+
+- 이벤트 수 : 사용자가 이벤트를 트리거한 횟수
+- 총 사용자 : 참여 이벤트를 실행했는지 여부와 관계없이 사이트 또는 앱과 상호작용한 총 사용자 수
+- 사용자당 이벤트 수 : 사용자당 평균 이벤트 수
+- 총 수익 : 구매, 구독 및 광고 수익의 합계(구매 수익, 구독 수익, 광고 수익을 더한 값)
+
+### GA4 이벤트 보고서는 이렇게 생겼어요! (Google Demo Account)
+
+<div class="gallery-box">
+  <div class="gallery">
+    <img src="https://osoma.kr/images/posts/ga4-event/02.png" alt="GA4 이벤트 보고서">
+  </div>
+  <em>GA4 이벤트 보고서 : 이벤트 이름으로 나열되어 있습니다. (경로 = 보고서 > 참여도 > 이벤트)</em>
+</div>
+
+### 이벤트 개별 보고서는 [이벤트 이름]을 누르면 볼 수 있어요
+
+개별보고서는 [이벤트 이름]을 누르면 연결되고, 이 보고서에서 매개변수 데이터도 확인할 수 있습니다.
+
+<div class="gallery-box">
+  <div class="gallery">
+    <img src="https://osoma.kr/images/posts/ga4-event/03.png" alt="GA4 이벤트 개별 보고서 1">
+    <img src="https://osoma.kr/images/posts/ga4-event/04.png" alt="GA4 이벤트 개별 보고서 2">
+  </div>
+  <em>이미지를 누르면 확대됩니다.</em>
+</div>
+
+### [참고] UA 이벤트 보고서는 이렇게 생겼었죠!
+
+<div class="gallery-box">
+  <div class="gallery">
+    <img src="https://osoma.kr/images/posts/ga4-event/05.png" alt="UA 이벤트 보고서 1">
+    <img src="https://osoma.kr/images/posts/ga4-event/06.png" alt="UA 이벤트 보고서 2">
+  </div>
+  <em>이미지를 누르면 확대됩니다.</em>
+</div>
+
+<div id="chapter5"></div>
+## 5. GA4는 전환도 이벤트 중에 가져옵니다.
+
+**전환**은 비즈니스에서 일어나는 이벤트 중에서 **중요한 의미를 갖는 이벤트**를 의미해요.
+
+그래서 GA4는 전환도 이벤트 중에서 가져오는데, 설정 방법이 매우 직관적입니다. 바로, **중요한 이벤트를 선택해 '전환 이벤트'로 표시만**하면 되죠! 표시된 전환 이벤트는 [전환수] 보고서에서 모아볼 수 있어요.
+
+### ✅ 전환 이벤트 표시 방법 = [토글버튼 활성화]
+
+이벤트를 전환으로 표시하고 싶다면 먼저, 이벤트 중에 우리 비즈니스에서 중요한 이벤트를 선택하고, 해당 이벤트의 '전환으로 표시' 항목 토글버튼을 활성화하세요. 활성화 된 이벤트는 전환으로 수집됩니다.
+
+설정경로 : [구성] > [이벤트] > [전환으로 표시] 항목 토글 활성화
+
+![전환으로 표시](https://osoma.kr/images/posts/ga4-event/07.png)
+
+### ✅ 데이터는 [전환수]에서 확인해요!
+
+수집된 데이터는 [전환수]에서 확인할 수 있어요.
+
+간단하게는, 이벤트별 전환수는 전환 설정 바로 아래에 있는 '전환수'를 누르면 간략하게 확인 가능! 이벤트별 상세 데이터는 보고서 영역에서 확인 할 수 있어요.
+
+**전환 전체수 간략히 보기**
+
+전환수 확인 경로 : [구성] > [전환수]
+
+![전환수 확인](https://osoma.kr/images/posts/ga4-event/08.png)
+
+**이벤트별 전환수 보기**
+
+이벤트별 상세데이터 확인 경로 : [보고서] > [Life cycle] > [참여도] > [전환수]
+
+![이벤트 별 전환수 확인](https://osoma.kr/images/posts/ga4-event/09.png)
+
+### ⚠️ purchase 이벤트는 이미 '전환 이벤트'로 표시되어 있어요.
+
+GA4는 purchase 이벤트를 '전환'으로 생각하고, 처음부터 전환값으로 표시해두었어요. 따라서, purchase는 별도로 전환 이벤트로 변경할 필요 없이 그대로 확인하면 됩니다.
+
+![전환 이벤트 purchase](https://osoma.kr/images/posts/ga4-event/10.png)
+
+### ⚠️  기본 보고서에서는 <u>이벤트의 흐름을 확인 할 수 없어요.</u>
+
+GA4에서 기본적으로 제공되는 보고서에서는 **개별 이벤트 단위의 데이터만 확인**할 수 있습니다. 이벤트의 흐름 및 관계를 확인하고 싶다면 [탐색] 분석 메뉴를 이용하세요. 탐색분석은 사용자가 측정기준, 측정항목, 형식을 자유롭게 선택해 보고서를 만들어 볼 수 있는 메뉴입니다. (UA의 '맞춤 보고서'와 비슷한 개념이라고 이해하면 좋아요!)
+
+![탐색](https://osoma.kr/images/posts/ga4-event/11.png)
+
+### 📍 UA의 목표를 GA4 전환으로 가져올 수 있어요.
+
+이미 UA를 사용중이라면, 목표를 전환에 매핑할 수 있어요. 공식 가이드문서를 확인해보세요!
+
+📕 가이드 문서 : [https://support.google.com/analytics/answer/11189166](https://support.google.com/analytics/answer/11189166)
+
+<div id="chapter6"></div>
+## 6. 알아두면 무조건 이득! 맞춤 측정기준 및 측정항목
+
+사실 GA4는 이미 다양한 측정기준과 측정항목을 제공하고 있어요. (이건 UA도 마찬가지였죠!🙋) 하지만, GA4에서 제공하는 것만으로는 우리 비즈니스에 필요한 모든 데이터를 수집할 수 없는 상황이 발생하기도 하는데요, 바로 이럴때 사용할 수 있는 것이 **맞춤 측정기준**과 **맞춤 측정항목** 입니다.
+
+💡 맞춤 측정기준 및 측정항목 : GA에서 기본적으로 제공하는 기준 외 사용자가 직접 추가하는 데이터 수집 기준 및 값
+
+그러니, 이벤트와 매개변수를 모두 파악했다면, 한층 더 심화된 '맞춤' 측정기준과 측정항목도 학습해보세요. 우리 비즈니스에 필요한 항목을 커스터마이징해 더 유연하고 풍성하게 데이터를 수집할 수 있습니다.
+
+**잠깐, 측정기준 / 측정항목이 뭔데?**
+
+측정기준은 데이터를 수집하는 '기준' 측정 항목은 측정 기준들로 수집되는 '값'을 말합니다.
+
+- 측정기준 예시 : 유입채널, 사용기기 유형(PC, 모바일), 검색어 등
+- 측정항목 예시 : 사용자 수, 세션 수, 이벤트 수 등
+
+![측정기준 측정항목 표](https://osoma.kr/images/posts/ga4-event/12.png)
+
+👉 [GA4 측정기준 및 측정항목 리스트(기본 수집 항목) 바로가기](https://support.google.com/analytics/answer/9143382)
+
+**UA에는 없었나요?**
+
+UA에도 있었어요!
+
+다만, 메뉴가 관리 항목 내부에 있어서 찾기 쉽지 않았고, 추가할 수 있는 지표의 수가 각각 20개씩만 제공되었었죠. 그런데, GA4에서는 메뉴도 보고서 수준으로 찾기 쉬워졌고, 추가할 수 있는 지표가 각각 50개로 2배이상 늘어났어요!
+
+💡 UA 맞춤정의 설정경로 : [관리] > [속성] > [맞춤정의] > [맞춤 측정기준 / 맞춤 측정항목]
+
+![UA 맞춤측정기준 맞춤측정항목](https://osoma.kr/images/posts/ga4-event/13.png)
+
+**GA4에서는 이렇게 설정해요.**
+
+GA4에서는 구성 메뉴에 있어서 쉽게 찾을 수 있어요. 설정할 때도 따로 지수가 부여되지 않고, 이름을 설정한 뒤 매개변수만 매칭하면 바로 사용할 수 있어 UA와 비교해 상대적으로 편리해졌습니다.
+
+💡 GA4 맞춤정의 설정경로 : [관리] > [속성] > [맞춤정의] > [맞춤 측정기준 / 맞춤 측정항목]
+
+![GA4 맞춤측정기준 맞춤측정항목](https://osoma.kr/images/posts/ga4-event/14.png)
+
+## 유튜브 영상 보기
+
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-lg-6 mb-3">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ErO_6VFRohQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-lg-6">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/CGgbtJpA-N0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<details>
+<summary class="summary_toggle">📚 참고문서</summary>
+<div markdown="1">
+- GA4 이벤트 예시 : [https://developers.google.com/analytics/devguides/collection/ga4/reference/events](https://developers.google.com/analytics/devguides/collection/ga4/reference/events)
+- GA4 developer guide : [https://developers.google.com/analytics/devguides/collection/ga4/user-properties?technology=websites](https://developers.google.com/analytics/devguides/collection/ga4/user-properties?technology=websites)
+- GA4 파라미터 이해하기 : [https://www.optimizesmart.com/understanding-event-parameters-in-google-analytics-4-ga4/](https://www.optimizesmart.com/understanding-event-parameters-in-google-analytics-4-ga4/)
+- GA4 구현가이드(시모) : [https://www.simoahava.com/analytics/implementation-guide-events-google-analytics-4/](https://www.simoahava.com/analytics/implementation-guide-events-google-analytics-4/)
+- GA 이벤트 개념 설명 블로그 : [https://ga-study.tistory.com/15](https://ga-study.tistory.com/15)
+- GA4 이벤트 수집 한도 가이드 문서 : [https://support.google.com/analytics/answer/9267744](https://support.google.com/analytics/answer/9267744?hl=ko&ref_topic=9756175)
+- GA4 할당량 가이드 문서(360 포함) : [https://support.google.com/analytics/answer/9826983](https://support.google.com/analytics/answer/9826983?hl=ko&utm_id=ad)
+- [UA→GA4] 이벤트 이전 가이드 소개 : [https://support.google.com/analytics/answer/11208943](https://support.google.com/analytics/answer/11208943)
+- [UA→GA4] Google 애널리틱스 4와 유니버설 애널리틱스의 이벤트 비교 : [https://support.google.com/analytics/answer/11091422](https://support.google.com/analytics/answer/11091422)
+- [GA4] 향상된 측정 이벤트 : [https://support.google.com/analytics/answer/9216061](https://support.google.com/analytics/answer/9216061?hl=ko&ref_topic=9756175)
+- [GA4] 이벤트 정보 : [https://support.google.com/analytics/answer/9322688](https://support.google.com/analytics/answer/9322688?hl=ko)
+- [GA4] 사용자 인터페이스를 통해 이벤트 수정 및 만들기 : [https://support.google.com/analytics/answer/10085872](https://support.google.com/analytics/answer/10085872)
+- [GA4] 전환 이벤트 설정 및 관리하기 : [https://support.google.com/analytics/answer/9267568](https://support.google.com/analytics/answer/9267568)
+- [UA→GA4] UA 및 GA4 속성 모두에 이벤트 전송하기 : [https://support.google.com/analytics/answer/11091026](https://support.google.com/analytics/answer/11091026)
+- [UA] 맞춤 측정기준과 측정항목 만들기 및 수정하기 : [https://support.google.com/analytics/answer/2709828](https://support.google.com/analytics/answer/2709828)
+- [GA4] 측정기준 및 측정항목 : [https://support.google.com/analytics/answer/9143382](https://support.google.com/analytics/answer/9143382)
+</div>
+</details>

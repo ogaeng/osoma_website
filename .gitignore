@@ -21,5 +21,8 @@ Brewfile.lock.json
 .serena/
 docs/
 
+# Python
+scripts/__pycache__/
+
 # Temp
 temp_memo/
