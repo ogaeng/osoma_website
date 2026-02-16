@@ -7,6 +7,7 @@ title:  "메이크샵, 카페24 쇼핑몰을 위한 GA4, Amplitude 네이버페�
 permalink: /blog/npay-event/
 categories:
   - blog
+  - case
 date:   2024-03-19 03:00:00 +9:00
 image:  '/images/posts/npay-event/thumb.png'
 tags:   [GA, GA]

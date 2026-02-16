@@ -7,6 +7,7 @@ title:  "GA4 설치 시 개인정보 처리 방침을 수정해야 하나요? �
 permalink: /blog/ga4-setup-privacy-term/
 categories: 
   - blog
+  - case
 date:   2026-01-22 15:30:00 +9:00
 image:  '/images/posts/ga4-setup-privacy-term/thumb.png'
 tags:   [GA,GA4,privacy]

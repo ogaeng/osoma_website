@@ -228,7 +228,7 @@ Our team consists of certified Google Analytics experts and growth hackers who u
 
 ### Services & Solutions
 
-- [GA4 Implementation & Consulting](https://osoma.kr/ga-consulting): Complete GA4 setup, migration, configuration and consulting services
+- [GA4 Implementation & Consulting](https://osoma.kr/ga-consulting) ([markdown](https://osoma.kr/ga-consulting.md)): Complete GA4 setup, migration, configuration and consulting services
 - [Education](https://edu.osoma.kr): Digital marketing courses and training programs
 
 ### Resources

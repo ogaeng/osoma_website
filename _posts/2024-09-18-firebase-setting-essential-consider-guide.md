@@ -7,6 +7,7 @@ title:  "모바일 앱에 GA4(Firebase Analytics) 세팅 시 필수 고려 사�
 permalink: /blog/firebase-setting-essential-consider-guide/
 categories:
   - blog
+  - case
 date:   2024-09-18 23:00:00 +9:00
 image:  '/images/posts/firebase-setting-essential-consider-guide/thumb.png'
 tags:   [GA,GA4,firebase]

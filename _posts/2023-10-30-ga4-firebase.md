@@ -8,6 +8,7 @@ permalink: /blog/ga4-firebase/
 categories:
   - blog
   - GA
+  - case
 date: 2023-10-30 00:00:00 +9:00
 image: "/images/posts/ga4-firebase/thumb.png"
 tags: [GA, GA4, firebase]

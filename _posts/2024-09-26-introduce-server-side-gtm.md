@@ -7,6 +7,7 @@ title:  "서버사이드 GTM(Server-side GTM) 소개: 장점과 사례를 바탕
 permalink: /blog/introduce-server-side-gtm/
 categories:
   - blog
+  - case
 date:   2024-09-26 01:20:00 +9:00
 image:  '/images/posts/introduce-server-side-gtm/thumb.png'
 tags:   [GTM,GA]
