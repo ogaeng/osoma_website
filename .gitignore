@@ -20,7 +20,6 @@ Brewfile.lock.json
 .claude/
 .serena/
 docs/
-remotion/
 
 # Secrets
 .env
@@ -30,3 +29,8 @@ scripts/__pycache__/
 
 # Temp
 temp_memo/
+
+# Video (symlinks to osoma-video)
+remotion
+tts-script.json
+video-plan.json
