@@ -3,7 +3,7 @@
 
 Scans _posts/*.md, filters for division: blog posts, extracts raw markdown
 body, cleans Liquid tags and kramdown attributes, converts relative URLs
-to absolute, and outputs clean .md files to blog/<slug>.md.
+to absolute, and outputs clean .md files to md/blog/<slug>.md.
 """
 
 import os
@@ -13,7 +13,7 @@ import yaml
 
 SITE_URL = "https://osoma.kr"
 POSTS_DIR = "_posts"
-OUTPUT_DIR = "blog"
+OUTPUT_DIR = os.path.join("md", "blog")
 
 
 def parse_front_matter(content):
