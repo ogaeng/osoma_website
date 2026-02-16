@@ -51,6 +51,14 @@ tag_page_dir:         tag
 tag_page_layout:      tag_page
 tag_permalink_style:  /:title
 
+exclude:
+  - docs/
+  - remotion/
+  - scripts/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
 sass:
   sass_dir: _sass
   style: compressed

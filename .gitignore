@@ -20,6 +20,10 @@ Brewfile.lock.json
 .claude/
 .serena/
 docs/
+remotion/
+
+# Secrets
+.env
 
 # Python
 scripts/__pycache__/
