@@ -223,6 +223,7 @@ Our team consists of certified Google Analytics experts and growth hackers who u
 - [GA4 설치 시 개인정보 처리 방침을 수정해야 하나요? 필수 검토 사항 총정리](https://osoma.kr/blog/ga4-setup-privacy-term/) ([markdown](https://osoma.kr/md/blog/ga4-setup-privacy-term.md)): GA4는 쿠키를 통해 사용자 행태 정보를 수집하므로 개인정보 처리 방침 검토가 필요합니다. GA4 도입 시 확인해야 할 5가지 개인정보 처리 방침 항목과 작성 예시를 알아봅니다.
 - [BigQuery 비용 폭탄 방지: 파티션·클러스터링 활용 가이드](https://osoma.kr/blog/bigquery-cost-optimization/) ([markdown](https://osoma.kr/md/blog/bigquery-cost-optimization.md)): BigQuery 비용이 갑자기 늘어났다면? 파티션과 클러스터링을 활용한 비용 최적화 방법과 쿼리 작성 베스트 프랙티스를 알아봅니다.
 - [BigQuery AI 함수로 GA4 데이터 자동 분석하기](https://osoma.kr/blog/bigquery-ai-functions-ga4/) ([markdown](https://osoma.kr/md/blog/bigquery-ai-functions-ga4.md)): BigQuery AI 함수(AI.GENERATE, AI.CLASSIFY 등)를 활용해 GA4 데이터를 SQL만으로 자동 분석하는 방법을 실전 예제와 함께 알아봅니다. 고객 피드백 감정 분석부터 유입 소스 자동 분류까지 비용 효율적인 데이터 분석 기법을 소개합니다.
+- [웹사이트 도메인이 다른 경우, GA4에서 데이터 분석은 어떻게 할까?](https://osoma.kr/blog/cross-domain-tracking/) ([markdown](https://osoma.kr/md/blog/cross-domain-tracking.md)): 도메인이 분리된 환경에서 발생하는 세션 단절 문제를 GA4 교차 도메인 설정으로 해결하고, 유입부터 최종 전환까지 전체 퍼널을 정확히 분석하는 방법을 실제 사례와 함께 소개합니다.
 
 ## Main Pages
 
