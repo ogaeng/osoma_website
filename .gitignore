@@ -20,6 +20,7 @@ Brewfile.lock.json
 .claude/
 .serena/
 docs/
+CLAUDE.md
 
 # Secrets
 .env
